@@ -1,0 +1,519 @@
+<!-- /*
+* Template Name: Tour
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Untree.co">
+<link rel="shortcut icon" href="favicon.png">
+
+<meta name="description" content="" />
+<meta name="keywords" content="bootstrap, bootstrap4" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+	rel="stylesheet">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="css/daterangepicker.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/flight.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/modal.css">
+
+<title>Tour Free Bootstrap Template for Travel Agency by
+	Untree.co</title>
+
+<style>
+.hero {
+	position: relative; /* 부모 요소를 기준으로 자식 위치를 설정 */
+}
+
+.air_background img {
+	min-height: 27.6rem;
+	min-width: 8rem;
+	width: 123rem;
+	height: 5rem;
+	background-position: center top;
+}
+
+.logo_koreanair img {
+	width: 11.2rem;
+	height: 3.4rem;
+	display: inline-block;
+	transform: translate(-93%, 41%);
+}
+
+.form {
+	position: absolute; /* 부모 요소를 기준으로 위치 설정 */
+	top: 50%; /* 부모 요소의 중간에 위치 */
+	left: 50%;
+	transform: translate(-49%, -114%); /* 중앙으로 정렬 */
+	z-index: 8; /* 이미지 위에 표시되도록 z-index 설정 */
+	background: rgba(255, 255, 255, 0.9); /* 투명도 있는 배경 */
+	padding: 0px;
+	height: 18rem;
+	min-width: 81rem;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+	position: fixed;
+}
+</style>
+
+</head>
+
+<body>
+
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav">
+		<div class="container">
+			<div class="site-navigation">
+				<a href="index.html" class="logo m-0"><span class="text-primary"></span></a>
+				<div class="logo_koreanair">
+					<img src="images/gal_4.jpg" alt="Image" class="img-fluid">
+
+					<ul
+						class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#">이벤트</a></li>
+						<!-- 							<ul class="dropdown">
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="#">Menu One</a></li>
+								<li class="has-children"><a href="#">Menu Two</a>
+									<ul class="dropdown">
+										<li><a href="#">Sub Menu One</a></li>
+										<li><a href="#">Sub Menu Two</a></li>
+										<li><a href="#">Sub Menu Three</a></li>
+									</ul></li>
+								<li><a href="#">Menu Three</a></li>
+							</ul></li> -->
+						<li><a href="booking">자주 묻는 질문</a></li>
+						<li class="language"><a id="openModalBtn5">대한민국 - 한국어</a></li>
+
+						<li><a href="payment">회원가입</a></li>
+					</ul>
+					<div class="row align-items-center">
+						<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+							<input type="submit" class="btn btn-login btn-block" value="로그인">
+						</div>
+
+						<a href="#"
+							class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+							data-toggle="collapse" data-target="#main-navbar"> <span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="LANModal" class="modal" style="display: none;">
+			<div id="overlay" class="overlay" style="display: none;">
+				<div class="modal-content" id="lan_modal">
+					<span class="close-btn5">&times;</span>
+					<p class="lanFont">지역 및 언어 선택</p>
+					<p class="K">※ 선택한 국가 또는 언어에 제공 가능한 서비스 및 예약 부가 기능이 적용됩니다.</p>
+					<p class="C">국가 / 지역</p>
+					<select name="" id="" class="Country">
+						<option value="">대한민국</option>
+						<option value="">그리스</option>
+						<option value="">뉴질랜드</option>
+						<option value="">독일</option>
+						<option value="">몰디브</option>
+						<option value="">미국</option>
+						<option value="">베트남</option>
+						<option value="">싱가포르</option>
+						<option value="">중국</option>
+					</select>
+					<p class="L">언어</p>
+					<select name="" id="" class="Lan">
+						<option value="">한국어</option>
+						<option value="">English</option>
+						<option value="">简体中文</option>
+					</select>
+					<button type="button" class="language-btn">적용</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="hero">
+		<div class="air_background">
+			<img src="images/img_1.jpg" alt="Image" class="img-fluid">
+			<div>
+				<div class="row align-items-center">
+					<div class="col-lg-7">
+						<!-- 	<div class="intro-wrap">
+						<h1 class="mb-5"><span class="d-block">Let's Enjoy Your</span> Trip In <span class="typed-words"></span></h1>
+					</div>
+ -->
+						<div class="row">
+							<div class="col-12">
+								<form class="form" action="flight">
+									<div class="row mb-2">
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+
+											<label class="location">서울</label> <input
+												class="btn btn-location btn-block" id="openModalBtn"
+												value="SEL">
+											<!-- <span id="selectSel"></span> -->
+										</div>
+										<div class="btn-change">
+											<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+											    <g fill="none" fill-rule="evenodd">
+											        <path d="M0 0H44V44H0z"/>
+											        <circle cx="22" cy="22" r="20" stroke="#D9DBE1"/>
+											        <g stroke="#AAA" stroke-linecap="round" stroke-width="1.5">
+											            <path d="M17.602 4.13C16.045 1.645 13.332 0 10.246 0 6.432 0 3.189 2.512 1.992 6.015c-.319.934-.438 1.603-.438 2.65" transform="translate(12 12.5)"/>
+											            <path fill="#AAA" d="M0 8L1.5 10.25 3 8z" transform="translate(12 12.5)"/>
+											            <path d="M2.5 14.534c1.557 2.485 4.27 4.13 7.356 4.13 3.814 0 7.057-2.511 8.253-6.015.32-.934.439-1.603.439-2.649" transform="translate(12 12.5)"/>
+											            <path fill="#AAA" d="M17 9L18.5 11.25 20 9z" transform="translate(12 12.5) rotate(180 18.5 10.125)"/>
+											        </g>
+											    </g>
+											</svg>
+										
+										</div>
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+											<label class="locationTo">도착지</label> <input
+												class="btn btn-locationTo btn-block" id="openModalBtn2"
+												value="TO">
+											<!-- <span id="selectTo">도착지</span> -->
+										</div>
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+											<label class="date">출발일</label> <input type="text"
+												class="btn btn-date daterange" name="daterange">
+										</div>
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+											<label class="people">탑승객</label>
+											<button class="btn btn-people btn-block" id="openModalBtn3"
+												value="성인 1명">
+												성인 1명, 소아 0명, 유아 0명
+												<svg width="30" height="30" viewBox="0 0 30 30"
+													xmlns="http://www.w3.org/2000/svg">
+												    <g fill="none" fill-rule="evenodd">
+												        <path d="M0 0h30v30H0z" />
+												        <path
+														d="M15 4.188a5.989 5.989 0 1 1-.001 11.977A5.989 5.989 0 0 1 15 4.188zm0 1.796a4.192 4.192 0 1 0 0 8.383 4.192 4.192 0 0 0 0-8.383z"
+														fill="#000" fill-rule="nonzero" />
+												        <path d="M23.383 24.188a8.383 8.383 0 1 0-16.766 0"
+														stroke="#000" stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												    </g>
+												</svg>
+											</button>
+
+										</div>
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+											<label class="seat">좌석 등급</label>
+											<button class="btn btn-seat btn-block" id="openModalBtn4"
+												value="선택하세요">
+												선택하세요
+												<svg width="30" height="30" viewBox="0 0 30 30"
+													xmlns="http://www.w3.org/2000/svg">
+											    <g fill="none" fill-rule="evenodd">
+											        <path d="M30 0H0v30h30z" />
+											        <g stroke="#000" stroke-linejoin="round"
+														stroke-width="1.498">
+											            <path
+														d="M6.25 19.653V17.44c0-.478.387-.865.864-.865h14.961l-1.464 5.856a.864.864 0 0 1-.839.655H9.626a.432.432 0 0 1-.309-.13l-2.943-3a.432.432 0 0 1-.124-.302zM24.445 5h-4.36a.432.432 0 0 0-.41.298l-3.669 11.276h6.07l2.788-11.036A.432.432 0 0 0 24.445 5z" />
+											            <path stroke-linecap="round"
+														d="M20.208 25.979H8.496" />
+											        </g>
+											    </g>
+												</svg>
+											</button>
+										</div>
+
+									</div>
+
+									<div class="row align-items-center">
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+											<input type="submit" class="btn btn-primary btn-block"
+												value="항공편 검색">
+										</div>
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+											<input type="submit" class="btn btn-reservation btn-block"
+												value="예매"> <label
+												class="radio-inline btn btn-round"><input
+												type="radio" name="round" value="roundTrip"
+												checked="checked">Round trip</label> <label
+												class="radio-inline btn btn-one"><input type="radio"
+												name="round" value="oneWay">One way</label>
+
+										</div>
+
+										<!-- 										 <div class="btn-group">
+										 	<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+							                        <label class="radio-inline"><input type="radio" name="round" value="roundTrip" checked="checked">Round trip</label>
+							                        <label class="radio-inline"><input type="radio" name="round" value="oneWay">One way</label>
+					                       </div>
+										</div> -->
+								</form>
+							</div>
+						</div>
+						<div id="SELModal" class="modal" style="display: none;">
+							<div class="modal-content" id="sel_modal">
+								<span class="close-btn">&times;</span> 
+								<p class="DesF">출발지 검색</p> 
+								<select name="" id="" class="form-control custom-select" onclick="selectSel">
+									<option value="">도시, 공항</option>
+									<option value="">ICN  서울/인천, 대한민국</option>
+									<option value="">ATH  아테네, 그리스</option>
+									<option value="">WLG  웰링턴, 뉴질랜드</option>
+									<option value="">BER  베를린/브란덴부크, 독일</option>
+									<option value="">MLE  말레, 몰디브</option>
+									<option value="">IAD  워싱턴/덜레스, 미국</option>
+									<option value="">PEK 베이징/서우두</option>
+									<option value="">HAN  하노이, 베트남</option>
+									<option value="">SIN  싱가포르/창이, 싱가포르</option>
+									<option value="">HND 도쿄/하네다, 일본</option>
+								</select>
+							</div>
+						</div>
+						<div id="TOModal" class="modal" style="display: none;">
+							<div class="modal-content" id="to_modal">
+								<span class="close-btn2">&times;</span> 
+								<p class="DesF">도착지 검색</p> 
+								<select name="" id="" class="form-control custom-select" onclick="selectTo">
+									<option value="">도시, 공항</option>
+									<option value="">ICN  서울/인천, 대한민국</option>
+									<option value="">ATH  아테네, 그리스</option>
+									<option value="">WLG  웰링턴, 뉴질랜드</option>
+									<option value="">BER  베를린/브란덴부크, 독일</option>
+									<option value="">MLE  말레, 몰디브</option>
+									<option value="">IAD  워싱턴/덜레스, 미국</option>
+									<option value="">PEK 베이징/서우두</option>
+									<option value="">HAN  하노이, 베트남</option>
+									<option value="">SIN  싱가포르/창이, 싱가포르</option>
+									<option value="">HND 도쿄/하네다, 일본</option>
+								</select>
+							</div>
+						</div>
+						<div id="PEOModal" class="modal" style="display: none;">
+							<div class="modal-content" id="peo_modal">
+								<span class="close-btn3">&times;</span>
+								<div class="passenger-selectArea">
+									<p class="PassFont">승객 선택</p>
+									<p class="adC">성인(12세~)</p>
+									<div>
+										<input type="text" class="adultCount" value="1"
+											oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+										<button type="button" class="btn_number minus">-</button>
+										<button type="button" class="btn_number plus">+</button>
+									</div>
+									<p class="chC">소아(만 2세 ~ 12세 미만)</p>
+									<div>
+										<input type="text" class="childCount" value="0"
+											oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+										<button type="button" class="btn_number minus">-</button>
+										<button type="button" class="btn_number plus">+</button>
+									</div>
+									<p class="inC">유아(만 2세 미만)</p>
+									<div>
+										<input type="text" class="infantCount" value="0"
+											oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+										<button type="button" class="btn_number minus">-</button>
+										<button type="button" class="btn_number plus">+</button>
+									</div>
+									<p class="T">※ 예약인원은 성인,소아, 유아를 포함하여 총 9명까지 선택 가능합니다.</p>
+								</div>
+							</div>
+
+						</div>
+						<div id="SEATModal" class="modal" style="display: none;">
+							<div class="modal-content" id="seat_modal">
+								<span class="close-btn4">&times;</span> 
+								<p class="SeatF">좌석 등급 선택</p>
+								<div style="text-align: center">
+									<!-- Button 1 -->
+									<input type="button" class="GenBtn" value="일반석"
+										onclick="selectSeat('일반석')" />
+
+
+									<!-- Button 2 -->
+									<input type="button" class="PreBtn" value="프레스티지석"
+										onclick="selectSeat('프레스티지석')" />
+
+
+									<!-- Button 3 -->
+									<input type="button" class="FirstBtn" value="일등석"
+										onclick="selectSeat('일등석')" />
+								</div>
+								<!-- 								<div class="selected-value" id="selectedSeat">선택하세요</div>
+ -->
+							</div>
+
+						</div>
+						<!--  						<button id="openModalBtn">Open Seat Modal</button>
+ -->
+					</div>
+
+
+					<!-- 				<div class="col-lg-5">
+					<div class="slides">
+						<img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid active">
+						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid">
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+
+		<div class="site-footer">
+			<div class="inner first">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-4">
+							<div class="widget">
+								<h3 class="heading">About Tour</h3>
+								<p>Far far away, behind the word mountains, far from the
+									countries Vokalia and Consonantia, there live the blind texts.</p>
+							</div>
+							<div class="widget">
+								<ul class="list-unstyled social">
+									<li><a href="#"><span class="icon-twitter"></span></a></li>
+									<li><a href="#"><span class="icon-instagram"></span></a></li>
+									<li><a href="#"><span class="icon-facebook"></span></a></li>
+									<li><a href="#"><span class="icon-linkedin"></span></a></li>
+									<li><a href="#"><span class="icon-dribbble"></span></a></li>
+									<li><a href="#"><span class="icon-pinterest"></span></a></li>
+									<li><a href="#"><span class="icon-apple"></span></a></li>
+									<li><a href="#"><span class="icon-google"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-2 pl-lg-5">
+							<div class="widget">
+								<h3 class="heading">Pages</h3>
+								<ul class="links list-unstyled">
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-2">
+							<div class="widget">
+								<h3 class="heading">Resources</h3>
+								<ul class="links list-unstyled">
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="widget">
+								<h3 class="heading">Contact</h3>
+								<ul class="list-unstyled quick-info links">
+									<li class="email"><a href="#">mail@example.com</a></li>
+									<li class="phone"><a href="#">+1 222 212 3819</a></li>
+									<li class="address"><a href="#">43 Raymouth Rd.
+											Baltemoer, London 3910</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="inner dark">
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-md-8 mb-3 mb-md-0 mx-auto">
+							<p>
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script>
+								. All Rights Reserved. &mdash; Designed with love by <a
+									href="https://untree.co" class="link-highlight">Untree.co</a>
+								<!-- License information: https://untree.co/license/ -->
+								Distributed By <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="overlayer"></div>
+		<div class="loader">
+			<div class="spinner-border" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.animateNumber.min.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/moment.min.js"></script>
+		<script src="js/daterangepicker.js"></script>
+
+		<script src="js/typed.js"></script>
+		<script src="js/index.js"></script>
+		<script>
+		$(function() {
+			var slides = $('.slides'),
+			images = slides.find('img');
+
+			images.each(function(i) {
+				$(this).attr('data-id', i + 1);
+			})
+
+			var typed = new Typed('.typed-words', {
+				strings: ["San Francisco."," Paris."," New Zealand.", " Maui.", " London."],
+				typeSpeed: 80,
+				backSpeed: 80,
+				backDelay: 4000,
+				startDelay: 1000,
+				loop: true,
+				showCursor: true,
+				preStringTyped: (arrayPos, self) => {
+					arrayPos++;
+					console.log(arrayPos);
+					$('.slides img').removeClass('active');
+					$('.slides img[data-id="'+arrayPos+'"]').addClass('active');
+				}
+
+			});
+		})
+	</script>
+
+		<script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,508 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+.body {
+  background-color: #efefef;
+}
+.header-container {
+  background-color: #FCE00C;
+  height: 8px;
+  width: 100%;
+}
+ .link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+  }
+  
+  .nav-arrow {
+    color: #fee014;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+.sub-nav {
+  align-items: center;
+  background-color: #FBFBFB;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  display: flex;
+  height: 62px;
+  justify-content: center;
+  margin-bottom: 56px;
+  width: 100%;  
+}
+
+.sub-item {  
+    
+  > .button {
+    color: #666666;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 24px 32px;
+    text-decoration: none;
+    
+    &:hover {
+    background-color: #02A7E0;
+    color: #F2F2F2;
+    cursor: pointer;
+    }
+  }
+}
+.route-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0;
+  max-width: 830px;
+  padding: 20px;
+  width: 100%;
+  
+  > .origin,
+  > .destination {
+    color: #666666;
+    flex: 0 0 150px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  > .destination {
+    text-align: right;
+  }
+  
+  > .icon {
+    color: #666666;
+    font-size: 32px;
+    transform: rotate(90deg);
+  }
+  
+  > .line {
+    background-color: #666666;
+    display: block;
+    height: 1px;
+    margin: 0 24px;
+    width: 100%;
+  }
+  
+}
+
+
+
+
+
+.schedule-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    max-width: 855px;
+    padding: 0;
+    width: 100%;
+  
+  > .button-right,
+  > .button-left {
+    background-color: #e4e4e4;
+    border: none;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    height: 115px;
+    max-width: 24px;
+    padding: 0;
+    width: 100%;
+    
+    > i {
+      color: #5c5c5c;
+    }
+  }
+  
+  
+  > .button-left {
+    transform: scaleX(-1);
+  }
+  
+  .sched-grid {
+    display: flex;
+    list-style: none;
+    padding: 8px;
+  }
+
+  .sched-column {
+    padding: 0 4px;
+    max-width: 120px;
+    width: 100%;
+  }
+
+  .sched-card {
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 12px 18px;
+
+    &:hover {
+      background-color: #fee014;
+      
+      > .heading {
+        color: black;
+      }
+      
+      > .number {
+        font-weight: 400;
+      }
+      
+      > .footer > .currency, .price {
+        color: black;
+      }
+    }
+
+    > .heading {
+      color: #b8b8b8;
+      font-size: 14px;
+      font-weight: regular;
+      margin-top: 0;
+      margin-bottom: 2px;
+    }
+
+    > .number {
+      color: #4e84c4;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 1em;
+      padding-bottom: 6px;
+    }
+    
+    > .footer {
+      text-align: center;
+    }
+
+    > .footer p {
+      color: #c3c3c3;
+      font-size: 11px;
+    }
+    
+    > .body, 
+    > .footer {
+      margin: 0 auto;
+    }
+  }
+  
+  
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.flights-container {
+  width: 100%;
+  text-align: center;
+}
+.flight-date {
+  font-size: 0.8em;
+}
+.flight-container {
+  padding: 5px;
+  display: flex;
+  border: 1px solid black; 
+  margin: 10px;
+}
+
+.flight-container > div {
+  padding: 10px 0;
+/*   margin: 0px; */
+  margin: auto; 
+ justify-content: center;
+}
+div.flight-price-container {
+  padding-top: 2px;
+}
+svg#plane {
+  width: 30px;
+  opacity: 0.5;
+}
+.label {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.airport {
+  font-size: 2rem;
+}
+.city {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.flight-type {
+  font-size: 0.7em;
+}
+.flight-escale {
+  font-size: 0.7em;
+}
+.flight-price {
+  color: #378302;
+  font-weight: bold;
+}
+flight-logo {
+  padding: 0;
+  margin: 0;
+}
+.flight-book {
+  background-color: white;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+  padding: 2px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 15px 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+span.flag {
+  width: 22px;
+  height: 15px;
+  display: inline-block;
+  margin-right:2px;
+}
+img.flag {
+  width: 22px;
+}
+.flag {
+      border: 1px solid #f9f9f9;
+    border-radius: 3px;
+  margin:4px;
+  background: url(https://raw.githubusercontent.com/SlavkoPekaric/Country-Flags-Responsive-CSS-Sprite/master/img/flags_responsive.png)
+    no-repeat;
+  background-size: 100%;
+}
+.flag-ad {
+  background-position: 0 0.413223%;
+}
+.flag-ae {
+  background-position: 0 0.826446%;
+}
+.flag-af {
+  background-position: 0 1.239669%;
+}
+.flag-ag {
+  background-position: 0 1.652893%;
+}
+.flag-ai {
+  background-position: 0 2.066116%;
+}
+.flag-al {
+  background-position: 0 2.479339%;
+}
+.flag-am {
+  background-position: 0 2.892562%;
+}
+.flag-an {
+  background-position: 0 3.305785%;
+}
+.flag-ao {
+  background-position: 0 3.719008%;
+}
+.flag-aq {
+  background-position: 0 4.132231%;
+}
+.flag-ar {
+  background-position: 0 4.545455%;
+}
+.flag-as {
+  background-position: 0 4.958678%;
+}
+.flag-at {
+  background-position: 0 5.371901%;
+}
+.flag-au {
+  background-position: 0 5.785124%;
+}
+.flag-aw {
+  background-position: 0 6.198347%;
+}
+.flag-az {
+  background-position: 0 6.61157%;
+}
+.flag-ba {
+  background-position: 0 7.024793%;
+}
+.flag-bb {
+  background-position: 0 7.438017%;
+}
+.flag-bd {
+  background-position: 0 7.85124%;
+}
+.flag-be {
+  background-position: 0 8.264463%;
+}
+.flag-bf {
+  background-position: 0 8.677686%;
+}
+.flag-bg {
+  background-position: 0 9.090909%;
+}
+.flag-bh {
+  background-position: 0 9.504132%;
+}
+.flag-bi {
+  background-position: 0 9.917355%;
+}
+.flag-bj {
+  background-position: 0 10.330579%;
+}
+.flag-bm {
+  background-position: 0 10.743802%;
+}
+.flag-bn {
+  background-position: 0 11.157025%;
+}
+.flag-bo {
+  background-position: 0 11.570248%;
+}
+.flag-br {
+  background-position: 0 11.983471%;
+}
+.flag-bs {
+  background-position: 0 12.396694%;
+}
+.flag-bt {
+  background-position: 0 12.809917%;
+}
+.flag-bv {
+  background-position: 0 13.22314%;
+}
+.flag-bw {
+  background-position: 0 13.636364%;
+}
+.flag-by {
+  background-position: 0 14.049587%;
+}
+.flag-bz {
+  background-position: 0 14.46281%;
+}
+.flag-ca {
+  background-position: 0 14.876033%;
+}
+.flag-cc {
+  background-position: 0 15.289256%;
+}
+.flag-cd {
+  background-position: 0 15.702479%;
+}
+.flag-cf {
+  background-position: 0 16.115702%;
+}
+.flag-cg {
+  background-position: 0 16.528926%;
+}
+.flag-ch {
+  background-position: 0 16.942149%;
+}
+.flag-ci {
+  background-position: 0 17.355372%;
+}
+.flag-ck {
+  background-position: 0 17.768595%;
+}
+.flag-cl {
+  background-position: 0 18.181818%;
+}
+.flag-cm {
+  background-position: 0 18.595041%;
+}
+.flag-cn {
+  background-position: 0 19.008264%;
+}
+.flag-co {
+  background-position: 0 19.421488%;
+}
+.flag-cr {
+  background-position: 0 19.834711%;
+}
+.flag-cu {
+  background-position: 0 20.247934%;
+}
+.flag-cv {
+  background-position: 0 20.661157%;
+}
+.flag-cx {
+  background-position: 0 21.07438%;
+}
+.flag-cy {
+  background-position: 0 21.487603%;
+}
+.flag-cz {
+  background-position: 0 21.900826%;
+}
+.flag-de {
+  background-position: 0 22.31405%;
+}
+.flag-dj {
+  background-position: 0 22.727273%;
+}
+.flag-dk {
+  background-position: 0 23.140496%;
+}
+.flag-dm {
+  background-position: 0 23.553719%;
+}
+.flag-do {
+  background-position: 0 23.966942%;
+}
+.flag-dz {
+  background-position: 0 24.380165%;
+}
+.flag-ec {
+  background-position: 0 24.793388%;
+}
+.flag-ee {
+  background-position: 0 25.206612%;
+}
+.flag-eg {
+  background-position: 0 25.619835%;
+}
+.flag-eh {
+  background-position: 0 26.033058%;
+}
+.flag-er {
+  background-position: 0 26.446281%;
+}
+.flag-es {
+  background-position: 0 26.859504%;
+}
+.flag-et {
+  background-position: 0 27.272727%;
+}
+.flag-fi {
+  background-position: 0 27.68595%;
+}
+.flag-fj {
+  background-position: 0 28.099174%;
+}
+.flag-fk {
+  background-position: 0 28.512397%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
