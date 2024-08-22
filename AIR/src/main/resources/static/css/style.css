@@ -87,7 +87,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-size: 1rem;
 	cursor: pointer;
 	max-width: 10%;
-	transform: translate(1108px, 12px);
+	transform: translate(1131px, -10px);
 	position: fixed;
 }
 
@@ -139,6 +139,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .custom-svg{
 	transform: translate(-293px, 170px);
 	cursor: pointer;
+}
+.peo-svg{
+	transform: translate(-231px, 38px);
+	cursor: pointer;
+}
+
+.date-svg{
+	transform: translate(-206px, 44px);
+	cursor: pointer;
+}
+.seat-svg{
+	transform: translate(-310px, 37px);
+	cursor: pointer;
+	
 }
 
 .btn.btn-locationTo{
@@ -198,7 +212,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 		font-weight: 200;
 		cursor: auto;
 		max-width: 41%;
-		transform: translate(127px, -5px);	
+		transform: translate(111px, -5px);	
 		position: fixed;
 	}
 
@@ -214,7 +228,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-weight: 800;
 	cursor: pointer;
 	max-width: 41%;
-	transform: translate(15px, 13px);
+	transform: translate(34px, 13px);
 	position: fixed;
 }
 	.seat{
@@ -251,7 +265,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 		font-weight: 200;
 		cursor: auto;
 		max-width: 41%;
-		transform: translate(323px, -5px);	
+		transform: translate(338px, -5px);	
 		position: fixed
 				
 	}
@@ -266,7 +280,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-size: 1rem;
 	cursor: pointer;
 	max-width: 7%;
-	transform: translate(-419px, -123px);
+	transform: translate(-419px, -150px);
 	position: fixed;
 }
 .btn.btn-round{
@@ -280,7 +294,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-size: 1rem;
 	cursor: pointer;
 	max-width: -1%;
-	transform: translate(-329px, -123px);
+	transform: translate(-329px, -150px);
 	position: fixed;
 }
 .btn.btn-one{
@@ -294,7 +308,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-size: 1rem;
 	cursor: pointer;
 	max-width: -1%;
-	transform: translate(-200px, -123px);
+	transform: translate(-200px, -150px);
 	position: fixed;
 }
 .form-control:not(:placeholder-shown) {

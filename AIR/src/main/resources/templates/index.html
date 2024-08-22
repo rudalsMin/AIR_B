@@ -154,7 +154,7 @@
 						<option value="">English</option>
 						<option value="">简体中文</option>
 					</select>
-					<button type="button" class="language-btn">적용</button>
+					<span class="language-btn">적용</span>
 				</div>
 			</div>
 		</div>
@@ -177,9 +177,8 @@
 									<div class="row mb-2">
 										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
 
-											<label class="location">서울</label> <input
-												class="btn btn-location btn-block" id="openModalBtn"
-												value="SEL">
+											<label class="location">서울</label> 
+											<input class="btn btn-location btn-block" id="openModalBtn" value="SEL">
 											<!-- <span id="selectSel"></span> -->
 										</div>
 										<div class="btn-change">
@@ -207,47 +206,48 @@
 											<label class="date">출발일</label> <input type="text"
 												class="btn btn-date daterange" name="daterange">
 										</div>
+										
+										<svg class="date-svg" width="28" height="29" viewBox="0 0 28 29" xmlns="http://www.w3.org/2000/svg">
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M0 .5h28v28H0z"/>
+										        <path stroke="#000" stroke-width="1.75" d="M21.82 8.667H6.652v13.27h15.166z"/>
+										        <path fill="#000" fill-rule="nonzero" d="M6.653 12.167h15.166v1.75H6.653z"/>
+										        <path d="M10.736 5.167v3.5m7-3.5v3.5" stroke="#000" stroke-width="1.75"/>
+										    </g>
+										</svg>
+										
+										
 										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
 											<label class="people">탑승객</label>
 											<button class="btn btn-people btn-block" id="openModalBtn3"
 												value="성인 1명">
-												성인 1명, 소아 0명, 유아 0명
-												<svg width="30" height="30" viewBox="0 0 30 30"
-													xmlns="http://www.w3.org/2000/svg">
-												    <g fill="none" fill-rule="evenodd">
-												        <path d="M0 0h30v30H0z" />
-												        <path
-														d="M15 4.188a5.989 5.989 0 1 1-.001 11.977A5.989 5.989 0 0 1 15 4.188zm0 1.796a4.192 4.192 0 1 0 0 8.383 4.192 4.192 0 0 0 0-8.383z"
-														fill="#000" fill-rule="nonzero" />
-												        <path d="M23.383 24.188a8.383 8.383 0 1 0-16.766 0"
-														stroke="#000" stroke-width="1.5" stroke-linecap="round"
-														stroke-linejoin="round" />
-												    </g>
-												</svg>
+												성인 1명
 											</button>
-
 										</div>
+											<svg class="peo-svg" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+												<g fill="none" fill-rule="evenodd">
+												 	<path d="M0 0h30v30H0z" />
+												     <path d="M15 4.188a5.989 5.989 0 1 1-.001 11.977A5.989 5.989 0 0 1 15 4.188zm0 1.796a4.192 4.192 0 1 0 0 8.383 4.192 4.192 0 0 0 0-8.383z" fill="#000" fill-rule="nonzero" />
+												     <path d="M23.383 24.188a8.383 8.383 0 1 0-16.766 0" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</g>
+											</svg>
+										
 										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
 											<label class="seat">좌석 등급</label>
 											<button class="btn btn-seat btn-block" id="openModalBtn4"
 												value="선택하세요">
 												선택하세요
-												<svg width="30" height="30" viewBox="0 0 30 30"
-													xmlns="http://www.w3.org/2000/svg">
-											    <g fill="none" fill-rule="evenodd">
-											        <path d="M30 0H0v30h30z" />
-											        <g stroke="#000" stroke-linejoin="round"
-														stroke-width="1.498">
-											            <path
-														d="M6.25 19.653V17.44c0-.478.387-.865.864-.865h14.961l-1.464 5.856a.864.864 0 0 1-.839.655H9.626a.432.432 0 0 1-.309-.13l-2.943-3a.432.432 0 0 1-.124-.302zM24.445 5h-4.36a.432.432 0 0 0-.41.298l-3.669 11.276h6.07l2.788-11.036A.432.432 0 0 0 24.445 5z" />
-											            <path stroke-linecap="round"
-														d="M20.208 25.979H8.496" />
-											        </g>
-											    </g>
-												</svg>
 											</button>
 										</div>
-
+										<svg class="seat-svg" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+											<g fill="none" fill-rule="evenodd">
+												<path d="M30 0H0v30h30z" />
+											    <g stroke="#000" stroke-linejoin="round" stroke-width="1.498">
+											    <path d="M6.25 19.653V17.44c0-.478.387-.865.864-.865h14.961l-1.464 5.856a.864.864 0 0 1-.839.655H9.626a.432.432 0 0 1-.309-.13l-2.943-3a.432.432 0 0 1-.124-.302zM24.445 5h-4.36a.432.432 0 0 0-.41.298l-3.669 11.276h6.07l2.788-11.036A.432.432 0 0 0 24.445 5z" />
+											    <path stroke-linecap="round" d="M20.208 25.979H8.496" />
+											    </g>
+											 </g>
+										</svg>
 									</div>
 
 									<div class="row align-items-center">
@@ -363,9 +363,24 @@
 									<input type="button" class="FirstBtn" value="일등석"
 										onclick="selectSeat('일등석')" />
 								</div>
+							</div>
+						</div>
+								
+						<!-- <div id="DATEModal" class="modal" style="display: none;">
+							<div class="modal-content" id="date_modal">
+								<span class="close-btn6">&times;</span>
+								<p class="DateF">날짜</p>
+								<input type="text" class="DateBtn" name="daterange"
+									onclick="selectDate">
+							</div>
+						</div>
+						 -->
+								
+								
+								
 								<!-- 								<div class="selected-value" id="selectedSeat">선택하세요</div>
  -->
-							</div>
+							
 
 						</div>
 						<!--  						<button id="openModalBtn">Open Seat Modal</button>

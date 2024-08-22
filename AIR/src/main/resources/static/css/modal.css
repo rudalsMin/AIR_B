@@ -357,3 +357,52 @@
 	position: fixed;
 	cursor: pointer;	
 }
+
+
+
+#date_modal{
+    background-color: #fefefe;
+/*     margin: 4% auto;
+ */ padding: 20px;
+    border: 1px solid #888;
+    transform: translate(365px, 448px);
+    width: 33%;
+    height: 49%;
+    border-radius: 2rem;
+}
+.close-btn6 {
+    color: #000000;
+    float: right;
+    font-size: 35px;
+    font-weight: normal;
+    transform: translate(558px, -12px);
+    cursor: pointer;
+    
+    
+}
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.DateF{
+	font-family: cursive;
+	font-size: 22px;
+	font-weight: bold;
+	transform: translate(12px, -29px);
+	padding: 0%;
+	margin: 0%;
+	width: 30%;
+}
+.DateBtn{
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	width: 556px;
+	height: 54px;
+	border-radius: 1rem;
+	transform: translate(28px, 3px);
+	cursor: pointer
+	
+}

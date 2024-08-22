@@ -1,29 +1,28 @@
 // "대한민국 - 한국어" 버튼을 클릭하면 LANModal을 열기
 document.getElementById('openModalBtn5').onclick = function() {
     document.getElementById('LANModal').style.display = "block";
-	document.getElementById('overlay').style.display = "block";
+    document.getElementById('overlay').style.display = "block";
 }
 
 // LANModal 닫기 버튼 클릭 시 모달 닫기
 document.querySelector('.close-btn5').onclick = function() {
     document.getElementById('LANModal').style.display = "none";
-	document.getElementById('overlay').style.display = "none";
+    document.getElementById('overlay').style.display = "none";
 }
 
 // LANModal 외부 클릭 시 모달 닫기
 window.onclick = function(event) {
     if (event.target == document.getElementById('LANModal')) {
         document.getElementById('LANModal').style.display = "none";
-		document.getElementById('overlay').style.display = "none";
+        document.getElementById('overlay').style.display = "none";
     }
 }
 
-
 // SEL 버튼을 클릭하면 모달창을 열기
 document.getElementById('openModalBtn').onclick = function() {
-alert("?");
+    alert("?");
     document.getElementById('SELModal').style.display = "block";
-	document.getElementById('SEATModal').style.display = "none";
+    document.getElementById('SEATModal').style.display = "none";
 }
 
 // 모달창 닫기 버튼 클릭 시 모달창 닫기
@@ -37,27 +36,25 @@ window.onclick = function(event) {
         document.getElementById('SELModal').style.display = "none";
     }
 }
+
 // SEL 모달에서 선택한 값을 버튼 텍스트로 업데이트
-//document.querySelector('#SELModal select').addEventListener('change', function() {
+document.querySelector('#SELModal select').addEventListener('change', function() {
     // 선택된 옵션의 텍스트를 가져옵니다.
-  //  let selectedText = this.options[this.selectedIndex].text;
+    let selectedText = this.options[this.selectedIndex].text;
 
     // 모달 밖의 SEL 버튼 텍스트 업데이트
-    //document.getElementById('openModalBtn').value = selectedText;
+    document.getElementById('openModalBtn').value = selectedText;
 
-    // 선택된 도시 정보를 HTML 요소에 업데이트 (예: #selectedCity)
-   // document.getElementById('selectSel').innerText = selectedText;
-//	document.getElementById('selectSel').style.display = 'none';
+    // 선택된 도시 정보를 HTML 요소에 업데이트
+    document.getElementById('selectSel').innerText = selectedText;
 
-    // 모달 닫기 (선택 후 자동으로 닫히게 하려면)
-  //  document.getElementById('SELModal').style.display = "none";
-//});
-
+    // 모달 닫기
+    document.getElementById('SELModal').style.display = "none";
+});
 
 // TO 버튼을 클릭하면 모달창을 열기
 document.getElementById('openModalBtn2').onclick = function() {
-	alert("#");
-	document.getElementById('TOModal').style.display = "none";
+    alert("#");
     document.getElementById('TOModal').style.display = "block";
 }
 
@@ -72,36 +69,25 @@ window.onclick = function(event) {
         document.getElementById('TOModal').style.display = "none";
     }
 }
-// SEL 모달에서 선택한 값을 버튼 텍스트로 업데이트
+
+// TO 모달에서 선택한 값을 버튼 텍스트로 업데이트
 document.querySelector('#TOModal select').addEventListener('change', function() {
     // 선택된 옵션의 텍스트를 가져옵니다.
     let selectedText = this.options[this.selectedIndex].text;
 
-    // 모달 밖의 SEL 버튼 텍스트 업데이트
+    // 모달 밖의 TO 버튼 텍스트 업데이트
     document.getElementById('openModalBtn2').value = selectedText;
 
-    // 선택된 도시 정보를 HTML 요소에 업데이트 (예: #selectedCity)
+    // 선택된 도시 정보를 HTML 요소에 업데이트
     document.getElementById('selectTo').innerText = selectedText;
-	document.getElementById('selectTo').style.display = 'none';
 
-    // 모달 닫기 (선택 후 자동으로 닫히게 하려면)
-	document.getElementById('TOModal').style.display = "none";
+    // 모달 닫기
+    document.getElementById('TOModal').style.display = "none";
 });
-
-// 출발지 & 도착지 값 교환
-//document.getElementById('swapButton').addEventListener('click', function() {
-  //  let departureInput = document.getElementById('openModalBtn');
-    //let arrivalInput = document.getElementById('openModalBtn2');
-
-//    let tempValue = departureInput.value;
-
-//    departureInput.value = arrivalInput.value;
-  //  arrivalInput.value = tempValue;
-//});
 
 // 좌석 등급 모달창 열기 버튼 클릭 시 모달 열기
 document.getElementById('openModalBtn4').addEventListener('click', function(event) {
-	alert("d");
+    alert("d");
     event.preventDefault(); // 기본 동작인 폼 제출을 막음
     document.getElementById('SEATModal').style.display = "block";
 });
@@ -118,23 +104,11 @@ window.onclick = function(event) {
     }
 }
 
-// 모달 닫기 버튼 클릭 시 모달 창 닫기
-document.querySelector('.close-btn4').onclick = function() {
-    document.getElementById('SEATModal').style.display = "none";
-};
-
-// 모달창 외부 클릭 시 모달창 닫기
-window.onclick = function(event) {
-    if (event.target == document.getElementById('SEATModal')) {
-        document.getElementById('SEATModal').style.display = "none";
-    }
-};
-
 // 좌석 선택 함수
 function selectSeat(seatType) {
     // 선택된 좌석 정보를 HTML 요소에 업데이트
     const selectedSeatElem = document.getElementById('selectedSeat');
-   // selectedSeatElem.textContent = `선택된 부분: ${seatType}`;
+    // selectedSeatElem.textContent = `선택된 부분: ${seatType}`;
 
     // 선택된 버튼 스타일 업데이트
     const buttons = document.querySelectorAll('.modal-content .showImgBtn');
@@ -152,13 +126,10 @@ function selectSeat(seatType) {
     seatButton.value = `선택된 부분: ${seatType}`;
 }
 
-
-
 // 탑승객 모달창 열기 버튼 클릭 시 모달 열기
 document.getElementById('openModalBtn3').addEventListener('click', function(event) {
-alert("d");
+    alert("d");
     event.preventDefault(); // 기본 동작인 폼 제출을 막음
-	document.getElementById('PEOModal').style.display = "none";
     document.getElementById('PEOModal').style.display = "block";
 });
 
@@ -181,13 +152,9 @@ let infantCount = document.querySelector(".infantCount");
 let totalNum = 0;
 let plusBtn = document.querySelectorAll(".btn_number.plus");
 let minusBtn = document.querySelectorAll(".btn_number.minus");
-//let passengerSelect = document.querySelector(".passenger-select");
 let passengerButton = document.querySelector(".btn-people");
 
 // 승객 수를 업데이트하고 표시하는 함수
-//function updatePassengerSelect() {
-    //passengerSelect.value = `성인 ${adultCount.value}명, 소아 ${childCount.value}명, 유아 ${infantCount.value}명`;
-//}
 function updatePassengerSelect() {
     passengerButton.textContent = `성인 ${adultCount.value}명, 소아 ${childCount.value}명, 유아 ${infantCount.value}명`;
 }
@@ -240,10 +207,13 @@ for (let i = 0; i < minusBtn.length; i++) {
         updatePassengerSelect(); // 승객 수 변경 시 업데이트
     });
 }
+
+// 승객 수 적용 버튼 클릭 시 승객 수 업데이트 및 모달 닫기
 document.querySelector(".passenger-btn").addEventListener("click", function() {
     updatePassengerSelect(); // 최종 선택한 값을 업데이트
     document.getElementById('PEOModal').style.display = "none"; // 모달 창 닫기
 });
+
 
 // 페이지 로드 시 기본 값 업데이트
 updatePassengerSelect();
