@@ -203,6 +203,7 @@ html {
 .flights-container {
   width: 100%;
   text-align: center;
+  transform: translate(10px, 211px);
 }
 .flight-date {
   font-size: 0.8em;
@@ -492,17 +493,3 @@ img.flag {
 .flag-fk {
   background-position: 0 28.512397%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
