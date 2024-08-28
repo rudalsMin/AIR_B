@@ -245,7 +245,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 		font-weight: 700;
 		cursor: pointer;
 		max-width: 41%;
-		transform: translate(3px, 90px);
+		transform: translate(10px, 90px);
 		position: fixed;
 	}
 	.location{
@@ -291,7 +291,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-size: 2rem;
 	font-weight: 700;
 	cursor: pointer;
-	transform: translate(-306px, 28px);
+	transform: translate(-301px, 28px);
 	/* margin: 0%;
 	padding: 0%; */
 }

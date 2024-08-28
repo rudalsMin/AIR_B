@@ -25,9 +25,15 @@ document.querySelector('.language-btn').onclick = function() {
 }
 
 // SEL 버튼을 클릭하면 모달창을 열기
-document.getElementById('openModalBtn').onclick = function() {
+document.getElementById('openModalBtn').onclick = function(event) {
+    // 버튼의 기본 동작(페이지 전환)을 막습니다.
+    event.preventDefault();
+
+    // 모달 창 열기
     document.getElementById('SELModal').style.display = "block";
-    document.getElementById('SEATModal').style.display = "none";
+
+    // 다른 모달 창이 열려 있다면 닫기 (이 코드는 선택사항입니다)
+    document.getElementById('SEATModal').style.display = "none"; 
 }
 
 // 모달창 닫기 버튼 클릭 시 모달창 닫기
@@ -44,26 +50,29 @@ window.onclick = function(event) {
 
 // SEL 모달에서 선택한 값을 버튼 텍스트로 업데이트
 document.querySelector('#SELModal select').addEventListener('change', function() {
-    // 선택된 옵션의 텍스트를 가져옵니다.
-    let selectedText = this.options[this.selectedIndex].text;
+    // 선택된 옵션의 value를 가져옵니다.
+    let selectedValue = this.options[this.selectedIndex].value;
+	let selectedText = this.options[this.selectedIndex].text;
 
-    // 모달 밖의 SEL 버튼 텍스트 업데이트
-    document.getElementById('openModalBtn').value = selectedText;
-
-    // 선택된 도시 정보를 HTML 요소에 업데이트
-    document.getElementById('selectSel').innerText = selectedText;
+    // SEL 버튼 텍스트를 선택된 option의 value로 업데이트
+    document.getElementById('openModalBtn').innerText = selectedValue;
 	
-	// 선택된 텍스트를 departureSel 요소에 업데이트
-	document.getElementById('departureSel').value = selectedText;
+	// departure_Sel의 텍스트를 선택된 option의 텍스트로 업데이트
+	document.getElementById('departure_Sel').innerText = selectedText;
 
     // 모달 닫기
     document.getElementById('SELModal').style.display = "none";
 });
 
-
 // TO 버튼을 클릭하면 모달창을 열기
-document.getElementById('openModalBtn2').onclick = function() {
+document.getElementById('openModalBtn2').onclick = function(event) {
+    // 버튼의 기본 동작(페이지 전환)을 막습니다.
+    event.preventDefault();
+
+    // 모달 창 열기
     document.getElementById('TOModal').style.display = "block";
+
+    // 다른 모달 창이 열려 있다면 닫기 (이 코드는 선택사항입니다)
     document.getElementById('SEATModal').style.display = "none";
 }
 
@@ -78,22 +87,21 @@ window.onclick = function(event) {
         document.getElementById('TOModal').style.display = "none";
     }
 }
-
 // TO 모달에서 선택한 값을 버튼 텍스트로 업데이트
 document.querySelector('#TOModal select').addEventListener('change', function() {
-    // 선택된 옵션의 텍스트를 가져옵니다.
-    let selectedText = this.options[this.selectedIndex].text;
+    // 선택된 옵션의 value를 가져옵니다.
+    let selectedValue = this.options[this.selectedIndex].value;
+	let selectedText = this.options[this.selectedIndex].text;
 
-    // 모달 밖의 TO 버튼 텍스트 업데이트
-    document.getElementById('openModalBtn2').value = selectedText;
+    // TO 버튼 텍스트를 선택된 option의 value로 업데이트
+    document.getElementById('openModalBtn2').innerText = selectedValue;
+	
+	// departure_Sel의 텍스트를 선택된 option의 텍스트로 업데이트
+	document.getElementById('departure_To').innerText = selectedText;
 
-    // 선택된 도시 정보를 HTML 요소에 업데이트
-    document.getElementById('selectTo').innerText = selectedText;
-	   
     // 모달 닫기
     document.getElementById('TOModal').style.display = "none";
 });
-
 
 // 좌석 등급 모달창 열기 버튼 클릭 시 모달 열기
 document.getElementById('openModalBtn4').addEventListener('click', function(event) {
@@ -222,12 +230,60 @@ for (let i = 0; i < minusBtn.length; i++) {
     });
 }
 
-// 승객 수 적용 버튼 클릭 시 승객 수 업데이트 및 모달 닫기
-document.querySelector(".passenger-btn").addEventListener("click", function() {
-    updatePassengerSelect(); // 최종 선택한 값을 업데이트
-    document.getElementById('PEOModal').style.display = "none"; // 모달 창 닫기
+// 모든 JavaScript 코드는 DOMContentLoaded 이벤트 안에서 실행되어야 합니다.
+document.addEventListener('DOMContentLoaded', function() {
+    // recommend 버튼을 클릭하면 RECOMModal을 열기
+    document.getElementById('openModalBtn6').onclick = function(event) {
+        event.preventDefault(); // 기본 동작 막기
+        document.getElementById('RECOMModal').style.display = "block";
+        document.getElementById('overlay').style.display = "block";
+    }
+
+    // recommend 닫기 버튼 클릭 시 모달 닫기
+    document.querySelector('.close-btn6').onclick = function() {
+        document.getElementById('RECOMModal').style.display = "none";
+        document.getElementById('overlay').style.display = "none";
+    }
+
+    // recommend 외부 클릭 시 모달 닫기
+    window.onclick = function(event) {
+        if (event.target === document.getElementById('overlay')) {
+            document.getElementById('RECOMModal').style.display = "none";
+            document.getElementById('overlay').style.display = "none";
+        }
+    }
+	
+	// language-btn 버튼 클릭 시 모달 닫기
+	document.querySelector('.recom-btn').onclick = function() {
+	    document.getElementById('RECOMModal').style.display = "none";
+	    document.getElementById('overlay').style.display = "none";
+	}
 });
 
+
+// routeModal
+document.addEventListener('DOMContentLoaded', function() {
+    // route 버튼을 클릭하면 RECOMModal을 열기
+    document.getElementById('openModalBtn7').onclick = function(event) {
+        event.preventDefault(); // 기본 동작 막기
+        document.getElementById('ROUTEModal').style.display = "block";
+        document.getElementById('overlay').style.display = "block";
+    }
+
+    // route 닫기 버튼 클릭 시 모달 닫기
+    document.querySelector('.close-btn7').onclick = function() {
+        document.getElementById('ROUTEModal').style.display = "none";
+        document.getElementById('overlay').style.display = "none";
+    }
+
+    // route 외부 클릭 시 모달 닫기
+    window.onclick = function(event) {
+        if (event.target === document.getElementById('overlay')) {
+            document.getElementById('ROUTEModal').style.display = "none";
+            document.getElementById('overlay').style.display = "none";
+        }
+    }
+});
 
 // 페이지 로드 시 기본 값 업데이트
 updatePassengerSelect();

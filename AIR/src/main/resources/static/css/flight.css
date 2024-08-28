@@ -232,7 +232,7 @@
     border-style: solid;
     border-color: #bbb9b9;
     border-width: thin;
-    transform: translate(317px, 157px);
+    transform: translate(317px, 141px);
 }
 .flight-svg{
 	transform: translate(130px, 10px);
@@ -259,6 +259,7 @@
     font-weight: 700;
     padding: 0px 0px;
     margin: 0px;
+    background-color: #ffffff;
     cursor: pointer;
     transform: translate(-574px, 3px);
     position: fixed;
@@ -272,10 +273,11 @@
     border: none;
     font-size: 1.5rem;
     font-weight: 700;
+    background-color: #ffffff;
     padding: 0px 0px;
     margin: 0px;
     cursor: pointer;
-    transform: translate(-453px, -89px);
+    transform: translate(-454px, -89px);
     position: fixed;
 }
 .dateD-btn{
@@ -510,8 +512,123 @@
     border: none;
     position: fixed;
 }
+.departureSel{
+	transform: translate(409px, 93px);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0px 0px;
+    text-decoration: none !important;
+    color: #00256c;
+    border: none;
+    position: fixed;
+}
+.departureTo{
+	transform: translate(640px, 72px);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0px 0px;
+    text-decoration: none !important;
+    color: #00256c;
+    border: none;
+    position: fixed;
+}
+.flightD-svg{
+	transform: translate(601px, 94px);
+    width: 35px;
+}
+.economy_btn{
+	font-weight: bold;
+    display: flex;
+    padding: 18px 50px;
+    justify-content: center;
+    line-height: 0.54;
+    min-height: 3rem;
+    border-radius: 2rem;
+    background: #00256c;
+    color: #fff;
+    font-size: 1.1rem;
+    border: 1px solid #d9dbe1;
+    cursor: pointer;
+    width: 400px;
+    transform: translate(317px, 152px);
+}
+.prestige_btn{
+	font-weight: bold;
+    display: flex;
+    padding: 18px 50px;
+    justify-content: center;
+    line-height: 0.54;
+    min-height: 3rem;
+    border-radius: 2rem;
+    background: #fff;
+    color: #00256c;
+    font-size: 1.1rem;
+    border: 1px solid #d9dbe1;
+    cursor: pointer;
+    width: 400px;
+    transform: translate(754px, 104px);
+}
+.first_btn{
+	font-weight: bold;
+    display: flex;
+    padding: 18px 50px;
+    justify-content: center;
+    line-height: 0.54;
+    min-height: 3rem;
+    border-radius: 2rem;
+    background: #fff;
+    color: #00256c;
+    font-size: 1.1rem;
+    border: 1px solid #d9dbe1;
+    cursor: pointer;
+    width: 400px;
+    transform: translate(1188px, 56px);
+}
+.recommend-btn{
+	display: flex;
+    align-items: center;
+    border: 1px solid #767676;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #ffffff;
+    margin: 0px;
+    border-radius: 1rem;
+    cursor: pointer;
+    transform: translate(319px, 51px);
+    width: 148px;
+    padding: 0px 2.8rem 0 1.2rem;
+    height: 2.7rem;
+    position: fixed;
+}
+.down-svg{
+	transform: translate(418px, 87px);
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+}
 
-
+.route-btn{
+	display: flex;
+    align-items: center;
+    border: 1px solid #767676;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #ffffff;
+    margin: 0px;
+    border-radius: 1rem;
+    cursor: pointer;
+    transform: translate(475px, 51px);
+    width: 148px;
+    padding: 0px 2.8rem 0 1.2rem;
+    height: 2.7rem;
+    position: fixed;
+}
+.down-svg2{
+	transform: translate(575px, 87px);
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+}
 html {
   font-family: sans-serif;
 }

@@ -125,7 +125,8 @@
 						<option value="">한국어</option>
 						<option value="">English</option>
 						<option value="">简体中文</option>
-					</select> <span class="language-btn">적용</span>
+					</select> 
+					<span class="language-btn">적용</span>
 				</div>
 			</div>
 		</div>
@@ -202,9 +203,11 @@
 	<div class="wrapper">
 		<div class="container2">
 			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-				<label class="location"></label> <input class="selD-btn"
-					id="openModalBtn" value="SEL">
-				<!-- <span id="selectSel"></span> -->
+				<label class="location"></label>
+				<button class="selD-btn" id="openModalBtn"
+					value="SEL">
+					서울
+				</button>
 			</div>
 			<div class="btn-change">
 				<svg class="change-svg" xmlns="http://www.w3.org/2000/svg"
@@ -225,8 +228,11 @@
 				</svg>
 			</div>
 			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
-				<label class="locationTo"></label> <input class="toD-btn"
-					id="openModalBtn2" value="TO">
+				<label class="locationTo"></label>
+				<button class="toD-btn" id="openModalBtn2"
+					value="TO">
+					TO
+				</button>
 			</div>
 			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
 				<label class="date"></label> <input type="text" class="dateD-btn daterange"
@@ -290,7 +296,18 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-lg-4">
-			<input type="text" class="departure" value="가는 편">
+			<div type="text" class="departure" value="가는 편">가는 편</div>
+			<div type="text" class="departureSel" id="departure_Sel" data-value="SEL">SEL</div>
+			
+			<svg class="flightD-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+			    <g fill="#00256C" fill-rule="evenodd" transform="translate(0 5)">
+			        <path d="M8 5L8 0 16 5z"/>
+			        <rect width="11" height="1" y="4" rx=".5" transform="matrix(1 0 0 -1 0 9)"/>
+			    </g>
+			</svg>
+			
+			<div type="text" class="departureTo" id="departure_To" data-value="SEL">TO</div>
+			
 			<a href="home" class="index-btn">
 				01
 			</a>
@@ -328,6 +345,64 @@
 			</a>
 		</div>
 	</div>
+	<div class="wrapper">
+		<div type="text" class="economy_btn" id="classEconomy" data-value="economy">일반석</div>
+		<div type="text" class="prestige_btn" id="classPrestige" data-value="prestige">프레스티지석</div>
+		<div type="text" class="first_btn" id="classFirst" data-value="first">일등석</div>
+	</div>
+	
+	<div class="wrapper">
+		<label class="recommend"></label>
+			<button class="recommend-btn" id="openModalBtn6" value="추천순 정렬">추천순 정렬</button>	
+			
+			<svg class="down-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+			    <g fill="none" fill-rule="evenodd">
+			        <path d="M0 0H16V16H0z"/>
+			        <path stroke="#000" stroke-linecap="round" d="M5.5 12.5L10.5 7.5 5.5 2.5" transform="rotate(90 8 7.5)"/>
+			    </g>
+			</svg>	
+			
+		<label class="route"></label>
+			<button class="route-btn" id="openModalBtn7" value="직항 및 경유">직항 및 경유</button>
+			
+			<svg class="down-svg2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+			    <g fill="none" fill-rule="evenodd">
+			        <path d="M0 0H16V16H0z"/>
+			        <path stroke="#000" stroke-linecap="round" d="M5.5 12.5L10.5 7.5 5.5 2.5" transform="rotate(90 8 7.5)"/>
+			    </g>
+			</svg>
+	</div>
+	<div id="RECOMModal" class="modal" style="display: none;">
+				<div class="modal-content" id="recom_modal">
+					<span class="close-btn6">&times;</span>
+					<p class="RecomFont">정렬 기준 선택</p>
+					
+					<input type="radio" id="option1" class="option1" name="option" value="1">
+					<label class="label1" for="option1">추천 순</label></br>
+					
+					<input type="radio" id="option2" class="option2" name="option" value="2">
+					<label class="label2" for="option2">출발 시간 순</label></br>
+					
+					<input type="radio" id="option3" class="option3" name="option" value="3">
+					<label class="label3" for="option3">도착 시간 순</label></br>
+					
+					<input type="radio" id="option4" class="option4" name="option" value="4">
+					<label class="label4" for="option4">여행 시간 순</label></br>
+					
+					<input type="radio" id="option5" class="option5" name="option" value="5">
+					<label class="label5" for="option5">최저 요금 순</label></br>
+					
+					<span class="recom-btn">적용</span>
+				</div>
+	</div>	
+	
+	<div id="ROUTEModal" class="modal" style="display: none;">
+				<div class="modal-content" id="route_modal">
+					<span class="close-btn7">&times;</span>
+					<p class="RouteFont">경유 선택</p>
+				</div>
+	</div>	
+	
 	<div id="SELModal" class="modal" style="display: none;">
 				<div class="modal-content" id="sel_modal">
 					<span class="close-btn">&times;</span>
@@ -335,18 +410,18 @@
 					<select name="" id="" class="form-control custom-select"
 						onclick="selectSel">
 						<option value="">도시, 공항</option>
-						<option value="">ICN 서울/인천, 대한민국</option>
-						<option value="">ATH 아테네, 그리스</option>
-						<option value="">WLG 웰링턴, 뉴질랜드</option>
-						<option value="">BER 베를린/브란덴부크, 독일</option>
-						<option value="">MLE 말레, 몰디브</option>
-						<option value="">IAD 워싱턴/덜레스, 미국</option>
-						<option value="">PEK 베이징/서우두</option>
-						<option value="">HAN 하노이, 베트남</option>
-						<option value="">SIN 싱가포르/창이, 싱가포르</option>
-						<option value="">HND 도쿄/하네다, 일본</option>
+						<option value="ICN">ICN 서울/인천, 대한민국</option>
+						<option value="ATH">ATH 아테네, 그리스</option>
+						<option value="WLG">WLG 웰링턴, 뉴질랜드</option>
+						<option value="BER">BER 베를린/브란덴부크, 독일</option>
+						<option value="MLE">MLE 말레, 몰디브</option>
+						<option value="IAD">IAD 워싱턴/덜레스, 미국</option>
+						<option value="PEK">PEK 베이징/서우두</option>
+						<option value="HAN">HAN 하노이, 베트남</option>
+						<option value="SIN">SIN 싱가포르/창이, 싱가포르</option>
+						<option value="HND">HND 도쿄/하네다, 일본</option>
 					</select>
-				</div>
+		</div>
 			</div>
 			<div id="TOModal" class="modal" style="display: none;">
 				<div class="modal-content" id="to_modal">
@@ -355,16 +430,16 @@
 					<select name="" id="" class="form-control custom-select"
 						onclick="selectTo">
 						<option value="">도시, 공항</option>
-						<option value="">ICN 서울/인천, 대한민국</option>
-						<option value="">ATH 아테네, 그리스</option>
-						<option value="">WLG 웰링턴, 뉴질랜드</option>
-						<option value="">BER 베를린/브란덴부크, 독일</option>
-						<option value="">MLE 말레, 몰디브</option>
-						<option value="">IAD 워싱턴/덜레스, 미국</option>
-						<option value="">PEK 베이징/서우두</option>
-						<option value="">HAN 하노이, 베트남</option>
-						<option value="">SIN 싱가포르/창이, 싱가포르</option>
-						<option value="">HND 도쿄/하네다, 일본</option>
+						<option value="ICN">ICN 서울/인천, 대한민국</option>
+						<option value="ATH">ATH 아테네, 그리스</option>
+						<option value="WLG">WLG 웰링턴, 뉴질랜드</option>
+						<option value="BER">BER 베를린/브란덴부크, 독일</option>
+						<option value="MLE">MLE 말레, 몰디브</option>
+						<option value="IAD">IAD 워싱턴/덜레스, 미국</option>
+						<option value="PEK">PEK 베이징/서우두</option>
+						<option value="HAN">HAN 하노이, 베트남</option>
+						<option value="SIN">SIN 싱가포르/창이, 싱가포르</option>
+						<option value="HND">HND 도쿄/하네다, 일본</option>
 					</select>
 				</div>
 			</div>

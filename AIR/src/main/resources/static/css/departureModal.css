@@ -37,10 +37,10 @@
 }
 #to_modal {
     background-color: #fefefe;
-    margin: 4% auto;
+    /* margin: 4% auto; */
     padding: 20px;
     border: 1px solid #888;
-    transform: translate(33px, 172px);
+    transform: translate(622px, 249px);
     width: 38%;
     min-height: 36%;
     border-radius: 2rem;
@@ -330,5 +330,149 @@
 	position: fixed;
 	cursor: pointer;	
 }
+#recom_modal{
+	background-color: #ffffff;
+    margin: 4% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    transform: translate(316px, 505px);
+    width: 18%;
+    min-height: 31%;
+    border-radius: 2rem;
+    z-index: 1000;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: fixed;
+}
+.close-btn6 {
+    color: #000000;
+    float: right;
+    font-size: 35px;
+    font-weight: normal;
+    transform: translate(273px, -12px);
+}
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.RecomFont{
+	font-family: cursive;
+    font-size: 19px;
+    font-weight: 900;
+    transform: translate(6px, -45px);
+    margin: 0%;
+    max-width: 109px;
+}
+#option1{
+	transform: translate(2px, 60px);    
+	position: fixed;
+    height: 1rem;
+    border-radius: 1.8rem;
+    border: 1px solid #00256c;
+}
+.label1{
+	transform: translate(-15px, -26px);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 3rem;
+    line-height: 1.5;
+}
+#option2{
+	transform: translate(2px, 108px);
+    position: fixed;
+    height: 1rem;
+    border-radius: 1.8rem;
+    border: 1px solid #00256c;
+}
+.label2{
+	transform: translate(-15px, -27px);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 3rem;
+    line-height: 1.5;
+}
+#option3{
+	transform: translate(2px, 160px);    
+	position: fixed;
+    height: 1rem;
+    border-radius: 1.8rem;
+    border: 1px solid #00256c;
+}
+.label3{
+	transform: translate(-15px, -26px);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 3rem;
+    line-height: 1.5;
+}
+#option4{
+	transform: translate(2px, 213px);    
+	position: fixed;
+    height: 1rem;
+    border-radius: 1.8rem;
+    border: 1px solid #00256c;
+}
+.label4{
+	transform: translate(-15px, -26px);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 3rem;
+    line-height: 1.5;
+}
+#option5{
+	transform: translate(2px, 263px);    
+	position: fixed;
+    height: 1rem;
+    border-radius: 1.8rem;
+    border: 1px solid #00256c;
+}
+.label5{
+	transform: translate(-15px, -26px);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 3rem;
+    line-height: 1.5;
+}
+.recom-btn{
+	background-color: rgb(0, 37, 108);
+    color: #ffffff;
+    transform: translate(3px, 296px);
+    width: 295px;
+    height: 48px;
+    border-radius: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 13px 132px;
+    position: fixed;
+    cursor: pointer;
+}
 
-
+#route_modal{
+	background-color: #ffffff;
+    margin: 4% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    transform: translate(476px, 505px);
+    width: 16%;
+    min-height: 30%;
+    border-radius: 2rem;
+    z-index: 1000;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: fixed;
+}
+.close-btn7 {
+    color: #000000;
+    float: right;
+    font-size: 35px;
+    font-weight: normal;
+    transform: translate(238px, -12px);
+}
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
