@@ -87,9 +87,134 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-size: 1rem;
 	cursor: pointer;
 	max-width: 10%;
-	transform: translate(1131px, -10px);
+	transform: translate(1131px, -38px);
 	position: fixed;
 }
+.gnb-book_button{
+	font-size: 21.6px;
+	font-weight: 800;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: rgb(0, 0, 0);
+    transform: translate(593px, -76px);
+    cursor: pointer;
+    height: 4.8rem;
+    width: 130px;
+    border-width: 0 0 2px;
+    border-color: #4771bf;
+    background: #ffffff;
+    position: absolute;
+}
+.gnb-travel_button{
+	font-size: 21.6px;
+	font-weight: 800;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: rgb(0, 0, 0);
+    transform: translate(753px, -76px);
+    cursor: pointer;
+    height: 4.8rem;
+    width: 138px;
+    border-width: 0 0 2px;
+    border-color: #4771bf;
+    background: #ffffff;
+    position: absolute;
+}
+.gnb-skypass_button{
+	font-size: 21.6px;
+	font-weight: 800;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: rgb(0, 0, 0);
+    transform: translate(918px, -76px);
+    cursor: pointer;
+    height: 4.8rem;
+    width: 140px;
+    border-width: 0 0 2px;
+    border-color: #4771bf;
+    background: #ffffff;
+    position: absolute;
+}
+.search-svg{
+	transform: translate(0px, 1px);
+	cursor: pointer;
+	height: 2rem;
+	width: 34px;
+	top: 50%;
+    left: 50%;
+}
+.event-svg{
+	transform: translate(1355px, -92px);
+	cursor: pointer;
+	height: 1.5rem;
+	width: 42px;
+	top: 50%;
+    left: 50%;
+}
+.faq-svg{
+	transform: translate(1377px, -92px);
+	cursor: pointer;
+	height: 1.5rem;
+	width: 42px;
+	top: 50%;
+    left: 50%;
+}
+.signUp-svg{
+	transform: translate(1578px, -92px);
+	cursor: pointer;
+	height: 1.5rem;
+	width: 42px;
+	top: 50%;
+    left: 50%;
+}
+
+.submit-btn{
+	transform: translate(615px, -477px);
+    cursor: pointer;
+    height: 2.2rem;
+    width: 38px;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    border-width: 0 0 0px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+
+.search_btn{
+	transform: translate(431px, -480px);
+    cursor: pointer;
+    border-color: #000000;
+    height: 2.7rem;
+    width: 230px;
+    border-radius: 1rem;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+
+ .btn_reservation{
+ 	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 12%;
+    transform: translate(-635px, -355px);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    border: none;
+ }
 
 .btn.btn-primary:hover {
 	border-color: #1f425c;
@@ -106,7 +231,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-size: 0.9rem;
 	cursor: pointer;
 	max-width: 33%;
-	transform: translate(1239px, -5px);
+	transform: translate(1239px, -13px);
 }
 	.btn.btn-location{
 		display: flex;
@@ -120,7 +245,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 		font-weight: 700;
 		cursor: pointer;
 		max-width: 41%;
-		transform: translate(3px, 104px);
+		transform: translate(3px, 90px);
 		position: fixed;
 	}
 	.location{
@@ -134,23 +259,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 		font-weight: 350;
 		cursor: auto;
 		max-width: 41%;
-		transform: translate(49px, 207px);	
+		transform: translate(53px, 191px);	
 	}
 .custom-svg{
-	transform: translate(-293px, 170px);
+	transform: translate(-293px, 156px);
 	cursor: pointer;
 }
 .peo-svg{
-	transform: translate(-231px, 38px);
+	transform: translate(-231px, 15px);
 	cursor: pointer;
 }
 
 .date-svg{
-	transform: translate(-206px, 44px);
+	transform: translate(-206px, 15px);
 	cursor: pointer;
 }
 .seat-svg{
-	transform: translate(-310px, 37px);
+	transform: translate(-321px, 15px);
 	cursor: pointer;
 	
 }
@@ -166,7 +291,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-size: 2rem;
 	font-weight: 700;
 	cursor: pointer;
-	transform: translate(-306px, 42px);
+	transform: translate(-306px, 28px);
 	/* margin: 0%;
 	padding: 0%; */
 }
@@ -179,10 +304,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	border-radius: 2rem;
 	color: #000000;
 	font-size: 0.9rem;
-	font-weight: 350;
+	font-weight: 380;
 	cursor: auto;
 	max-width: 41%;
-	transform: translate(-258px, 177px);
+	transform: translate(-260px, 161px);
 }
 
 .btn.btn-people{
@@ -197,7 +322,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-weight: 800;
 	cursor: pointer;
 	max-width: 41%;
-	transform: translate(91px, 14px);
+	transform: translate(91px, -11px);
 	position: fixed;
 	overflow: visible;
 }
@@ -207,11 +332,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 		justify-content: center;
  		border-radius: 2rem;
 		color: #000000;
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 		font-weight: 200;
 		cursor: auto;
 		max-width: 41%;
-		transform: translate(111px, -5px);	
+		transform: translate(105px, -34px);	
 		position: fixed;
 	}
 
@@ -227,7 +352,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-weight: 800;
 	cursor: pointer;
 	max-width: 41%;
-	transform: translate(34px, 13px);
+	transform: translate(8px, -11px);
 	position: fixed;
 }
 	.seat{
@@ -236,23 +361,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	justify-content: center;
 	border-radius: 2rem;
 	color: #000000;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	font-weight: 200;
 	cursor: auto;
 	max-width: 41%;
-	transform: translate(48px, -5px);	
+	transform: translate(22px, -34px);	
 	position: fixed;
 	}
 .btn.btn-date{
 	width: 24%;
 	padding: 1px;
-	font-size: 16px;
+	font-size: 14px;
+	font-weight: bold;
 	border: 1px solid #ced4da;
 	border-radius: 4px;
 	background-color: #ffffff;
 	box-sizing: border-box;
-	transform: translate(312px, 44px);
+	transform: translate(312px, 18px);
 	position: fixed;
+	height: 22px;
 }
 	.date{
 		display: flex;
@@ -260,26 +387,27 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 		justify-content: center;
 		border-radius: 2rem;
 		color: #000000;
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 		font-weight: 200;
 		cursor: auto;
 		max-width: 41%;
-		transform: translate(338px, -5px);	
+		transform: translate(338px, -34px);	
 		position: fixed
 				
 	}
 .btn.btn-reservation{
 	display: flex;
-	padding: 6px 30px;
+	padding: 2px 22px;
 	justify-content: center;
-	height: 2.2rem;
-	border-radius: 1rem;
+	height: 2.4rem;
+	border-radius: 2rem;
 	background: #00256c;
 	color: #fff;
-	font-size: 1rem;
+	font-size: 1.1rem;
+	font-weight: bold;
 	cursor: pointer;
-	max-width: 7%;
-	transform: translate(-419px, -150px);
+	max-width: 6%;
+	transform: translate(-412px, -163px);
 	position: fixed;
 }
 .btn.btn-round{
@@ -291,9 +419,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	border-radius: 1rem;
 	color: #000;
 	font-size: 1rem;
+	font-weight: bold;
 	cursor: pointer;
 	max-width: -1%;
-	transform: translate(-329px, -150px);
+	transform: translate(-329px, -163px);
 	position: fixed;
 }
 .btn.btn-one{
@@ -305,9 +434,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	border-radius: 1rem;
 	color: #000;
 	font-size: 1rem;
+	font-weight: bold;
 	cursor: pointer;
 	max-width: -1%;
-	transform: translate(-200px, -150px);
+	transform: translate(-241px, -162px);
 	position: fixed;
 }
 .form-control:not(:placeholder-shown) {
@@ -426,6 +556,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-weight: 700; }
   .logo:hover {
     color: #ffffff; }
+
+.gnb-new_button{
+	
+}
 
 .site-nav {
   position: absolute;

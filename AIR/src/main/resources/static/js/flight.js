@@ -24,7 +24,6 @@ document.querySelector('.language-btn').onclick = function() {
     document.getElementById('overlay').style.display = "none";
 }
 
-
 // SEL 버튼을 클릭하면 모달창을 열기
 document.getElementById('openModalBtn').onclick = function() {
     document.getElementById('SELModal').style.display = "block";
@@ -53,14 +52,19 @@ document.querySelector('#SELModal select').addEventListener('change', function()
 
     // 선택된 도시 정보를 HTML 요소에 업데이트
     document.getElementById('selectSel').innerText = selectedText;
+	
+	// 선택된 텍스트를 departureSel 요소에 업데이트
+	document.getElementById('departureSel').value = selectedText;
 
     // 모달 닫기
     document.getElementById('SELModal').style.display = "none";
 });
 
+
 // TO 버튼을 클릭하면 모달창을 열기
 document.getElementById('openModalBtn2').onclick = function() {
     document.getElementById('TOModal').style.display = "block";
+    document.getElementById('SEATModal').style.display = "none";
 }
 
 // TO 모달창 닫기 버튼 클릭 시 모달창 닫기
@@ -85,10 +89,11 @@ document.querySelector('#TOModal select').addEventListener('change', function() 
 
     // 선택된 도시 정보를 HTML 요소에 업데이트
     document.getElementById('selectTo').innerText = selectedText;
-
+	   
     // 모달 닫기
     document.getElementById('TOModal').style.display = "none";
 });
+
 
 // 좌석 등급 모달창 열기 버튼 클릭 시 모달 열기
 document.getElementById('openModalBtn4').addEventListener('click', function(event) {
@@ -125,10 +130,15 @@ function selectSeat(seatType) {
     }
 
     // 모달 밖에 있는 버튼의 텍스트도 변경
-    const seatButton = document.querySelector('.btn.btn-seat.btn-block');
-    seatButton.textContent = `${seatType}`;
-    seatButton.value = `선택된 부분: ${seatType}`;
+    const seatButton = document.getElementById('openModalBtn4');
+    seatButton.textContent = seatType;
+    seatButton.value = seatType;
+
+    // 모달 창 닫기
+    document.getElementById('SEATModal').style.display = "none";
 }
+
+
 
 // 탑승객 모달창 열기 버튼 클릭 시 모달 열기
 document.getElementById('openModalBtn3').addEventListener('click', function(event) {
@@ -155,10 +165,11 @@ let infantCount = document.querySelector(".infantCount");
 let totalNum = 0;
 let plusBtn = document.querySelectorAll(".btn_number.plus");
 let minusBtn = document.querySelectorAll(".btn_number.minus");
-let passengerButton = document.querySelector(".btn-people");
+let passengerButton = document.querySelector("#openModalBtn3"); // 수정된 부분: 모달 외부 버튼을 정확히 가리키도록 ID로 선택
 
 // 승객 수를 업데이트하고 표시하는 함수
 function updatePassengerSelect() {
+    // 수정된 부분: 모달 외부 버튼 텍스트도 업데이트
     passengerButton.textContent = `성인 ${adultCount.value}명, 소아 ${childCount.value}명, 유아 ${infantCount.value}명`;
 }
 

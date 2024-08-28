@@ -7,46 +7,64 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="Untree.co">
-	<link rel="shortcut icon" href="favicon.png">
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Untree.co">
+<link rel="shortcut icon" href="favicon.png">
 
-	<meta name="description" content="" />
-	<meta name="keywords" content="bootstrap, bootstrap4" />
+<meta name="description" content="" />
+<meta name="keywords" content="bootstrap, bootstrap4" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+	rel="stylesheet">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<link rel="stylesheet" href="css/daterangepicker.css">
-	<link rel="stylesheet" href="css/aos.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/flight.css">
-	
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="css/daterangepicker.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/style.css">
 
-	<title>Tour Free Bootstrap Template for Travel Agency by Untree.co</title>
-	
+<link rel="stylesheet" href="css/flight.css">
+
+<link rel="stylesheet" href="css/departureModal.css">
+
+
+
+
+<title>Tour Free Bootstrap Template for Travel Agency by
+	Untree.co</title>
+
 <style>
-	.logo_koreanair img {
-		width: 11.2rem;
-		height: 3.4rem;
-		display: inline-block;
-		transform: translate(-93%, 41%);
-	}
+.logo_koreanair img {
+	width: 11.2rem;
+	height: 3.4rem;
+	display: inline-block;
+	transform: translate(-93%, 41%);
+}
+
+.form {
+	border-radius: 1rem;
+	flex-direction: row;
+	max-width: 128rem;
+	height: 7.8rem;
+	padding: 0 0 0 .6rem;
+	margin: 2rem auto 0;
+	box-shadow: .4rem 1rem 2rem #0019482e;
+}
 </style>
-	
+
 </head>
 
 <body class='body'>
-
-<div class="site-mobile-menu site-navbar-target">
+	<div class="site-mobile-menu site-navbar-target">
 		<div class="site-mobile-menu-header">
 			<div class="site-mobile-menu-close">
 				<span class="icofont-close js-menu-toggle"></span>
@@ -54,276 +72,371 @@
 		</div>
 		<div class="site-mobile-menu-body"></div>
 	</div>
-	<nav class="site-nav">
-			<div class="container">
-				<div class="site-navigation">
-					<a href="index.html" class="logo m-0"><span class="text-primary"></span></a>
-					<div class="logo_koreanair">
-						<img src="images/gal_4.jpg" alt="Image" class="img-fluid">
-	
-						<ul
-							class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="#">이벤트</a></li>
-							<!-- 							<ul class="dropdown">
-									<li><a href="elements.html">Elements</a></li>
-									<li><a href="#">Menu One</a></li>
-									<li class="has-children"><a href="#">Menu Two</a>
-										<ul class="dropdown">
-											<li><a href="#">Sub Menu One</a></li>
-											<li><a href="#">Sub Menu Two</a></li>
-											<li><a href="#">Sub Menu Three</a></li>
-										</ul></li>
-									<li><a href="#">Menu Three</a></li>
-								</ul></li> -->
-							<li><a href="booking">자주 묻는 질문</a></li>
-							<li class="language"><a id="openModalBtn5">대한민국 - 한국어</a></li>
-	
-							<li><a href="payment">회원가입</a></li>
-						</ul>
-						<div class="row align-items-center">
-							<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-								<input type="submit" class="btn btn-login btn-block" value="로그인">
-							</div>
-	
-							<a href="#"
-								class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
-								data-toggle="collapse" data-target="#main-navbar"> <span></span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="LANModal" class="modal" style="display: none;">
-				<div id="overlay" class="overlay" style="display: none;">
-					<div class="modal-content" id="lan_modal">
-						<span class="close-btn5">&times;</span>
-						<p class="lanFont">지역 및 언어 선택</p>
-						<p class="K">※ 선택한 국가 또는 언어에 제공 가능한 서비스 및 예약 부가 기능이 적용됩니다.</p>
-						<p class="C">국가 / 지역</p>
-						<select name="" id="" class="Country">
-							<option value="">대한민국</option>
-							<option value="">그리스</option>
-							<option value="">뉴질랜드</option>
-							<option value="">독일</option>
-							<option value="">몰디브</option>
-							<option value="">미국</option>
-							<option value="">베트남</option>
-							<option value="">싱가포르</option>
-							<option value="">중국</option>
-						</select>
-						<p class="L">언어</p>
-						<select name="" id="" class="Lan">
-							<option value="">한국어</option>
-							<option value="">English</option>
-							<option value="">简体中文</option>
-						</select>
-						<span class="language-btn">적용</span>
-					</div>
-				</div>
-			</div>
-		</nav>
 
-	  <section class="route-info">
-	    <span class="origin">Manila (MNL)</span>
-	    <span class="line"></span>
-	    <span class="icon ion-plane"></span>
-	    <span class="line"></span>
-	    <span class="destination">Kalibo (KLO)</span>
-	  </section>
-	  
-	  <section class='schedule'>
-	    <div class="schedule-bar">
-	      <button class="button-left">
-	        <i class="ion-ios-play"></i>
-	      </button>
-	      <ul class="sched-grid">
-	        <li class="sched-column">
-	          <div class="sched-card">
-	            <div class="heading">Sun | Jul</div>
-	            <div class="number">01</div>
-	            <div class="footer">
-	              <p class="currency">from PHP</p>
-	              <p class="price">1,866.56</p>
-	            </div>  
-	          </div>
-	        </li>
-	        <li class="sched-column">
-	          <div class="sched-card">
-	            <div class="heading">Sun | Jul</div>
-	            <div class="number">02</div>
-	            <div class="footer">
-	              <p class="currency">from PHP</p>
-	              <p class="price">1,866.56</p>
-	            </div>  
-	          </div>
-	        </li>
-	        <li class="sched-column">
-	          <div class="sched-card">
-	            <div class="heading">Sun | Jul</div>
-	            <div class="number">03</div>
-	            <div class="footer">
-	              <p class="currency">from PHP</p>
-	              <p class="price">1,866.56</p>
-	            </div>  
-	          </div>
-	        </li>
-	        <li class="sched-column">
-	          <div class="sched-card">
-	            <div class="heading">Sun | Jul</div>
-	            <div class="number">04</div>
-	            <div class="footer">
-	              <p class="currency">from PHP</p>
-	              <p class="price">1,866.56</p>
-	            </div>  
-	          </div>
-	        </li>
-	        <li class="sched-column">
-	          <div class="sched-card">
-	            <div class="heading">Sun | Jul</div>
-	            <div class="number">05</div>
-	            <div class="footer">
-	              <p class="currency">from PHP</p>
-	              <p class="price">1,866.56</p>
-	            </div>  
-	          </div>
-	        </li>
-	        <li class="sched-column">
-	          <div class="sched-card">
-	            <div class="heading">Sun | Jul</div>
-	            <div class="number">06</div>
-	            <div class="footer">
-	              <p class="currency">from PHP</p>
-	              <p class="price">1,866.56</p>
-	            </div>  
-	          </div>
-	        </li>
-	        <li class="sched-column">
-	          <div class="sched-card">
-	            <div class="heading">Sun | Jul</div>
-	            <div class="number">07</div>
-	            <div class="footer">
-	              <p class="currency">from PHP</p>
-	              <p class="price">1,866.56</p>
-	            </div>  
-	          </div>
-	        </li>
-	      </ul>
-	      <button class="button-right">
-	        <i class="ion-ios-play"></i>
-	      </button>
-	    </div>
-	    
-	     <div class="flights-container">
-	  <div class="grid-container flight-container">
-	    <div class="grid-25 mobile-grid-33">
-	      <div class="side">
-	<!--         <div class="label">Départ</div> -->
-	        <div class="airport">BCN</div>
-	        <div class="city">Barcelone</div>
-	        <span class="flag flag-es"></span>
-	        <div class="flight-date"> <span class="iconify" data-icon="ic:baseline-flight-takeoff" data-inline="false"></span> 10/10/2020</div>
-	      </div>
-	    </div>
-	    <div class="grid-25 mobile-grid-33">
-	      <div>
-	        <svg id="plane" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve">
-	          <g>
-	            <path d="M12.5,50L6.25,31.25h6.25L25,43.75h25L31.25,6.25h6.25l31.25,37.5h12.5c0,0,12.5,0,12.5,6.25s-12.5,6.25-12.5,6.25h-12.5   L37.5,93.75h-6.25L50,56.25H25l-12.5,12.5H6.25L12.5,50z"></path>
-	          </g>
-	        </svg>
-	      </div>
-	      <div>
-	        <div class="flight-time">2h20</div>
-	        <div class="flight-distance">1335 km</div>
-	      </div>
-	    </div>
-	    <div class="grid-25 mobile-grid-33">
-	      <div class="right">
-	<!--         <div class="label">Arrivée</div> -->
-	        <div class="airport">ALG</div>
-	        <div class="city">Alger </div>
-	
-	        <span class="flag flag-dz"></span>
-	
-	        <div class="flight-date"><span class="iconify" data-icon="ic:outline-flight-land" data-inline="false"></span> 20/10/2020</div>
-	
-	      </div>
-	    </div>
-	    <div class="grid-25 mobile-grid-100 flight-price-container">
-	      <img class="flight-logo" src="http://pics.avs.io/60/30/AH.png" alt="">
-	      <div class="flight-type">aller-retour</div>
-	      <div class="flight-escale">sans escale</div>
-	      <div class="flight-price">
-	        <button class="flight-book">160€</button>
-	
-	      </div>
-	
-	    </div>
-	
-	  </div>
-	
-	  <div class="grid-container flight-container">
-	
-	    <div class="grid-25 mobile-grid-33">
-	      <div class="side">
-	        <div class="label">Départ</div>
-	        <div class="airport">FRA</div>
-	        <div class="city">Francfort</div>
-	        <span class="flag flag-de"></span>
-	        <div class="flight-date"> <span class="iconify" data-icon="ic:baseline-flight-takeoff" data-inline="false"></span> 10/10/2020</div>
-	
-	      </div>
-	    </div>
-	    <div class="grid-25 mobile-grid-33">
-	      <div>
-	        <svg id="plane" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve">
-	          <g>
-	            <path d="M12.5,50L6.25,31.25h6.25L25,43.75h25L31.25,6.25h6.25l31.25,37.5h12.5c0,0,12.5,0,12.5,6.25s-12.5,6.25-12.5,6.25h-12.5   L37.5,93.75h-6.25L50,56.25H25l-12.5,12.5H6.25L12.5,50z"></path>
-	          </g>
-	        </svg>
-	      </div>
-	      <div>
-	        <div class="flight-time">2h20</div>
-	        <div class="flight-distance">1335 km</div>
-	
-	      </div>
-	
-	    </div>
-	    <div class="grid-25 mobile-grid-33">
-	      <div class="right">
-	        <div class="label">Arrivée</div>
-	        <div class="airport">ALG</div>
-	        <div class="city">Alger </div>
-	
-	        <span class="flag flag-dz"></span>
-	
-	        <div class="flight-date"><span class="iconify" data-icon="ic:outline-flight-land" data-inline="false"></span> 20/10/2020</div>
-	
-	      </div>
-	    </div>
-	    <div class="grid-25 mobile-grid-100 flight-price-container">
-	      <img class="flight-logo" src="http://pics.avs.io/60/30/AH.png" alt="">
-	      <div class="flight-type">aller-retour</div>
-	      <div class="flight-escale">sans escale</div>
-	      <div class="flight-price">
-	        <button class="flight-book">160€</button>
-	
-	      </div>
-	
-	    </div>
-	    <!-- 페이지의 하단 오른쪽에 추가할 부분 -->
-		<div style="position: fixed; bottom: 20px; right: 20px;">
-	    	<a href="flightArrival.html" class="btn btn-primary">Next Page</a>
+	<nav class="site-nav">
+		<div class="container">
+			<div class="site-navigation">
+				<a href="index.html" class="logo m-0"><span class="text-primary"></span></a>
+				<div class="logo_koreanair">
+					<img src="images/gal_4.jpg" alt="Image" class="img-fluid">
+
+					<ul
+						class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#">이벤트</a></li>
+						<li><a href="booking">자주 묻는 질문</a></li>
+						<li class="language"><a id="openModalBtn5">대한민국 - 한국어</a></li>
+
+						<li><a href="payment">회원가입</a></li>
+					</ul>
+					<div class="row align-items-center">
+						<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+							<input type="submit" class="btn btn-login btn-block" value="로그인">
+						</div>
+
+						<a href="#"
+							class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+							data-toggle="collapse" data-target="#main-navbar"> <span></span>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
-	    
-	
-	  </div>
-	
+		<div id="LANModal" class="modal" style="display: none;">
+			<div id="overlay" class="overlay" style="display: none;">
+				<div class="modal-content" id="lan_modal">
+					<span class="close-btn5">&times;</span>
+					<p class="lanFont">지역 및 언어 선택</p>
+					<p class="K">※ 선택한 국가 또는 언어에 제공 가능한 서비스 및 예약 부가 기능이 적용됩니다.</p>
+					<p class="C">국가 / 지역</p>
+					<select name="" id="" class="Country">
+						<option value="">대한민국</option>
+						<option value="">그리스</option>
+						<option value="">뉴질랜드</option>
+						<option value="">독일</option>
+						<option value="">몰디브</option>
+						<option value="">미국</option>
+						<option value="">베트남</option>
+						<option value="">싱가포르</option>
+						<option value="">중국</option>
+					</select>
+					<p class="L">언어</p>
+					<select name="" id="" class="Lan">
+						<option value="">한국어</option>
+						<option value="">English</option>
+						<option value="">简体中文</option>
+					</select> <span class="language-btn">적용</span>
+				</div>
+			</div>
+		</div>
+		<div class="gnb-new_group">
+			<button type="button" id="gnb-new_nav" class="gnb-book_button">예약</button>
+			<button type="button" id="gnb-new_nav" class="gnb-travel_button">여행
+				준비</button>
+			<button type="button" id="gnb-new_nav" class="gnb-skypass_button">스카이패스</button>
+		</div>
+		<section>
+			<form action="">
+				<div class="search">
+					<input type="text" name="query" class="search_btn" value="">
+					<button type="submit" class="submit-btn">
+						<svg class="search-svg" xmlns="http://www.w3.org/2000/svg"
+							width="96" height="96" viewBox="0 0 96 96" fill="none">
+						  <g clip-path="url(#clip0_9_17244)">
+						    <path fill-rule="evenodd" clip-rule="evenodd"
+								d="M58.9812 56.9149L82.0057 79.9407L80.0477 79.4827L78.3343 79.0777C74.0947 78.0731 70.2137 75.9613 67.0852 72.9594L66.7276 72.6091L55.0361 60.9193C56.4944 59.7356 57.8183 58.3919 58.9812 56.9149ZM39.1958 16C53.0885 16 64.3917 27.3348 64.3917 41.2687C64.3917 55.2016 53.0885 66.5363 39.1958 66.5363C25.3032 66.5363 14 55.2016 14 41.2687C14 27.3348 25.3032 16 39.1958 16ZM39.1958 21.0536C28.0816 21.0536 19.0392 30.1218 19.0392 41.2687C19.0392 52.4146 28.0816 61.4827 39.1958 61.4827C50.3101 61.4827 59.3525 52.4146 59.3525 41.2687C59.3525 30.1218 50.3101 21.0536 39.1958 21.0536Z"
+								fill="#333333" />
+						  </g>
+						  <defs>
+						    <clipPath id="clip0_9_17244">
+						      <rect width="96" height="96" fill="white" />
+						    </clipPath>
+						  </defs>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</section>
+		<svg class="event-svg" xmlns="http://www.w3.org/2000/svg" width="96"
+			height="96" viewBox="0 0 96 96" fill="none">
+	  			<path
+				d="M50.7111 78.5141V31.1335H73.3961V77.0823L75.3052 74.9092C77.5899 72.3097 78.7983 69.3243 78.8084 66.278V29.4783C78.8084 27.4068 77.1228 25.7212 75.0513 25.7212H74.1374V18.4709C74.1374 16.0034 72.7666 13.81 70.5427 12.7235C68.3697 11.6573 65.8412 11.901 63.9119 13.3429L47.9796 23.6801L32.0473 13.3429C30.1179 11.901 27.5895 11.6573 25.4164 12.7235C23.2028 13.7999 21.8218 16.0034 21.8218 18.4709V25.7212H20.918C18.8465 25.7212 17.1609 27.4068 17.1609 29.4783V80.1794C17.1609 82.2509 18.8465 83.9365 20.918 83.9365L67.9737 83.9162C71.0302 83.9162 74.0257 82.6977 76.6354 80.4129L78.8084 78.4938L50.6807 78.5141H50.7111ZM67.1613 17.6992C67.5776 17.3742 67.9838 17.4961 68.1869 17.5875C68.39 17.689 68.7352 17.9327 68.7352 18.4608V25.711H54.844L67.1715 17.6992H67.1613ZM27.2645 18.4608C27.2645 17.9327 27.6098 17.689 27.8129 17.5875C28.016 17.4859 28.4222 17.3742 28.8385 17.6992L41.166 25.711H27.2645V18.4608ZM45.2785 78.5141H22.5935V31.1335H45.2785V78.5141Z"
+				fill="#333333" />
+			</svg>
+
+		<svg class="faq-svg" xmlns="http://www.w3.org/2000/svg" width="96"
+			height="96" viewBox="0 0 96 96" fill="none">
+	  			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M78.9811 66.3084C82.2407 60.754 84.0076 54.2958 83.9872 48.0102C84.0279 38.4853 80.1692 29.1737 73.4266 22.4819C66.7552 15.7495 57.5045 11.901 48.0406 11.901H47.7765C38.2923 11.901 29.0416 15.7495 22.3803 22.4616C15.6175 29.1635 11.7689 38.4751 11.7994 47.9797C11.7588 57.5046 15.6175 66.8162 22.36 73.5079C29.0315 80.2403 38.2822 84.0889 47.7461 84.0889H48.0101C54.1535 84.0889 60.236 82.4641 65.6788 79.3874L84.2005 83.7944L78.9811 66.3084ZM64.7852 73.5486L76.2183 76.2673L73.0103 65.5164L73.6805 64.4603C76.8081 59.5354 78.514 53.6966 78.4937 48.0102C78.5242 40.0389 75.1732 31.956 69.5375 26.3609C63.9526 20.7252 55.9102 17.3844 47.9999 17.3844H47.7867C39.8561 17.3844 31.8138 20.7252 26.2491 26.3406C20.5931 31.9459 17.2422 40.0288 17.2726 47.9797C17.2422 55.9509 20.5931 64.0339 26.2288 69.6289C31.8138 75.2647 39.8561 78.6055 47.7664 78.6055H47.9898C53.5239 78.6055 58.987 77.062 63.8205 74.1274L64.7852 73.5486ZM46.5479 56.8242C43.8062 56.8242 42.0698 58.8957 42.0698 61.3023C42.0698 63.7089 43.8062 65.7804 46.5479 65.7804C49.2896 65.7804 51.026 63.7089 51.026 61.3023C51.026 58.8957 49.2896 56.8242 46.5479 56.8242ZM40.7091 31.5194C42.3541 30.7476 44.5678 30.2196 47.3603 30.2196L47.3501 30.2399C54.3364 30.2399 58.9668 33.6112 58.9668 39.2977C58.9668 42.7603 57.3319 45.6036 53.1889 48.4976L51.2596 49.8481C49.9598 50.762 49.1881 51.5338 49.1881 52.8843V53.1686H43.6945V52.7828C43.6945 49.2185 44.9537 47.0963 47.7461 44.974L48.7616 44.2023C51.026 42.4658 52.0821 41.0645 52.0821 39.2367C52.0821 36.9723 50.4472 35.4288 46.6393 35.4288C42.8314 35.4288 39.4093 36.9723 36.8098 38.8001C36.8098 34.6977 37.7237 32.9207 40.7091 31.5194Z"
+				fill="#333333" />
+			</svg>
+
+		<svg class="signUp-svg" xmlns="http://www.w3.org/2000/svg" width="96"
+			height="96" viewBox="0 0 96 96" fill="none">
+	  			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M18.465 60.1532C18.3829 60.4303 18.3521 60.728 18.3521 61.0769V71.3296H45.2798C45.2798 71.3296 45.2946 72.7998 45.5198 74.1006C45.7775 75.5891 46.3998 76.8716 46.3998 76.8716H12.7998V60.9127C12.7998 60.3893 12.8716 59.363 13.0051 58.8396C14.0622 54.8678 16.669 51.3989 20.1686 49.336L45.3745 34.1058C48.5355 32.0532 49.9826 28.338 49.0487 24.6741C47.9403 20.3328 43.6811 17.5824 39.1244 18.3008C34.8037 18.9781 31.9095 22.4573 31.9095 26.9833C31.9095 31.0371 35.6965 34.701 37.9339 36.2199L39.1859 37.0718L37.6773 37.1436C34.6908 37.2668 31.889 36.3328 30.175 34.6394C27.0448 31.54 26.7883 28.4509 26.7883 25.803C26.7883 18.2495 33.9929 12.8819 40.4688 12.7998H40.6638C47.8992 12.7998 53.9236 18.2084 54.6625 25.372C55.2373 30.8729 52.6407 36.066 47.9095 38.9191L23.0525 54.211C20.7434 55.5759 19.1115 57.6799 18.465 60.1532ZM57.5768 47.6217C56.3003 48.4278 55.0911 49.3348 53.9602 50.3537H53.949C53.1316 49.8722 52.2807 49.3796 51.3737 48.8645C51.291 48.8192 51.0085 48.6586 50.6056 48.4297L50.6056 48.4297L50.6055 48.4297C49.318 47.6981 46.8007 46.2677 45.6409 45.6622C45.4841 45.5726 43.4463 44.5537 43.4463 44.5537L44.6779 44.6657C47.1525 44.8784 52.3366 45.5726 57.5768 47.6217ZM65.7841 60.9326H71.2675V65.7255H76.0604V71.2089H71.2675V76.0018H65.7841V71.2089H60.9912V65.7255H65.7841V60.9326ZM82.3471 54.6462C78.7423 51.0109 73.6448 48.8988 68.5269 48.9191C63.4091 48.8988 58.3014 51.0109 54.7067 54.6462C51.0714 58.251 48.9593 63.3485 48.9796 68.4664C48.9593 73.5842 51.0714 78.6919 54.7067 82.2866C58.3116 85.9218 63.4091 88.034 68.5269 88.0137C73.6448 88.034 78.7524 85.9218 82.3471 82.2866C85.9824 78.6817 88.0945 73.5842 88.0742 68.4664C88.0945 63.3485 85.9824 58.2409 82.3471 54.6462ZM68.5269 82.4592C60.7994 82.4592 54.5443 76.1939 54.5443 68.4765C54.5443 60.7592 60.8095 54.4939 68.5269 54.4939C76.2443 54.4939 82.5096 60.7592 82.5096 68.4765C82.5096 76.1939 76.2443 82.4592 68.5269 82.4592Z"
+				fill="#333333" />
+			</svg>
+
+	</nav>
+	<div class="wrapper">
+		<div class="container1">
+			<svg class="flight-svg" xmlns="http://www.w3.org/2000/svg" width="80"
+				height="86" viewBox="0 0 80 86">
+	    <g fill="none" fill-rule="evenodd">
+	        <g>
+	            <path fill="#FFF" d="M0 0H1920V1690H0z"
+					transform="translate(-1646 -90)" />
+	            <g>
+	                <path fill="#00256C" d="M0 0H1920V86H0z"
+					transform="translate(-1646 -90) translate(0 90)" />
+	                <path fill="#C7F3FF"
+					d="M0 0h1720l-38.333 66.073C1674.511 78.408 1661.329 86 1647.068 86H0V0z"
+					transform="translate(-1646 -90) translate(0 90)" />
+	            </g>
+	        </g>
+	    </g>
+	</svg>
+		</div>
 	</div>
-	    
-	 </section>
-	 
-	</body>
-	
-	</html>
+	<div class="wrapper">
+		<div class="container2">
+			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+				<label class="location"></label> <input class="selD-btn"
+					id="openModalBtn" value="SEL">
+				<!-- <span id="selectSel"></span> -->
+			</div>
+			<div class="btn-change">
+				<svg class="change-svg" xmlns="http://www.w3.org/2000/svg"
+					width="44" height="44" viewBox="0 0 44 44">
+				    <g fill="none" fill-rule="evenodd">
+				        <path d="M0 0h44v44H0z" />
+				        <circle cx="22" cy="22" r="20" stroke="#D9DBE1" />
+				        <g stroke="#0064DE" stroke-linecap="round"
+						stroke-width="1.5">
+				            <path
+						d="M29.602 16.63c-1.557-2.485-4.27-4.13-7.356-4.13-3.814 0-7.057 2.512-8.254 6.015-.319.934-.438 1.603-.438 2.65" />
+				            <path fill="#0064DE" d="M12 20.5l1.5 2.25L15 20.5z" />
+				            <path
+						d="M14.5 27.034c1.557 2.485 4.27 4.13 7.356 4.13 3.814 0 7.057-2.511 8.253-6.015.32-.934.439-1.603.439-2.649" />
+				            <path fill="#0064DE" d="M32 23.75l-1.5-2.25-1.5 2.25z" />
+				        </g>
+				    </g>
+				</svg>
+			</div>
+			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+				<label class="locationTo"></label> <input class="toD-btn"
+					id="openModalBtn2" value="TO">
+			</div>
+			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+				<label class="date"></label> <input type="text" class="dateD-btn daterange"
+					name="daterange">
+			</div>
+
+			<svg class="dateD-svg" width="28" height="29" viewBox="0 0 28 29"
+				xmlns="http://www.w3.org/2000/svg">
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M0 .5h28v28H0z" />
+										        <path stroke="#000" stroke-width="1.75"
+					d="M21.82 8.667H6.652v13.27h15.166z" />
+										        <path fill="#000" fill-rule="nonzero"
+					d="M6.653 12.167h15.166v1.75H6.653z" />
+										        <path d="M10.736 5.167v3.5m7-3.5v3.5" stroke="#000"
+					stroke-width="1.75" />
+										    </g>
+										</svg>
+
+
+			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+				<label class="people"></label>
+				<button class="peopleD-btn" id="openModalBtn3" value="성인 1명">성인
+					1명</button>
+			</div>
+			<svg class="peoD-svg" width="30" height="30" viewBox="0 0 30 30"
+				xmlns="http://www.w3.org/2000/svg">
+												<g fill="none" fill-rule="evenodd">
+												 	<path d="M0 0h30v30H0z" />
+												     <path
+					d="M15 4.188a5.989 5.989 0 1 1-.001 11.977A5.989 5.989 0 0 1 15 4.188zm0 1.796a4.192 4.192 0 1 0 0 8.383 4.192 4.192 0 0 0 0-8.383z"
+					fill="#000" fill-rule="nonzero" />
+												     <path d="M23.383 24.188a8.383 8.383 0 1 0-16.766 0"
+					stroke="#000" stroke-width="1.5" stroke-linecap="round"
+					stroke-linejoin="round" />
+												</g>
+											</svg>
+
+			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+				<label class="seat"></label>
+				<button class="seatD-btn" id="openModalBtn4" value="선택하세요">선택하세요</button>
+			</div>
+			<svg class="seatD-svg" width="30" height="30" viewBox="0 0 30 30"
+				xmlns="http://www.w3.org/2000/svg">
+											<g fill="none" fill-rule="evenodd">
+												<path d="M30 0H0v30h30z" />
+											    <g stroke="#000" stroke-linejoin="round"
+					stroke-width="1.498">
+											    <path
+					d="M6.25 19.653V17.44c0-.478.387-.865.864-.865h14.961l-1.464 5.856a.864.864 0 0 1-.839.655H9.626a.432.432 0 0 1-.309-.13l-2.943-3a.432.432 0 0 1-.124-.302zM24.445 5h-4.36a.432.432 0 0 0-.41.298l-3.669 11.276h6.07l2.788-11.036A.432.432 0 0 0 24.445 5z" />
+											    <path stroke-linecap="round" d="M20.208 25.979H8.496" />
+											    </g>
+											 </g>
+										</svg>
+			<div class="row align-items-center">
+				<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+					<input type="submit" class="searchD-btn" value="항공편 검색">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-lg-4">
+			<input type="text" class="departure" value="가는 편">
+			<a href="home" class="index-btn">
+				01
+			</a>
+			<a href="" class="flight-btn">
+				02 항공편 
+			</a>
+			<a href="payment" class="payment-btn">
+				03
+			</a>
+						
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="container3">
+			<a href="" class="SelectDate1">
+				01
+			</a>
+			<a href="" class="SelectDate2">
+				02
+			</a>
+			<a href="" class="SelectDate3">
+				03
+			</a>
+			<a href="" class="SelectDate4">
+				04
+			</a>
+			<a href="" class="SelectDate5">
+				05
+			</a>
+			<a href="" class="SelectDate6">
+				06
+			</a>
+			<a href="" class="SelectDate7">
+				07
+			</a>
+		</div>
+	</div>
+	<div id="SELModal" class="modal" style="display: none;">
+				<div class="modal-content" id="sel_modal">
+					<span class="close-btn">&times;</span>
+					<p class="DesF">출발지 검색</p>
+					<select name="" id="" class="form-control custom-select"
+						onclick="selectSel">
+						<option value="">도시, 공항</option>
+						<option value="">ICN 서울/인천, 대한민국</option>
+						<option value="">ATH 아테네, 그리스</option>
+						<option value="">WLG 웰링턴, 뉴질랜드</option>
+						<option value="">BER 베를린/브란덴부크, 독일</option>
+						<option value="">MLE 말레, 몰디브</option>
+						<option value="">IAD 워싱턴/덜레스, 미국</option>
+						<option value="">PEK 베이징/서우두</option>
+						<option value="">HAN 하노이, 베트남</option>
+						<option value="">SIN 싱가포르/창이, 싱가포르</option>
+						<option value="">HND 도쿄/하네다, 일본</option>
+					</select>
+				</div>
+			</div>
+			<div id="TOModal" class="modal" style="display: none;">
+				<div class="modal-content" id="to_modal">
+					<span class="close-btn2">&times;</span>
+					<p class="DesF">도착지 검색</p>
+					<select name="" id="" class="form-control custom-select"
+						onclick="selectTo">
+						<option value="">도시, 공항</option>
+						<option value="">ICN 서울/인천, 대한민국</option>
+						<option value="">ATH 아테네, 그리스</option>
+						<option value="">WLG 웰링턴, 뉴질랜드</option>
+						<option value="">BER 베를린/브란덴부크, 독일</option>
+						<option value="">MLE 말레, 몰디브</option>
+						<option value="">IAD 워싱턴/덜레스, 미국</option>
+						<option value="">PEK 베이징/서우두</option>
+						<option value="">HAN 하노이, 베트남</option>
+						<option value="">SIN 싱가포르/창이, 싱가포르</option>
+						<option value="">HND 도쿄/하네다, 일본</option>
+					</select>
+				</div>
+			</div>
+			<div id="PEOModal" class="modal" style="display: none;">
+				<div class="modal-content" id="peo_modal">
+					<span class="close-btn3">&times;</span>
+					<div class="passenger-selectArea">
+						<p class="PassFont">승객 선택</p>
+						<p class="adC">성인(12세~)</p>
+						<div>
+							<input type="text" class="adultCount" value="1"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+							<button type="button" class="btn_number minus">-</button>
+							<button type="button" class="btn_number plus">+</button>
+						</div>
+						<p class="chC">소아(만 2세 ~ 12세 미만)</p>
+						<div>
+							<input type="text" class="childCount" value="0"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+							<button type="button" class="btn_number minus">-</button>
+							<button type="button" class="btn_number plus">+</button>
+						</div>
+						<p class="inC">유아(만 2세 미만)</p>
+						<div>
+							<input type="text" class="infantCount" value="0"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+							<button type="button" class="btn_number minus">-</button>
+							<button type="button" class="btn_number plus">+</button>
+						</div>
+						<p class="T">※ 예약인원은 성인,소아, 유아를 포함하여 총 9명까지 선택 가능합니다.</p>
+					</div>
+				</div>
+
+			</div>
+			<div id="SEATModal" class="modal" style="display: none;">
+				<div class="modal-content" id="seat_modal">
+					<span class="close-btn4">&times;</span>
+					<p class="SeatF">좌석 등급 선택</p>
+					<div style="text-align: center">
+						<!-- Button 1 -->
+						<input type="button" class="GenBtn" value="일반석"
+							onclick="selectSeat('일반석')" />
+
+
+						<!-- Button 2 -->
+						<input type="button" class="PreBtn" value="프레스티지석"
+							onclick="selectSeat('프레스티지석')" />
+
+
+						<!-- Button 3 -->
+						<input type="button" class="FirstBtn" value="일등석"
+							onclick="selectSeat('일등석')" />
+					</div>
+				</div>
+			</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.animateNumber.min.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/moment.min.js"></script>
+		<script src="js/daterangepicker.js"></script>
+
+		<script src="js/typed.js"></script>
+		<script src="js/custom.js"></script>
+		
+
+			<script src="js/flight.js"></script>
+</body>
+
+</html>

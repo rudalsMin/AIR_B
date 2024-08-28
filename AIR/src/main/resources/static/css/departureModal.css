@@ -1,24 +1,3 @@
- body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        /* 오버레이 */
-        .overlay {
-            display: none; /* 기본적으로 숨김 */
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-        }
-
-      /* 모달창 스타일 */
-
 .modal {
     display: none;
     position: fixed;
@@ -36,7 +15,7 @@
     /* margin: 4% auto; */
     padding: 20px;
     border: 1px solid #888;
-    transform: translate(322px, 449px);
+    transform: translate(622px, 249px);
     width: 38%;
     min-height: 36%;
     border-radius: 2rem;
@@ -56,22 +35,12 @@
     text-decoration: none;
     cursor: pointer;
 }
-.DesF{
-	font-family: cursive;
-	font-size: 22px;
-	font-weight: bold;
-	transform: translate(11px, -35px);
-	padding: 0%;
-	margin: 0%;
-	width: 101px;
-}
-
 #to_modal {
     background-color: #fefefe;
     margin: 4% auto;
     padding: 20px;
     border: 1px solid #888;
-    transform: translate(-267px, 372px);
+    transform: translate(33px, 172px);
     width: 38%;
     min-height: 36%;
     border-radius: 2rem;
@@ -92,14 +61,12 @@
     text-decoration: none;
     cursor: pointer;
 }
-
-
 #peo_modal {
     background-color: #fefefe;
 /*     margin: 4% auto;
  */    padding: 20px;
     border: 1px solid #888;
-    transform: translate(938px, 448px);
+    transform: translate(635px, 184px);
     width: 33%;
     height: 49%;
     border-radius: 2rem;
@@ -226,7 +193,7 @@
     margin: 4% auto;
     padding: 20px;
     border: 1px solid #888;
-    transform: translate(347px, 372px);
+    transform: translate(-37px, 144px);
     width: 28%;
     min-height: 43%;
     border-radius: 2rem;
@@ -244,15 +211,6 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-.overlay{
-	position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 반투명한 검은색 배경 */
-    z-index: 999; /* 모달보다 한 단계 뒤에 위치 */
 }
 .SeatF{
 	font-family: cursive;
@@ -374,50 +332,3 @@
 }
 
 
-
-#date_modal{
-    background-color: #fefefe;
-/*     margin: 4% auto;
- */ padding: 20px;
-    border: 1px solid #888;
-    transform: translate(365px, 448px);
-    width: 33%;
-    height: 49%;
-    border-radius: 2rem;
-}
-.close-btn6 {
-    color: #000000;
-    float: right;
-    font-size: 35px;
-    font-weight: normal;
-    transform: translate(558px, -12px);
-    cursor: pointer;
-    
-    
-}
-.close-btn:hover,
-.close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-.DateF{
-	font-family: cursive;
-	font-size: 22px;
-	font-weight: bold;
-	transform: translate(12px, -29px);
-	padding: 0%;
-	margin: 0%;
-	width: 30%;
-}
-.DateBtn{
-	font-family: sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	width: 556px;
-	height: 54px;
-	border-radius: 1rem;
-	transform: translate(28px, 3px);
-	cursor: pointer
-	
-}

@@ -29,5 +29,10 @@ public class AirController {
 		return "/payment";
 	}
 
-
+	@GetMapping("home")
+	public String home() {
+		
+		return "/index";
+	}
+	
 }
