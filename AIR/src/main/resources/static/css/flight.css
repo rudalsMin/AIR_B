@@ -312,7 +312,7 @@ transform: translate(-221px, 47px);
     position: fixed;
 }
 .flight-d_T{
-transform: translate(-181px, 91px);
+	transform: translate(-181px, 91px);
     font-size: 0.9rem;
     color: #555;
     position: fixed;
@@ -441,15 +441,15 @@ transform: translate(-181px, 91px);
 	display: flex;
     align-items: center;
     justify-content: center;
-    height: 3rem;
     border-radius: 1rem;
     background: #ffffff;
-    border-color: #00256c;
-    color: #000000;
+    border: 1px solid #00256c;
+    color: #00256c;
     font-size: 1rem;
+    min-width: 7.5rem;
+    min-height: 3.3rem;
     cursor: pointer;
-    max-width: 10%;
-    transform: translate(554px, -186px);
+    transform: translate(539px, -189px);
     position: fixed;
 }
 .seatD-btn{
@@ -636,6 +636,71 @@ transform: translate(-181px, 91px);
     text-align: center;
     border: none;
     position: fixed;
+}
+/* flightarrival.html */
+.arrival{
+	font-size: 1.4rem;
+    font-weight: 700;
+    padding: 13px 18px;
+    text-decoration: none !important;
+    color: #00256c;
+    transform: translate(310px, 75px);
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    border: none;
+    position: fixed;
+}
+.nonmember{
+	display: flex;
+    padding: 20px 30px;
+    justify-content: center;
+    height: 4rem;
+    border-radius: 1rem;
+    border-color: #f3f4f8;
+    background: #f3f4f8;
+    color: #00256c;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    width: 16rem;
+    transform: translate(-255px, 4px);
+    position: fixed;
+}
+.member{
+	display: flex;
+    padding: 20px 30px;
+    justify-content: center;
+    height: 4rem;
+    border-radius: 1rem;
+    background: #00256c;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    width: 16rem;
+    transform: translate(12px, 4px);
+    position: fixed;
+}
+.totalP_A{
+	transform: translate(-496px, 25px);
+    font-size: 1.2rem;
+    font-weight: 450;
+    position: fixed;
+}
+.totalP_num_A{
+	transform: translate(-413px, 22px);
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: fixed;
+    color: #00256c;
+}
+.totalP_numW_A{
+	transform: translate(-298px, 27px);
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: fixed;
+    color: #00256c;
 }
 .departureSel{
 	transform: translate(409px, 93px);

@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+.body {
+  background-color: #ffffff;
+}
+.header-container {
+  background-color: #FCE00C;
+  height: 8px;
+  width: 100%;
+}
+ .link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+  }
+  
+  .nav-arrow {
+    color: #fee014;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+.sub-nav {
+  align-items: center;
+  background-color: #FBFBFB;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  display: flex;
+  height: 62px;
+  justify-content: center;
+  margin-bottom: 56px;
+  width: 100%;  
+}
+
+.sub-item {  
+    
+  > .button {
+    color: #666666;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 24px 32px;
+    text-decoration: none;
+    
+    &:hover {
+    background-color: #02A7E0;
+    color: #F2F2F2;
+    cursor: pointer;
+    }
+  }
+}
+.route-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0;
+  max-width: 830px;
+  padding: 20px;
+  width: 100%;
+  
+  > .origin,
+  > .destination {
+    color: #666666;
+    flex: 0 0 150px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  > .destination {
+    text-align: right;
+  }
+  
+  > .icon {
+    color: #666666;
+    font-size: 32px;
+    transform: rotate(90deg);
+  }
+  
+  > .line {
+    background-color: #666666;
+    display: block;
+    height: 1px;
+    margin: 0 24px;
+    width: 100%;
+  }
+  
+}
+
+.container6{
+	max-width: 1240px;
+    height: 16rem;
+    background: linear-gradient(310deg, #1670B5 11.1%, #2941B5 87.61%);
+    padding: 10px 1326px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translate(-16px, -8px);
+}
+.container7{
+	width: 1341px;
+    height: 43rem;
+    background: #ffffff;
+    /* padding: 10px 1326px; */
+    padding: 6rem 10.6rem;
+    border-radius: 10px;
+    transform: translate(321px, -153px);
+    box-shadow: 0 5px 10px #0000001a;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.login_join-copy{
+	font-size: 1.4rem;
+    font-weight: 700;
+    padding: 13px 18px;
+    color: #00256c;
+    transform: translate(10px, 10px);
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    border: none;
+    position: fixed;
+    line-height: 1.5;
+}
+.login_join-subcopy{
+	width: 309px;
+    font-size: 1.4rem;
+    color: #00256c;
+    font-feature-settings: "clig" off, "liga" off;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 2rem 0rem 7rem;
+    height: 1px;
+    transform: translate(-79px, 210px);
+    
+}
+.login_F{
+	transform: translate(-977px, 49px);
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: fixed;
+}
