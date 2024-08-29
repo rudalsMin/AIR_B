@@ -230,20 +230,19 @@ for (let i = 0; i < minusBtn.length; i++) {
     });
 }
 
-// 모든 JavaScript 코드는 DOMContentLoaded 이벤트 안에서 실행되어야 합니다.
 document.addEventListener('DOMContentLoaded', function() {
     // recommend 버튼을 클릭하면 RECOMModal을 열기
     document.getElementById('openModalBtn6').onclick = function(event) {
         event.preventDefault(); // 기본 동작 막기
         document.getElementById('RECOMModal').style.display = "block";
         document.getElementById('overlay').style.display = "block";
-    }
+    };
 
     // recommend 닫기 버튼 클릭 시 모달 닫기
     document.querySelector('.close-btn6').onclick = function() {
         document.getElementById('RECOMModal').style.display = "none";
         document.getElementById('overlay').style.display = "none";
-    }
+    };
 
     // recommend 외부 클릭 시 모달 닫기
     window.onclick = function(event) {
@@ -251,13 +250,27 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('RECOMModal').style.display = "none";
             document.getElementById('overlay').style.display = "none";
         }
-    }
-	
-	// language-btn 버튼 클릭 시 모달 닫기
-	document.querySelector('.recom-btn').onclick = function() {
-	    document.getElementById('RECOMModal').style.display = "none";
-	    document.getElementById('overlay').style.display = "none";
-	}
+    };
+
+    // 적용 버튼 클릭 시 동작
+    document.querySelector('.recom-btn').onclick = function() {
+        // 선택된 라디오 버튼 값 가져오기
+        const selectedRadio = document.querySelector('input[name="option"]:checked');
+        if (selectedRadio) {
+            // 라디오 버튼의 id를 이용해 해당 라벨을 찾음
+            const label = document.querySelector('label[for="' + selectedRadio.id + '"]');
+            if (label) {
+                // openModalBtn6의 텍스트를 라벨의 텍스트로 업데이트
+                document.getElementById('openModalBtn6').textContent = label.textContent;
+            }
+        } else {
+            alert("라디오 버튼을 선택해주세요!"); // 선택되지 않았을 때 사용자에게 알림
+        }
+
+        // 모달 닫기
+        document.getElementById('RECOMModal').style.display = "none";
+        document.getElementById('overlay').style.display = "none";
+    };
 });
 
 
@@ -282,7 +295,27 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('ROUTEModal').style.display = "none";
             document.getElementById('overlay').style.display = "none";
         }
-    }
+    };
+	
+	// 적용 버튼 클릭 시 동작
+	document.querySelector('.routeM-btn').onclick = function() {
+		// 선택된 라디오 버튼 값 가져오기
+		const selectedRadio = document.querySelector('input[name="option"]:checked');
+		if (selectedRadio) {
+			// 라디오 버튼의 id를 이용해 해당 라벨을 찾음
+			const label = document.querySelector('label[for="' + selectedRadio.id + '"]');
+			if (label) {
+				// openModalBtn6의 텍스트를 라벨의 텍스트로 업데이트
+				document.getElementById('openModalBtn7').textContent = label.textContent;
+			}
+		} else {
+			alert("라디오 버튼을 선택해주세요!"); // 선택되지 않았을 때 사용자에게 알림
+		}
+
+		// 모달 닫기
+		document.getElementById('ROUTEModal').style.display = "none";
+		document.getElementById('overlay').style.display = "none";
+	};
 });
 
 // 페이지 로드 시 기본 값 업데이트
