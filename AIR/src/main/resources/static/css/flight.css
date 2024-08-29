@@ -205,6 +205,7 @@
     margin-bottom: 20px; /* 각 박스 간의 간격 */
 }
 
+
 .container1 {
     max-width: 1240px; /* 박스 너비 */
     height: 5.4rem; /* 박스 높이 */
@@ -234,6 +235,130 @@
     border-width: thin;
     transform: translate(317px, 141px);
 }
+.container4{
+	width: 1272px;
+    height: 16.5rem;
+    padding: 17px 587px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #bbb9b9;
+    border-width: thin;
+    transform: translate(317px, 93px);
+}
+.container5{
+	max-width: 1240px;
+    height: 5.4rem;
+    background-color: #ffffff;
+    padding: 10px 1326px;
+    border-radius: 10px;
+    box-shadow: .4rem 0 1.6rem #698aa154;
+    transform: translate(-16px, 140px);
+}
+.totalP{
+	transform: translate(-284px, 25px);
+    font-size: 1.2rem;
+    font-weight: 450;
+    position: fixed;
+}
+.totalP_num{
+	transform: translate(-156px, 22px);
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: fixed;
+    color: #00256c;
+}
+.totalP_numW{
+	transform: translate(-43px, 27px);
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: fixed;
+    color: #00256c;
+}
+.timeF{
+	transform: translate(-546px, 47px);
+    font-size: 1.7rem;
+    font-weight: 600;
+    position: fixed;
+}
+.nextT-btn{
+	display: flex;
+    padding: 20px 30px;
+    justify-content: center;
+    height: 4rem;
+    border-radius: 1rem;
+    background: #00256c;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    width: 16rem;
+    transform: translate(12px, 4px);
+    position: fixed;
+}
+.nextT-btn:hover{
+	background: #00256c;
+    color: #fff;
+}
+.timeT{
+transform: translate(-221px, 47px);
+    font-size: 1.7rem;
+    font-weight: 600;
+    position: fixed;
+}
+.fligh-d_F{
+	transform: translate(-545px, 91px);
+    font-size: 0.9rem;
+    color: #555;
+    position: fixed;
+}
+.flight-d_T{
+transform: translate(-181px, 91px);
+    font-size: 0.9rem;
+    color: #555;
+    position: fixed;
+}
+.fight-d_LT{
+	transform: translate(-370px, 46px);
+    font-size: 0.8rem;
+    color: #00256c;
+}
+.filght-direc_svg{
+	transform: translate(-503px, 71px);
+	position: fixed;
+}
+.flightPrice_standard{
+	transform: translate(-153px, -18px);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 112px 15px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: #000000;
+    cursor: pointer;
+    height: 16.5rem;
+    width: 388px;
+    text-align: center;
+    border: 1.5px #00256c solid;
+    border-width: 3px 0.1px 0;
+    position: fixed;
+}
+.flightPrice_flex{
+	transform: translate(234px, -18px);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 112px 15px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: #000000;
+    cursor: pointer;
+    height: 16.5rem;
+    width: 388px;
+    text-align: center;
+    border: 1.5px #00256c solid;
+    border-width: 3px 0.1px 0;
+    position: fixed;
+}
+
 .flight-svg{
 	transform: translate(130px, 10px);
 	position: absolute; /* 위치를 고정하여 다른 내용물 앞에 배치 */
@@ -387,7 +512,7 @@
     padding: 10px 15px;
     display: inline-block;
     text-decoration: none !important;
-    color: #555;
+    color: #ccc;
     transform: translate(1478px, 36px);
     cursor: pointer;
     height: 2.7rem;
