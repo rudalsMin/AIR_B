@@ -114,20 +114,20 @@
     flex-direction: row-reverse;
 }
 .login_join-copy{
-	font-size: 1.4rem;
-    font-weight: 700;
+	font-size: 2.7rem;
+    font-weight: 650;
     padding: 13px 18px;
     color: #00256c;
-    transform: translate(10px, 10px);
+    transform: translate(-781px, 7px);
     cursor: pointer;
-    width: 100px;
-    text-align: center;
+    max-width: 323px;
+    text-align: left;
     border: none;
     position: fixed;
     line-height: 1.5;
 }
 .login_join-subcopy{
-	width: 309px;
+	max-width: 309px;
     font-size: 1.4rem;
     color: #00256c;
     font-feature-settings: "clig" off, "liga" off;
@@ -135,8 +135,7 @@
     line-height: 1.5;
     margin: 2rem 0rem 7rem;
     height: 1px;
-    transform: translate(-79px, 210px);
-    
+    transform: translate(-812px, 201px);
 }
 .login_F{
 	transform: translate(-977px, 49px);
@@ -144,4 +143,85 @@
     font-weight: 500;
     color: #FFFFFF;
     position: fixed;
+}
+.login_divider{
+	display: block;
+    width: 1.3px;
+    border: 0;
+    background-color: #d9dbe1;
+    transform: translate(5px, -8px);
+}
+.join-btn{
+	display: flex;
+    padding: 17px 30px;
+    justify-content: center;
+    height: 3.8rem;
+    border-radius: 1rem;
+    background: #fff;
+    color: #00256c;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: 1px solid #00256c;
+    cursor: pointer;
+    width: 14rem;
+    transform: translate(-842px, 341px);
+    position: fixed;
+}
+.login_id{
+	font-size: 1rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(373px, 34px);
+}
+.id_text{
+	transform: translate(141px, -172px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 1px;
+    height: 2.7rem;
+    width: 370px;
+    border-radius: 0rem;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+.login_password{
+	font-size: 1rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(643px, 166px);
+}
+.pass_text{
+	transform: translate(141px, -48px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 1px;
+    height: 2.7rem;
+    width: 370px;
+    border-radius: 0rem;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+.login_btn{
+	display: flex;
+    padding: 17px 30px;
+    justify-content: center;
+    height: 3.8rem;
+    border-radius: 1rem;
+    background: #00256c;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: 1px solid #00256c;
+    cursor: pointer;
+    width: 24rem;
+    transform: translate(23px, 300px);
+    position: fixed;
+}
+.login_btn:hover{
+	background: #00256c;
+    color: #fff;
 }

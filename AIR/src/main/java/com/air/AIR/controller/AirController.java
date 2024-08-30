@@ -40,5 +40,10 @@ public class AirController {
 		
 		return "/login";
 	}
+	@GetMapping("join")
+	public String join() {
+		
+		return "/join";
+	}
 	
 }
