@@ -45,5 +45,14 @@ public class AirController {
 		
 		return "/join";
 	}
-	
+	@GetMapping("memInformation")
+	public String memInformation() {
+		
+		return "/memInformation";
+	}
+	@GetMapping("nonMem")
+	public String nonMem() {
+		
+		return "/nonM";
+	}
 }

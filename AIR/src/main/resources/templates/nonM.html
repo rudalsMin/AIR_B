@@ -36,6 +36,8 @@
 
 <link rel="stylesheet" href="css/departureModal.css">
 
+<link rel="stylesheet" href="css/nonM.css">
+
 
 
 
@@ -295,19 +297,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-6 col-lg-4">
-			<div type="text" class="arrival" value="오는 편">오는 편</div>
-			<div type="text" class="departureSel" id="departure_Sel" data-value="SEL">SEL</div>
-			
-			<svg class="flightD-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-			    <g fill="#00256C" fill-rule="evenodd" transform="translate(0 5)">
-			        <path d="M8 5L8 0 16 5z"/>
-			        <rect width="11" height="1" y="4" rx=".5" transform="matrix(1 0 0 -1 0 9)"/>
-			    </g>
-			</svg>
-			
-			<div type="text" class="departureTo" id="departure_To" data-value="SEL">TO</div>
-			
+			<label class="agreeNonM">비회원 예매 동의</label>
 			<a href="home" class="index-btn">
 				01
 			</a>
@@ -317,130 +307,33 @@
 			<a href="payment" class="payment-btn">
 				03
 			</a>
-						
+			<label class="helper4">개인정보 수집 이용에 동의해 주세요.</label>		
+	</div>
+	<div class="wrapper">
+		<div class="container10">
+				<input type="checkbox" class="checkbox7">
+				<div class="container10T">[필수] 개인정보 수집 및 이용 동의</div>
 		</div>
+		<svg class="helper5_svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+			<g fill="none" fill-rule="evenodd">
+			<path stroke="#767676" d="M1.5 8c0 3.584 2.916 6.5 6.5 6.5s6.5-2.916 6.5-6.5S11.584 1.5 8 1.5A6.508 6.508 0 0 0 1.5 8z"/>
+			<path fill="#767676" d="M6.77 5.231a1.23 1.23 0 1 1 2.46 0 1.23 1.23 0 0 1-2.46 0M9 11.5H7v-4h2z"/>
+			</g>
+		</svg>
+		<label class="helper5">'캐시 앤 마일즈' 서비스 이용을 원하실 경우, 로그인 후 예매를 진행하여 주시기 바랍니다.</label>
+				
+		<svg class="helper6_svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+			<g fill="none" fill-rule="evenodd">
+				<path stroke="#767676" d="M1.5 8c0 3.584 2.916 6.5 6.5 6.5s6.5-2.916 6.5-6.5S11.584 1.5 8 1.5A6.508 6.508 0 0 0 1.5 8z"/>
+				<path fill="#767676" d="M6.77 5.231a1.23 1.23 0 1 1 2.46 0 1.23 1.23 0 0 1-2.46 0M9 11.5H7v-4h2z"/>
+			</g>
+		</svg>
+		<label class="helper6">개인정보 보호법 제39조의3(개인정보의 수집 . 이용 동의 등에 대한 특례)에 따라 만 14세 미만 승객은 예매 시 법정대리인의 동의 및 인증이 필요합니다. 로그인 후 예매를 진행하여 주시기 바랍니다.</label>	
+		
+		<a href="arrival" class="btnCancel">이전</a>
+		<a href="payment" class="btnSubmit">확인</a>
+		
 	</div>
-	<div class="wrapper">
-		<div class="container3">
-			<a href="" class="SelectDate1">
-				01
-			</a>
-			<a href="" class="SelectDate2">
-				02
-			</a>
-			<a href="" class="SelectDate3">
-				03
-			</a>
-			<a href="" class="SelectDate4">
-				04
-			</a>
-			<a href="" class="SelectDate5">
-				05
-			</a>
-			<a href="" class="SelectDate6">
-				06
-			</a>
-			<a href="" class="SelectDate7">
-				07
-			</a>
-		</div>
-	</div>
-	<div class="wrapper">
-		<div type="text" class="economy_btn" id="classEconomy" data-value="economy">일반석</div>
-		<div type="text" class="prestige_btn" id="classPrestige" data-value="prestige">프레스티지석</div>
-		<div type="text" class="first_btn" id="classFirst" data-value="first">일등석</div>
-	</div>
-	
-	<div class="wrapper">
-		<label class="recommend"></label>
-			<button class="recommend-btn" id="openModalBtn6" value="추천순 정렬">추천순 정렬</button>	
-			
-			<svg class="down-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-			    <g fill="none" fill-rule="evenodd">
-			        <path d="M0 0H16V16H0z"/>
-			        <path stroke="#000" stroke-linecap="round" d="M5.5 12.5L10.5 7.5 5.5 2.5" transform="rotate(90 8 7.5)"/>
-			    </g>
-			</svg>	
-			
-		<label class="route"></label>
-			<button class="route-btn" id="openModalBtn7" value="직항 및 경유">직항 및 경유</button>
-			
-			<svg class="down-svg2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-			    <g fill="none" fill-rule="evenodd">
-			        <path d="M0 0H16V16H0z"/>
-			        <path stroke="#000" stroke-linecap="round" d="M5.5 12.5L10.5 7.5 5.5 2.5" transform="rotate(90 8 7.5)"/>
-			    </g>
-			</svg>
-	</div>
-	<div class="wrapper">
-		<div class="container4">
-			<label class="timeF">08:05</label>
-			<label class="timeT">10:55</label>
-			<label class="fligh-d_F">ICN</label>
-			<label class="flight-d_T">HKG</label>
-			<label class="fight-d_LT">0시간 00분</label>
-			<svg class="filght-direc_svg" xmlns="http://www.w3.org/2000/svg" width="200" height="8" viewBox="0 0 200 8">
-			    <g fill="#767676" fill-rule="evenodd">
-			        <rect width="198" height="1" y="4" rx=".5" transform="matrix(1 0 0 -1 0 9)"/>
-			        <path d="M192 5L192 0 200 5z"/>
-			    </g>
-			</svg>
-			<a href class="flightPrice_standard">일반석 스탠다드</a>
-			<a href class="flightPrice_flex">일반석 플렉스</a>
-		</div>
-	</div>
-	<div class="wrapper">
-		<div class="container5">
-			<label class="totalP_A">총액</label>
-			<label class="totalP_num_A">158,900</label>
-			<label class="totalP_numW_A">원</label>			
-			<a href="nonMem" class="nonmember">비회원으로 진행</a>
-			<a href="" class="member">회원으로 진행</a> 
-		</div>
-	</div>
-	
-	<div id="RECOMModal" class="modal" style="display: none;">
-				<div class="modal-content" id="recom_modal">
-					<span class="close-btn6">&times;</span>
-					<p class="RecomFont">정렬 기준 선택</p>
-					
-					<input type="radio" id="option1" class="option1" name="option" value="1">
-					<label class="label1" for="option1">추천 순</label></br>
-					
-					<input type="radio" id="option2" class="option2" name="option" value="2">
-					<label class="label2" for="option2">출발 시간 순</label></br>
-					
-					<input type="radio" id="option3" class="option3" name="option" value="3">
-					<label class="label3" for="option3">도착 시간 순</label></br>
-					
-					<input type="radio" id="option4" class="option4" name="option" value="4">
-					<label class="label4" for="option4">여행 시간 순</label></br>
-					
-					<input type="radio" id="option5" class="option5" name="option" value="5">
-					<label class="label5" for="option5">최저 요금 순</label></br>
-					
-					<span class="recom-btn">적용</span>
-				</div>
-	</div>	
-	
-	<div id="ROUTEModal" class="modal" style="display: none;">
-				<div class="modal-content" id="route_modal">
-					<span class="close-btn7">&times;</span>
-					<p class="RouteFont">경유 선택</p>
-					
-					<input type="radio" id="option2-1" class="option2-1" name="option" value="2-1">
-					<label class="label2-1" for="option2-1">전체</label></br>
-					
-					<input type="radio" id="option2-2" class="option2-2" name="option" value="2-2">
-					<label class="label2-2" for="option2-2">직항</label></br>
-					
-					<input type="radio" id="option2-3" class="option2-3" name="option" value="2-3">
-					<label class="label2-3" for="option2-3">경유</label></br>
-					
-					<span class="routeM-btn">적용</span>
-				</div>
-	</div>	
-	
 	<div id="SELModal" class="modal" style="display: none;">
 				<div class="modal-content" id="sel_modal">
 					<span class="close-btn">&times;</span>
@@ -534,7 +427,7 @@
 				</div>
 			</div>
 
-<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
@@ -549,7 +442,7 @@
 		<script src="js/custom.js"></script>
 		
 
-			<script src="js/flight.js"></script>
+		<script src="js/flight.js"></script>
 </body>
 
 </html>

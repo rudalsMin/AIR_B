@@ -7,292 +7,496 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Untree.co">
+<link rel="shortcut icon" href="favicon.png">
 
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap4" />
+<meta name="description" content="" />
+<meta name="keywords" content="bootstrap, bootstrap4" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+	rel="stylesheet">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/daterangepicker.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="css/daterangepicker.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/style.css">
 
-  <title>Tour Free Bootstrap Template for Travel Agency by Untree.co</title>
+<link rel="stylesheet" href="css/flight.css">
+
+<link rel="stylesheet" href="css/departureModal.css">
+
+<link rel="stylesheet" href="css/nonM.css">
+
+<link rel="stylesheet" href="css/payment.css">
+
+
+
+<title>Tour Free Bootstrap Template for Travel Agency by
+	Untree.co</title>
+
+<style>
+.logo_koreanair img {
+	width: 11.2rem;
+	height: 3.4rem;
+	display: inline-block;
+	transform: translate(-93%, 41%);
+}
+
+.form {
+	border-radius: 1rem;
+	flex-direction: row;
+	max-width: 128rem;
+	height: 7.8rem;
+	padding: 0 0 0 .6rem;
+	margin: 2rem auto 0;
+	box-shadow: .4rem 1rem 2rem #0019482e;
+}
+</style>
+
 </head>
 
-<body>
+<body class='body'>
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav">
+		<div class="container">
+			<div class="site-navigation">
+				<a href="index.html" class="logo m-0"><span class="text-primary"></span></a>
+				<div class="logo_koreanair">
+					<img src="images/gal_4.jpg" alt="Image" class="img-fluid">
+
+					<ul
+						class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+						<li class="active"><a href="home">Home</a></li>
+						<li><a href="#">이벤트</a></li>
+						<li><a href="booking">자주 묻는 질문</a></li>
+						<li class="language"><a id="openModalBtn5">대한민국 - 한국어</a></li>
+
+						<li><a href="join">회원가입</a></li>
+					</ul>
+					<div class="row align-items-center">
+						<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+							<a href="login" class="btn btn-login btn-block">로그인</a> 
+						</div>
+
+						<a href="#"
+							class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+							data-toggle="collapse" data-target="#main-navbar"> <span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="LANModal" class="modal" style="display: none;">
+			<div id="overlay" class="overlay" style="display: none;">
+				<div class="modal-content" id="lan_modal">
+					<span class="close-btn5">&times;</span>
+					<p class="lanFont">지역 및 언어 선택</p>
+					<p class="K">※ 선택한 국가 또는 언어에 제공 가능한 서비스 및 예약 부가 기능이 적용됩니다.</p>
+					<p class="C">국가 / 지역</p>
+					<select name="" id="" class="Country">
+						<option value="">대한민국</option>
+						<option value="">그리스</option>
+						<option value="">뉴질랜드</option>
+						<option value="">독일</option>
+						<option value="">몰디브</option>
+						<option value="">미국</option>
+						<option value="">베트남</option>
+						<option value="">싱가포르</option>
+						<option value="">중국</option>
+					</select>
+					<p class="L">언어</p>
+					<select name="" id="" class="Lan">
+						<option value="">한국어</option>
+						<option value="">English</option>
+						<option value="">简体中文</option>
+					</select> 
+					<span class="language-btn">적용</span>
+				</div>
+			</div>
+		</div>
+		<div class="gnb-new_group">
+			<button type="button" id="gnb-new_nav" class="gnb-book_button">예약</button>
+			<button type="button" id="gnb-new_nav" class="gnb-travel_button">여행
+				준비</button>
+			<button type="button" id="gnb-new_nav" class="gnb-skypass_button">스카이패스</button>
+		</div>
+		<section>
+			<form action="">
+				<div class="search">
+					<input type="text" name="query" class="search_btn2" value="">
+					<button type="submit" class="submit-btn">
+						<svg class="search-svg" xmlns="http://www.w3.org/2000/svg"
+							width="96" height="96" viewBox="0 0 96 96" fill="none">
+						  <g clip-path="url(#clip0_9_17244)">
+						    <path fill-rule="evenodd" clip-rule="evenodd"
+								d="M58.9812 56.9149L82.0057 79.9407L80.0477 79.4827L78.3343 79.0777C74.0947 78.0731 70.2137 75.9613 67.0852 72.9594L66.7276 72.6091L55.0361 60.9193C56.4944 59.7356 57.8183 58.3919 58.9812 56.9149ZM39.1958 16C53.0885 16 64.3917 27.3348 64.3917 41.2687C64.3917 55.2016 53.0885 66.5363 39.1958 66.5363C25.3032 66.5363 14 55.2016 14 41.2687C14 27.3348 25.3032 16 39.1958 16ZM39.1958 21.0536C28.0816 21.0536 19.0392 30.1218 19.0392 41.2687C19.0392 52.4146 28.0816 61.4827 39.1958 61.4827C50.3101 61.4827 59.3525 52.4146 59.3525 41.2687C59.3525 30.1218 50.3101 21.0536 39.1958 21.0536Z"
+								fill="#333333" />
+						  </g>
+						  <defs>
+						    <clipPath id="clip0_9_17244">
+						      <rect width="96" height="96" fill="white" />
+						    </clipPath>
+						  </defs>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</section>
+		<svg class="event-svg" xmlns="http://www.w3.org/2000/svg" width="96"
+			height="96" viewBox="0 0 96 96" fill="none">
+	  			<path
+				d="M50.7111 78.5141V31.1335H73.3961V77.0823L75.3052 74.9092C77.5899 72.3097 78.7983 69.3243 78.8084 66.278V29.4783C78.8084 27.4068 77.1228 25.7212 75.0513 25.7212H74.1374V18.4709C74.1374 16.0034 72.7666 13.81 70.5427 12.7235C68.3697 11.6573 65.8412 11.901 63.9119 13.3429L47.9796 23.6801L32.0473 13.3429C30.1179 11.901 27.5895 11.6573 25.4164 12.7235C23.2028 13.7999 21.8218 16.0034 21.8218 18.4709V25.7212H20.918C18.8465 25.7212 17.1609 27.4068 17.1609 29.4783V80.1794C17.1609 82.2509 18.8465 83.9365 20.918 83.9365L67.9737 83.9162C71.0302 83.9162 74.0257 82.6977 76.6354 80.4129L78.8084 78.4938L50.6807 78.5141H50.7111ZM67.1613 17.6992C67.5776 17.3742 67.9838 17.4961 68.1869 17.5875C68.39 17.689 68.7352 17.9327 68.7352 18.4608V25.711H54.844L67.1715 17.6992H67.1613ZM27.2645 18.4608C27.2645 17.9327 27.6098 17.689 27.8129 17.5875C28.016 17.4859 28.4222 17.3742 28.8385 17.6992L41.166 25.711H27.2645V18.4608ZM45.2785 78.5141H22.5935V31.1335H45.2785V78.5141Z"
+				fill="#333333" />
+			</svg>
+
+		<svg class="faq-svg" xmlns="http://www.w3.org/2000/svg" width="96"
+			height="96" viewBox="0 0 96 96" fill="none">
+	  			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M78.9811 66.3084C82.2407 60.754 84.0076 54.2958 83.9872 48.0102C84.0279 38.4853 80.1692 29.1737 73.4266 22.4819C66.7552 15.7495 57.5045 11.901 48.0406 11.901H47.7765C38.2923 11.901 29.0416 15.7495 22.3803 22.4616C15.6175 29.1635 11.7689 38.4751 11.7994 47.9797C11.7588 57.5046 15.6175 66.8162 22.36 73.5079C29.0315 80.2403 38.2822 84.0889 47.7461 84.0889H48.0101C54.1535 84.0889 60.236 82.4641 65.6788 79.3874L84.2005 83.7944L78.9811 66.3084ZM64.7852 73.5486L76.2183 76.2673L73.0103 65.5164L73.6805 64.4603C76.8081 59.5354 78.514 53.6966 78.4937 48.0102C78.5242 40.0389 75.1732 31.956 69.5375 26.3609C63.9526 20.7252 55.9102 17.3844 47.9999 17.3844H47.7867C39.8561 17.3844 31.8138 20.7252 26.2491 26.3406C20.5931 31.9459 17.2422 40.0288 17.2726 47.9797C17.2422 55.9509 20.5931 64.0339 26.2288 69.6289C31.8138 75.2647 39.8561 78.6055 47.7664 78.6055H47.9898C53.5239 78.6055 58.987 77.062 63.8205 74.1274L64.7852 73.5486ZM46.5479 56.8242C43.8062 56.8242 42.0698 58.8957 42.0698 61.3023C42.0698 63.7089 43.8062 65.7804 46.5479 65.7804C49.2896 65.7804 51.026 63.7089 51.026 61.3023C51.026 58.8957 49.2896 56.8242 46.5479 56.8242ZM40.7091 31.5194C42.3541 30.7476 44.5678 30.2196 47.3603 30.2196L47.3501 30.2399C54.3364 30.2399 58.9668 33.6112 58.9668 39.2977C58.9668 42.7603 57.3319 45.6036 53.1889 48.4976L51.2596 49.8481C49.9598 50.762 49.1881 51.5338 49.1881 52.8843V53.1686H43.6945V52.7828C43.6945 49.2185 44.9537 47.0963 47.7461 44.974L48.7616 44.2023C51.026 42.4658 52.0821 41.0645 52.0821 39.2367C52.0821 36.9723 50.4472 35.4288 46.6393 35.4288C42.8314 35.4288 39.4093 36.9723 36.8098 38.8001C36.8098 34.6977 37.7237 32.9207 40.7091 31.5194Z"
+				fill="#333333" />
+			</svg>
+
+		<svg class="signUp-svg" xmlns="http://www.w3.org/2000/svg" width="96"
+			height="96" viewBox="0 0 96 96" fill="none">
+	  			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M18.465 60.1532C18.3829 60.4303 18.3521 60.728 18.3521 61.0769V71.3296H45.2798C45.2798 71.3296 45.2946 72.7998 45.5198 74.1006C45.7775 75.5891 46.3998 76.8716 46.3998 76.8716H12.7998V60.9127C12.7998 60.3893 12.8716 59.363 13.0051 58.8396C14.0622 54.8678 16.669 51.3989 20.1686 49.336L45.3745 34.1058C48.5355 32.0532 49.9826 28.338 49.0487 24.6741C47.9403 20.3328 43.6811 17.5824 39.1244 18.3008C34.8037 18.9781 31.9095 22.4573 31.9095 26.9833C31.9095 31.0371 35.6965 34.701 37.9339 36.2199L39.1859 37.0718L37.6773 37.1436C34.6908 37.2668 31.889 36.3328 30.175 34.6394C27.0448 31.54 26.7883 28.4509 26.7883 25.803C26.7883 18.2495 33.9929 12.8819 40.4688 12.7998H40.6638C47.8992 12.7998 53.9236 18.2084 54.6625 25.372C55.2373 30.8729 52.6407 36.066 47.9095 38.9191L23.0525 54.211C20.7434 55.5759 19.1115 57.6799 18.465 60.1532ZM57.5768 47.6217C56.3003 48.4278 55.0911 49.3348 53.9602 50.3537H53.949C53.1316 49.8722 52.2807 49.3796 51.3737 48.8645C51.291 48.8192 51.0085 48.6586 50.6056 48.4297L50.6056 48.4297L50.6055 48.4297C49.318 47.6981 46.8007 46.2677 45.6409 45.6622C45.4841 45.5726 43.4463 44.5537 43.4463 44.5537L44.6779 44.6657C47.1525 44.8784 52.3366 45.5726 57.5768 47.6217ZM65.7841 60.9326H71.2675V65.7255H76.0604V71.2089H71.2675V76.0018H65.7841V71.2089H60.9912V65.7255H65.7841V60.9326ZM82.3471 54.6462C78.7423 51.0109 73.6448 48.8988 68.5269 48.9191C63.4091 48.8988 58.3014 51.0109 54.7067 54.6462C51.0714 58.251 48.9593 63.3485 48.9796 68.4664C48.9593 73.5842 51.0714 78.6919 54.7067 82.2866C58.3116 85.9218 63.4091 88.034 68.5269 88.0137C73.6448 88.034 78.7524 85.9218 82.3471 82.2866C85.9824 78.6817 88.0945 73.5842 88.0742 68.4664C88.0945 63.3485 85.9824 58.2409 82.3471 54.6462ZM68.5269 82.4592C60.7994 82.4592 54.5443 76.1939 54.5443 68.4765C54.5443 60.7592 60.8095 54.4939 68.5269 54.4939C76.2443 54.4939 82.5096 60.7592 82.5096 68.4765C82.5096 76.1939 76.2443 82.4592 68.5269 82.4592Z"
+				fill="#333333" />
+			</svg>
+
+	</nav>
+	<div class="wrapper">
+		<div class="container1">
+			<svg class="flight-svg" xmlns="http://www.w3.org/2000/svg" width="80"
+				height="86" viewBox="0 0 80 86">
+	    <g fill="none" fill-rule="evenodd">
+	        <g>
+	            <path fill="#FFF" d="M0 0H1920V1690H0z"
+					transform="translate(-1646 -90)" />
+	            <g>
+	                <path fill="#00256C" d="M0 0H1920V86H0z"
+					transform="translate(-1646 -90) translate(0 90)" />
+	                <path fill="#C7F3FF"
+					d="M0 0h1720l-38.333 66.073C1674.511 78.408 1661.329 86 1647.068 86H0V0z"
+					transform="translate(-1646 -90) translate(0 90)" />
+	            </g>
+	        </g>
+	    </g>
+	</svg>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="container2">
+			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+				<label class="location"></label>
+				<button class="selD-btn" id="openModalBtn"
+					value="SEL">
+					서울
+				</button>
+			</div>
+			<div class="btn-change">
+				<svg class="change-svg" xmlns="http://www.w3.org/2000/svg"
+					width="44" height="44" viewBox="0 0 44 44">
+				    <g fill="none" fill-rule="evenodd">
+				        <path d="M0 0h44v44H0z" />
+				        <circle cx="22" cy="22" r="20" stroke="#D9DBE1" />
+				        <g stroke="#0064DE" stroke-linecap="round"
+						stroke-width="1.5">
+				            <path
+						d="M29.602 16.63c-1.557-2.485-4.27-4.13-7.356-4.13-3.814 0-7.057 2.512-8.254 6.015-.319.934-.438 1.603-.438 2.65" />
+				            <path fill="#0064DE" d="M12 20.5l1.5 2.25L15 20.5z" />
+				            <path
+						d="M14.5 27.034c1.557 2.485 4.27 4.13 7.356 4.13 3.814 0 7.057-2.511 8.253-6.015.32-.934.439-1.603.439-2.649" />
+				            <path fill="#0064DE" d="M32 23.75l-1.5-2.25-1.5 2.25z" />
+				        </g>
+				    </g>
+				</svg>
+			</div>
+			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+				<label class="locationTo"></label>
+				<button class="toD-btn" id="openModalBtn2"
+					value="TO">
+					TO
+				</button>
+			</div>
+			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+				<label class="date"></label> <input type="text" class="dateD-btn daterange"
+					name="daterange">
+			</div>
+
+			<svg class="dateD-svg" width="28" height="29" viewBox="0 0 28 29"
+				xmlns="http://www.w3.org/2000/svg">
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M0 .5h28v28H0z" />
+										        <path stroke="#000" stroke-width="1.75"
+					d="M21.82 8.667H6.652v13.27h15.166z" />
+										        <path fill="#000" fill-rule="nonzero"
+					d="M6.653 12.167h15.166v1.75H6.653z" />
+										        <path d="M10.736 5.167v3.5m7-3.5v3.5" stroke="#000"
+					stroke-width="1.75" />
+										    </g>
+										</svg>
 
 
-  <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close">
-        <span class="icofont-close js-menu-toggle"></span>
-      </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
-  </div>
+			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+				<label class="people"></label>
+				<button class="peopleD-btn" id="openModalBtn3" value="성인 1명">성인
+					1명</button>
+			</div>
+			<svg class="peoD-svg" width="30" height="30" viewBox="0 0 30 30"
+				xmlns="http://www.w3.org/2000/svg">
+												<g fill="none" fill-rule="evenodd">
+												 	<path d="M0 0h30v30H0z" />
+												     <path
+					d="M15 4.188a5.989 5.989 0 1 1-.001 11.977A5.989 5.989 0 0 1 15 4.188zm0 1.796a4.192 4.192 0 1 0 0 8.383 4.192 4.192 0 0 0 0-8.383z"
+					fill="#000" fill-rule="nonzero" />
+												     <path d="M23.383 24.188a8.383 8.383 0 1 0-16.766 0"
+					stroke="#000" stroke-width="1.5" stroke-linecap="round"
+					stroke-linejoin="round" />
+												</g>
+											</svg>
 
-  <nav class="site-nav">
-    <div class="container">
-      <div class="site-navigation">
-        <a href="index.html" class="logo m-0">Tour <span class="text-primary">.</span></a>
+			<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+				<label class="seat"></label>
+				<button class="seatD-btn" id="openModalBtn4" value="선택하세요">선택하세요</button>
+			</div>
+			<svg class="seatD-svg" width="30" height="30" viewBox="0 0 30 30"
+				xmlns="http://www.w3.org/2000/svg">
+											<g fill="none" fill-rule="evenodd">
+												<path d="M30 0H0v30h30z" />
+											    <g stroke="#000" stroke-linejoin="round"
+					stroke-width="1.498">
+											    <path
+					d="M6.25 19.653V17.44c0-.478.387-.865.864-.865h14.961l-1.464 5.856a.864.864 0 0 1-.839.655H9.626a.432.432 0 0 1-.309-.13l-2.943-3a.432.432 0 0 1-.124-.302zM24.445 5h-4.36a.432.432 0 0 0-.41.298l-3.669 11.276h6.07l2.788-11.036A.432.432 0 0 0 24.445 5z" />
+											    <path stroke-linecap="round" d="M20.208 25.979H8.496" />
+											    </g>
+											 </g>
+										</svg>
+			<div class="row align-items-center">
+				<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+					<input type="submit" class="searchD-btn" value="항공편 검색">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+			<label class="passport">여권 정보</label>
+		<div class="info-container">
+			<a href="home" class="index-btn">
+				01
+			</a>
+			<a href="" class="flight-btn">
+				02  
+			</a>
+			<a href="payment" class="payment-btn">
+				03  결제 
+			</a>		
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="container11">
+			<label class="departure">가는 편</label>
+			<div type="text" class="departureSel" id="departure_Sel" data-value="SEL">SEL</div>
+			<svg class="itinerary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+			    <g fill-rule="evenodd" transform="translate(0 5)">
+			        <path d="M8 5L8 0 16 5z"/>
+			        <rect width="14" height="1" y="4" rx=".5" transform="matrix(1 0 0 -1 0 9)"/>
+			    </g>
+			</svg>
+			<div type="text" class="departureTo" id="departure_To" data-value="SEL">TO</div>
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		<div class="container12">
+			<label class="arrival">오는 편</label>
+			<div type="text" class="arrivalTo" id="arrival_To" data-value="SEL">TO</div>
+			<svg class="itinerary2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+			    <g fill-rule="evenodd" transform="translate(0 5)">
+			        <path d="M8 5L8 0 16 5z"/>
+			        <rect width="14" height="1" y="4" rx=".5" transform="matrix(1 0 0 -1 0 9)"/>
+			    </g>
+			</svg>
+			<div type="text" class="arrivalSel" id="arrival_Sel" data-value="SEL">SEL</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="container13">
+			<label class="flightcost">항공 운송료</label>
+			<label class="cost1">운임</label>
+			<label class="costP1">572,300 원</label>
+			
+			<label class="cost2">유류할증료</label>
+			<label class="costP2">61,600 원</label>
+			
+			<label class="cost3">세금, 수수료 및 기타 요금</label>
+			<label class="costP3">70,700 원</label>
+		</div>
+		<div class="container17">
+			<label class="flightPayment">총액</label>
+			<label class="costP4">704,600 원</label>
+			
+			<svg class="m_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g id="Group 225">
+			<g id="Group 224">
+			<path id="Vector" d="M15.6017 20.501C16.825 20.501 19.7607 20.501 19.3938 15.6107C19.0268 10.7204 13.9895 7.08398 13.9895 7.08398H9.93451C9.93451 7.08398 4.89847 10.7204 4.5315 15.6107C4.16453 20.501 7.10028 20.501 8.32351 20.501C9.54674 20.501 14.3785 20.501 15.6017 20.501Z" stroke="#00256C" stroke-miterlimit="10"/>
+			<path id="Path" d="M11.9473 10.0392C11.8316 10.0411 11.7213 10.0887 11.6408 10.1718C11.5603 10.2548 11.5161 10.3665 11.518 10.4821V10.9528C10.6769 11.1367 9.9928 11.7461 9.9928 12.603C9.9928 13.6168 10.9002 14.3944 11.9543 14.3944C12.5912 14.3944 13.0432 14.8268 13.0432 15.3141C13.0432 15.8014 12.5912 16.232 11.9543 16.232C11.3173 16.232 10.8653 15.8014 10.8653 15.3141C10.8741 14.7248 9.98408 14.7248 9.9928 15.3141C9.9928 16.1719 10.676 16.7821 11.518 16.9651V17.4446C11.5093 18.033 12.3993 18.033 12.3906 17.4446V17.0558C13.2456 16.8762 13.9341 16.1849 13.9158 15.3158C13.9158 14.1547 13.1671 13.5244 11.9543 13.5244C11.3173 13.5244 10.8653 13.092 10.8653 12.6047C10.8653 12.1244 11.3069 11.7025 11.9298 11.6912C11.9464 11.6924 11.963 11.6927 11.9796 11.692C12.6026 11.7051 13.0432 12.1244 13.0432 12.6047C13.0345 13.1949 13.9245 13.1949 13.9158 12.6047C13.9158 11.7347 13.2456 11.0426 12.3906 10.863V10.4821C12.3925 10.364 12.3464 10.2503 12.2628 10.1668C12.1793 10.0834 12.0654 10.0373 11.9473 10.0392Z" fill="#00256C"/>
+			<path id="Vector_2" d="M13.9589 7.08499L16.058 4.09687C16.2329 3.84734 16.0592 3.5 15.7595 3.5H11.9308H11.9614H8.13269C7.833 3.5 7.6593 3.84734 7.83422 4.09687L9.93328 7.08499" stroke="#00256C" stroke-linejoin="round"/>
+			</g>
+			</g>
+			</svg>
+		</div>
+		
+	</div>
+	<label class="passenger">승객 정보</label>
+	<div class="container14">
+		<label class="helper7">예약 후 성명 변경은 <span class="blue">불가</span>하오니 <span class="blue">여권에 기재된 성명</span>을 정확히 확인하시기 바랍니다.</label>
+	</div>
+	<div class="wrapper">
+		<div class="container15">
+			<label class="adult">성인1</label>
+		</div>
+		<div class="container16">
+			<label class="lastname">승객 성</label>
+			<input type="text" class="lastname_text">
+			<label class="firstname">승객 이름</label>
+			<input type="text" class="firstname_text">
+			<label class="gender">성별</label>
+			<input type="text" class="gender_text">			
+			<label class="birth">생년월일(YYYY>MM.DD.)</label>
+			<input type="text" class="birth_text">
+			<label class="phone">휴대전화 번호</label>
+			<input type="text" class="phone_text">
+			<input type="submit" class="btn_confirm" value="확인">
+		</div>
+	</div>
+	<div id="SELModal" class="modal" style="display: none;">
+				<div class="modal-content" id="sel_modal">
+					<span class="close-btn">&times;</span>
+					<p class="DesF">출발지 검색</p>
+					<select name="" id="" class="form-control custom-select"
+						onclick="selectSel">
+						<option value="">도시, 공항</option>
+						<option value="ICN">ICN 서울/인천, 대한민국</option>
+						<option value="ATH">ATH 아테네, 그리스</option>
+						<option value="WLG">WLG 웰링턴, 뉴질랜드</option>
+						<option value="BER">BER 베를린/브란덴부크, 독일</option>
+						<option value="MLE">MLE 말레, 몰디브</option>
+						<option value="IAD">IAD 워싱턴/덜레스, 미국</option>
+						<option value="PEK">PEK 베이징/서우두</option>
+						<option value="HAN">HAN 하노이, 베트남</option>
+						<option value="SIN">SIN 싱가포르/창이, 싱가포르</option>
+						<option value="HND">HND 도쿄/하네다, 일본</option>
+					</select>
+		</div>
+			</div>
+			<div id="TOModal" class="modal" style="display: none;">
+				<div class="modal-content" id="to_modal">
+					<span class="close-btn2">&times;</span>
+					<p class="DesF">도착지 검색</p>
+					<select name="" id="" class="form-control custom-select"
+						onclick="selectTo">
+						<option value="">도시, 공항</option>
+						<option value="ICN">ICN 서울/인천, 대한민국</option>
+						<option value="ATH">ATH 아테네, 그리스</option>
+						<option value="WLG">WLG 웰링턴, 뉴질랜드</option>
+						<option value="BER">BER 베를린/브란덴부크, 독일</option>
+						<option value="MLE">MLE 말레, 몰디브</option>
+						<option value="IAD">IAD 워싱턴/덜레스, 미국</option>
+						<option value="PEK">PEK 베이징/서우두</option>
+						<option value="HAN">HAN 하노이, 베트남</option>
+						<option value="SIN">SIN 싱가포르/창이, 싱가포르</option>
+						<option value="HND">HND 도쿄/하네다, 일본</option>
+					</select>
+				</div>
+			</div>
+			<div id="PEOModal" class="modal" style="display: none;">
+				<div class="modal-content" id="peo_modal">
+					<span class="close-btn3">&times;</span>
+					<div class="passenger-selectArea">
+						<p class="PassFont">승객 선택</p>
+						<p class="adC">성인(12세~)</p>
+						<div>
+							<input type="text" class="adultCount" value="1"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+							<button type="button" class="btn_number minus">-</button>
+							<button type="button" class="btn_number plus">+</button>
+						</div>
+						<p class="chC">소아(만 2세 ~ 12세 미만)</p>
+						<div>
+							<input type="text" class="childCount" value="0"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+							<button type="button" class="btn_number minus">-</button>
+							<button type="button" class="btn_number plus">+</button>
+						</div>
+						<p class="inC">유아(만 2세 미만)</p>
+						<div>
+							<input type="text" class="infantCount" value="0"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+							<button type="button" class="btn_number minus">-</button>
+							<button type="button" class="btn_number plus">+</button>
+						</div>
+						<p class="T">※ 예약인원은 성인,소아, 유아를 포함하여 총 9명까지 선택 가능합니다.</p>
+					</div>
+				</div>
 
-        <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li class="has-children">
-            <a href="#">Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="elements.html">Elements</a></li>
-              <li><a href="#">Menu One</a></li>
-              <li class="has-children">
-                <a href="#">Menu Two</a>
-                <ul class="dropdown">
-                  <li><a href="#">Sub Menu One</a></li>
-                  <li><a href="#">Sub Menu Two</a></li>
-                  <li><a href="#">Sub Menu Three</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Menu Three</a></li>
-            </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="active"><a href="contact.html">Contact Us</a></li>
-        </ul>
-
-        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
-          <span></span>
-        </a>
-
-      </div>
-    </div>
-  </nav>
-
-
-  <div class="hero hero-inner">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mx-auto text-center">
-          <div class="intro-wrap">
-            <h1 class="mb-0">Contact Us</h1>
-            <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-  
-  <div class="untree_co-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <label class="text-black" for="fname">First name</label>
-                  <input type="text" class="form-control" id="fname">
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <label class="text-black" for="lname">Last name</label>
-                  <input type="text" class="form-control" id="lname">
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="text-black" for="email">Email address</label>
-              <input type="email" class="form-control" id="email">
-            </div>
-
-            <div class="form-group">
-              <label class="text-black" for="message">Message</label>
-              <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-        </div>
-        <div class="col-lg-5 ml-auto">
-          <div class="quick-contact-item d-flex align-items-center mb-4">
-            <span class="flaticon-house"></span>
-            <address class="text">
-              155 Market St #101, Paterson, NJ 07505, United States
-            </address>
-          </div>
-          <div class="quick-contact-item d-flex align-items-center mb-4">
-            <span class="flaticon-phone-call"></span>
-            <address class="text">
-              +1 202 2020 200
-            </address>
-          </div>
-          <div class="quick-contact-item d-flex align-items-center mb-4">
-            <span class="flaticon-mail"></span>
-            <address class="text">
-              @info@mydomain.com
-            </address>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="untree_co-section testimonial-section mt-5 bg-white">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-7 text-center">
-          <h2 class="section-title text-center mb-5">Testimonials</h2>
-
-          <div class="owl-single owl-carousel no-nav">
-            <div class="testimonial mx-auto">
-              <figure class="img-wrap">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <h3 class="name">Adam Aderson</h3>
-              <blockquote>
-                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-              </blockquote>
-            </div>
-
-            <div class="testimonial mx-auto">
-              <figure class="img-wrap">
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <h3 class="name">Lukas Devlin</h3>
-              <blockquote>
-                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-              </blockquote>
-            </div>
-
-            <div class="testimonial mx-auto">
-              <figure class="img-wrap">
-                <img src="images/person_4.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <h3 class="name">Kayla Bryant</h3>
-              <blockquote>
-                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-              </blockquote>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="site-footer">
-    <div class="inner first">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="widget">
-              <h3 class="heading">About Tour</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            </div>
-            <div class="widget">
-              <ul class="list-unstyled social">
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-dribbble"></span></a></li>
-                <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                <li><a href="#"><span class="icon-apple"></span></a></li>
-                <li><a href="#"><span class="icon-google"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2 pl-lg-5">
-            <div class="widget">
-              <h3 class="heading">Pages</h3>
-              <ul class="links list-unstyled">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2">
-            <div class="widget">
-              <h3 class="heading">Resources</h3>
-              <ul class="links list-unstyled">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="widget">
-              <h3 class="heading">Contact</h3>
-              <ul class="list-unstyled quick-info links">
-                <li class="email"><a href="#">mail@example.com</a></li>
-                <li class="phone"><a href="#">+1 222 212 3819</a></li>
-                <li class="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+			</div>
+			<div id="SEATModal" class="modal" style="display: none;">
+				<div class="modal-content" id="seat_modal">
+					<span class="close-btn4">&times;</span>
+					<p class="SeatF">좌석 등급 선택</p>
+					<div style="text-align: center">
+						<!-- Button 1 -->
+						<input type="button" class="GenBtn" value="일반석"
+							onclick="selectSeat('일반석')" />
 
 
+						<!-- Button 2 -->
+						<input type="button" class="PreBtn" value="프레스티지석"
+							onclick="selectSeat('프레스티지석')" />
 
-    <div class="inner dark">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-8 mb-3 mb-md-0 mx-auto">
-            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co" class="link-highlight">Untree.co</a> <!-- License information: https://untree.co/license/ --> Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a>
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
+						<!-- Button 3 -->
+						<input type="button" class="FirstBtn" value="일등석"
+							onclick="selectSeat('일등석')" />
+					</div>
+				</div>
+			</div>
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/moment.min.js"></script>
-  <script src="js/daterangepicker.js"></script>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.animateNumber.min.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/moment.min.js"></script>
+		<script src="js/daterangepicker.js"></script>
 
-  <script src="js/typed.js"></script>
-  
-  <script src="js/custom.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/custom.js"></script>
+		
 
+		<script src="js/flight.js"></script>
 </body>
 
 </html>

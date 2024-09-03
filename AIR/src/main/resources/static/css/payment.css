@@ -1,0 +1,537 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+.body {
+  background-color: #ffffff;
+  overflow-y: auto; /* 수직 스크롤 가능 */
+  overflow-x: hidden; /* 수평 스크롤 숨김 */
+}
+.header-container {
+  background-color: #FCE00C;
+  height: 8px;
+  width: 100%;
+}
+ .link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+  }
+  
+  .nav-arrow {
+    color: #fee014;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+.sub-nav {
+  align-items: center;
+  background-color: #FBFBFB;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  display: flex;
+  height: 62px;
+  justify-content: center;
+  margin-bottom: 56px;
+  width: 100%;  
+}
+
+.sub-item {  
+    
+  > .button {
+    color: #666666;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 24px 32px;
+    text-decoration: none;
+    
+    &:hover {
+    background-color: #02A7E0;
+    color: #F2F2F2;
+    cursor: pointer;
+    }
+  }
+}
+.route-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0;
+  max-width: 830px;
+  padding: 20px;
+  width: 100%;
+  
+  > .origin,
+  > .destination {
+    color: #666666;
+    flex: 0 0 150px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  > .destination {
+    text-align: right;
+  }
+  
+  > .icon {
+    color: #666666;
+    font-size: 32px;
+    transform: rotate(90deg);
+  }
+  
+  > .line {
+    background-color: #666666;
+    display: block;
+    height: 1px;
+    margin: 0 24px;
+    width: 100%;
+  }
+  
+}
+.search_btn2 {
+    transform: translate(1391px, -51px);
+    cursor: pointer;
+    border-color: #000000;
+    height: 2.7rem;
+    width: 230px;
+    border-radius: 1rem;
+}
+.submit-btn {
+    transform: translate(1352px, -52px);
+    cursor: pointer;
+    height: 2.2rem;
+    width: 38px;
+    border-color: #fff;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    border-width: 0 0 0px;
+}
+.faq-svg {
+    transform: translate(1368px, -134px);
+    cursor: pointer;
+    height: 1.5rem;
+    width: 42px;
+    top: 50%;
+    left: 50%;
+}
+.event-svg {
+    transform: translate(1347px, -134px);
+    cursor: pointer;
+    height: 1.5rem;
+    width: 42px;
+    top: 50%;
+    left: 50%;
+}
+.signUp-svg {
+    transform: translate(1572px, -134px);
+    cursor: pointer;
+    height: 1.5rem;
+    width: 42px;
+    top: 50%;
+    left: 50%;
+}
+
+.index-btn{
+	font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: #00256c;
+    transform: translate(1159px, 36px);
+    cursor: pointer;
+    height: 2.7rem;
+    width: 54px;
+    text-align: center;
+    border-bottom: 3.5px solid;
+    /* border-radius: 0rem; */
+}
+.flight-btn{
+	font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: #00256c;
+    transform: translate(1221px, 36px);
+    cursor: pointer;
+    height: 2.7rem;
+    width: 54px;
+    text-align: center;
+    border-bottom: 3.5px solid;
+    /* border-radius: 0rem; */
+}
+.payment-btn{
+	font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 0px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: #00256c;
+    transform: translate(1281px, 36px);
+    cursor: pointer;
+    height: 2.7rem;
+    width: 320px;
+    text-align: left;
+    border-bottom: 3.5px solid;
+    /* border-radius: 0rem; */
+}
+.passport{
+	font-size: 1.6rem;
+    font-weight: 730;
+    height: 4rem;
+    width: 11rem;
+    color: #00256c;
+    transform: translate(337px, 135px);
+}
+.info-container{
+	margin-top: 25px;
+    padding: 10px;
+    border-color: #000000;
+    max-width: 500px;
+    transform: translate(-183px, -33px);
+}
+.container11{
+	width: 939px;
+    height: 8rem;
+    background-color: #ffffff;
+    padding: 11px 353px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #bbb9b9;
+    border-width: thin;
+    transform: translate(317px, 116px);
+}
+.departure{
+	font-size: 1rem;
+    font-weight: 700;
+    height: 2rem;
+    width: 20rem;
+    color: #000000;
+    transform: translate(-447px, 7px);
+}
+.departureSel{
+	font-size: 1.2rem;
+    font-weight: 530;
+    height: 2rem;
+    width: 14rem;
+    color: #000000;
+    transform: translate(-195px, 20px);
+}
+.itinerary{
+	transform: translate(-55px, 22px);
+    width: 35px;
+}
+.departureTo {
+    font-size: 1.2rem;
+    font-weight: 530;
+    height: 2rem;
+    width: 14rem;
+    color: #000000;
+    transform: translate(38px, -1px);
+}
+
+.container12{
+	width: 939px;
+    height: 8rem;
+    background-color: #ffffff;
+    padding: 11px 353px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #bbb9b9;
+    border-width: thin;
+    transform: translate(317px, 116px);
+}
+.arrival{
+	font-size: 1rem;
+    font-weight: 700;
+    height: 2rem;
+    width: 20rem;
+    color: #000000;
+    transform: translate(-447px, 5px);
+}
+.arrivalTo{
+	font-size: 1.2rem;
+    font-weight: 530;
+    height: 2rem;
+    width: 14rem;
+    color: #000000;
+    transform: translate(-193px, 22px);
+}
+.itinerary2{
+	transform: translate(-55px, -9px);
+    width: 35px;
+}
+.arrivalSel {
+    font-size: 1.2rem;
+    font-weight: 530;
+    height: 2rem;
+    width: 14rem;
+    color: #000000;
+    transform: translate(35px, -31px);
+}
+.container13{
+	width: 24px;
+    height: 12rem;
+    background-color: #ffffff;
+    padding: 11px 141px;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: #bbb9b9;
+    border-width: 1.5px 0 1.5px;
+    transform: translate(1304px, -176px);
+    position: fixed;
+}
+.flightcost{
+	font-size: 1.1rem;
+    font-weight: 700;
+    height: 2rem;
+    width: 6rem;
+    color: #000000;
+    transform: translate(-138px, 23px);
+}
+.cost1{
+	font-size: 0.9rem;
+    font-weight: 450;
+    height: 2rem;
+    width: 3rem;
+    color: #000000;
+    transform: translate(-136px, 28px);
+}
+.costP1{
+	font-size: 0.9rem;
+    font-weight: 400;
+    height: 2rem;
+    width: 7rem;
+    color: #000000;
+    transform: translate(68px, -11px);
+}
+.cost2{
+	font-size: 0.9rem;
+    font-weight: 450;
+    height: 2rem;
+    width: 4rem;
+    color: #000000;
+    transform: translate(-136px, -20px);
+}
+.costP2{
+	font-size: 0.9rem;
+    font-weight: 400;
+    height: 2rem;
+    width: 7rem;
+    color: #000000;
+    transform: translate(78px, -61px);
+}
+.cost3{
+	font-size: 0.9rem;
+    font-weight: 450;
+    height: 2rem;
+    width: 10rem;
+    color: #000000;
+    transform: translate(-136px, -70px);
+}
+.costP3{
+	font-size: 0.9rem;
+    font-weight: 400;
+    height: 2rem;
+    width: 7rem;
+    color: #000000;
+    transform: translate(77px, -110px);
+}
+.passenger{
+	font-size: 1.6rem;
+    font-weight: 730;
+    height: 4rem;
+    width: 11rem;
+    color: #00256c;
+    transform: translate(321px, 155px);
+}
+.container14{
+	width: 940px;
+    height: 4rem;
+    background-color: #f8f9fc;
+    padding: 11px 141px;
+    border-radius: 10px;
+    border-style: solid;
+    border: thin;
+    border-color: #bbb9b9;
+    transform: translate(316px, 147px);
+}
+.helper7{
+	font-size: 1rem;
+    font-weight: 500;
+    height: 2rem;
+    color: #555;
+    transform: translate(-100px, 7px);
+    width: 547px;
+}
+.blue{
+	color:#0064de;
+}
+.container15{
+	width: 940px;
+    height: 5rem;
+    background-color: #00256c;
+    padding: 20px 141px;
+    border-radius: 10px;
+    border-style: solid;
+    border: thin;
+    border-color: #bbb9b9;
+    transform: translate(316px, 171px);
+}
+.adult{
+	font-size: 1.1rem;
+    font-weight: 700;
+    height: 2rem;
+    width: 6rem;
+    color: #ffffff;
+    transform: translate(-102px, 10px);
+}
+.container16{
+	width: 940px;
+    height: 36rem;
+    background-color: #ffffff;
+    padding: 17px 465px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #bbb9b9;
+    border-width: thin;
+    transform: translate(316px, 156px);
+    position: relative;
+    z-index: -1;
+}
+.lastname{
+	font-size: 0.9rem;
+    font-weight: 500;
+    height: 2rem;
+    color: #767676;
+    transform: translate(-429px, 37px);
+    width: 100px;
+}
+.lastname_text{
+	transform: translate(-429px, 19px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 1px;
+    height: 2.9rem;
+    width: 404px;
+    border-radius: 0rem;
+}
+
+.firstname{
+	font-size: 0.9rem;
+    font-weight: 500;
+    height: 2rem;
+    color: #767676;
+    transform: translate(23px, -49px);
+    width: 100px;
+}
+.firstname_text{
+	transform: translate(23px, -68px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 1px;
+    height: 2.9rem;
+    width: 404px;
+    border-radius: 0rem;
+}	
+.gender{
+	font-size: 0.9rem;
+    font-weight: 500;
+    height: 2rem;
+    color: #767676;
+    transform: translate(-429px, 37px);
+    width: 100px;
+}
+.gender_text{
+	transform: translate(-429px, 19px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 1px;
+    height: 2.9rem;
+    width: 404px;
+    border-radius: 0rem;
+}
+.birth{
+	font-size: 0.9rem;
+    font-weight: 500;
+    height: 2rem;
+    color: #767676;
+    transform: translate(23px, -49px);
+    width: 100px;
+}
+.birth_text{
+	transform: translate(23px, -68px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 1px;
+    height: 2.9rem;
+    width: 404px;
+    border-radius: 0rem;
+}	
+.phone{
+	font-size: 0.9rem;
+    font-weight: 500;
+    height: 2rem;
+    color: #767676;
+    transform: translate(-429px, 37px);
+    width: 100px;
+}
+.phone_text{
+	transform: translate(-429px, 19px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 1px;
+    height: 2.9rem;
+    width: 404px;
+    border-radius: 0rem;
+}
+.btn_confirm{
+	display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    height: 3.4rem;
+    border-radius: 1rem;
+    background: #c7f3ff;
+    border: 1px;
+    color: #00256c;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 165px;
+    transform: translate(200px, 44px);
+}
+.container17{
+	width: 24px;
+    height: 8rem;
+    background-color: #ffffff;
+    padding: 11px 141px;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: #bbb9b9;
+    border-width: 1.5px 0 1.5px;
+    transform: translate(1304px, 15px);
+    position: fixed;
+}
+.flightPayment{
+	font-size: 0.9rem;
+    font-weight: 450;
+    height: 2rem;
+    width: 3rem;
+    color: #000000;
+    transform: translate(-136px, 28px);
+}
+.costP4{
+	font-size: 0.9rem;
+    font-weight: 400;
+    height: 2rem;
+    width: 7rem;
+    color: #000000;
+    transform: translate(68px, -11px);
+}
+
+.m_svg{
+	transform: translate(10px, 10px);
+}

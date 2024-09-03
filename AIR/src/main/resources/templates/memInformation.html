@@ -38,6 +38,11 @@
 
 <link rel="stylesheet" href="css/login.css">
 
+<link rel="stylesheet" href="css/join.css">
+
+<link rel="stylesheet" href="css/memInformation.css">
+
+
 
 
 
@@ -141,7 +146,7 @@
 		<section>
 			<form action="">
 				<div class="search">
-					<input type="text" name="query" class="search_btn" value="">
+					<input type="text" name="query" class="search_btn1" value="">
 					<button type="submit" class="submit-btn">
 						<svg class="search-svg" xmlns="http://www.w3.org/2000/svg"
 							width="96" height="96" viewBox="0 0 96 96" fill="none">
@@ -180,38 +185,105 @@
 				d="M18.465 60.1532C18.3829 60.4303 18.3521 60.728 18.3521 61.0769V71.3296H45.2798C45.2798 71.3296 45.2946 72.7998 45.5198 74.1006C45.7775 75.5891 46.3998 76.8716 46.3998 76.8716H12.7998V60.9127C12.7998 60.3893 12.8716 59.363 13.0051 58.8396C14.0622 54.8678 16.669 51.3989 20.1686 49.336L45.3745 34.1058C48.5355 32.0532 49.9826 28.338 49.0487 24.6741C47.9403 20.3328 43.6811 17.5824 39.1244 18.3008C34.8037 18.9781 31.9095 22.4573 31.9095 26.9833C31.9095 31.0371 35.6965 34.701 37.9339 36.2199L39.1859 37.0718L37.6773 37.1436C34.6908 37.2668 31.889 36.3328 30.175 34.6394C27.0448 31.54 26.7883 28.4509 26.7883 25.803C26.7883 18.2495 33.9929 12.8819 40.4688 12.7998H40.6638C47.8992 12.7998 53.9236 18.2084 54.6625 25.372C55.2373 30.8729 52.6407 36.066 47.9095 38.9191L23.0525 54.211C20.7434 55.5759 19.1115 57.6799 18.465 60.1532ZM57.5768 47.6217C56.3003 48.4278 55.0911 49.3348 53.9602 50.3537H53.949C53.1316 49.8722 52.2807 49.3796 51.3737 48.8645C51.291 48.8192 51.0085 48.6586 50.6056 48.4297L50.6056 48.4297L50.6055 48.4297C49.318 47.6981 46.8007 46.2677 45.6409 45.6622C45.4841 45.5726 43.4463 44.5537 43.4463 44.5537L44.6779 44.6657C47.1525 44.8784 52.3366 45.5726 57.5768 47.6217ZM65.7841 60.9326H71.2675V65.7255H76.0604V71.2089H71.2675V76.0018H65.7841V71.2089H60.9912V65.7255H65.7841V60.9326ZM82.3471 54.6462C78.7423 51.0109 73.6448 48.8988 68.5269 48.9191C63.4091 48.8988 58.3014 51.0109 54.7067 54.6462C51.0714 58.251 48.9593 63.3485 48.9796 68.4664C48.9593 73.5842 51.0714 78.6919 54.7067 82.2866C58.3116 85.9218 63.4091 88.034 68.5269 88.0137C73.6448 88.034 78.7524 85.9218 82.3471 82.2866C85.9824 78.6817 88.0945 73.5842 88.0742 68.4664C88.0945 63.3485 85.9824 58.2409 82.3471 54.6462ZM68.5269 82.4592C60.7994 82.4592 54.5443 76.1939 54.5443 68.4765C54.5443 60.7592 60.8095 54.4939 68.5269 54.4939C76.2443 54.4939 82.5096 60.7592 82.5096 68.4765C82.5096 76.1939 76.2443 82.4592 68.5269 82.4592Z"
 				fill="#333333" />
 			</svg>
-		<div class="wrapper">
-			<div class="container6">
-			<label class="login_F">로그인</label>			
-			</div>
-		</div>
-		<div class="wrapper">
-			<div class="container7">
-				<label class="login_join-copy">
-				아직,<br>
-				대한항공 회원이<br>
-				아니세요?
-				</label>
-				<div class="login_join-subcopy">
-				회원으로 가입하시고<br>
-				마일리지 혜택을 누려 보세요.<br>
-				</div>
-				<a href="join" class="join-btn">
-					회원가입 
-				</a>
-				<div class="login_divider"></div>
-				<div class="login_id">아이디</div>
-				<input type="text" class="id_text">
-				<div class="login_password">비밀번호</div>
-				<input type="text" class="pass_text">
-				<a href="home" class="login_btn">
-					로그인 
-				</a>
-			</div>
+		<hr / class="line">
+		<div class="join-container">
+			<div class="joinMem">회원가입</div>
+			
+			<svg class="step1_svg" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+			    <g fill="none" fill-rule="evenodd">
+			        <path d="M0 0H24V24H0z" transform="translate(.5)"/>
+			        <g>
+			            <path fill="#00256C" d="M1 0h11c.552 0 1 .448 1 1v15c0 .552-.448 1-1 1H1c-.552 0-1-.448-1-1V1c0-.552.448-1 1-1z" transform="translate(.5) translate(5.5 3.5)"/>
+			            <path fill="#fff" d="M6.5 10v1H3v-1h3.5zm1.75-3v1H3V7h5.25zM10 4v1H3V4h7z" transform="translate(.5) translate(5.5 3.5)"/>
+			        </g>
+			    </g>
+			</svg>
+			<div class="step1">약관 동의</div>		
+			<svg class="arrow1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+			    <g fill="none" fill-rule="evenodd">
+			        <path d="M0 0h16v16H0z"/>
+			        <path stroke="#767676" d="M6 12.375l5-4.688L6 3"/>
+			    </g>
+			</svg>
+			
+			
+			<svg class="step2_svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			    <g fill="none" fill-rule="evenodd">
+			        <path d="M0 0H24V24H0z"/>
+			        <rect width="16" height="2" x="4" y="18" fill="#fff" rx="1"/>
+			        <path fill="#fff" d="M14.455 3L5 12.448 5 16 8.464 16 18 6.544z"/>
+			    </g>
+			</svg>
+			<div class="step2">회원정보 입력</div>
+			<svg class="arrow2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+			    <g fill="none" fill-rule="evenodd">
+			        <path d="M0 0h16v16H0z"/>
+			        <path stroke="#767676" d="M6 12.375l5-4.688L6 3"/>
+			    </g>
+			</svg>
+			
+			<svg class="step3-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			    <g fill="none" fill-rule="evenodd">
+			        <path d="M0 0H24V24H0z"/>
+			        <path stroke="#00256C" stroke-linecap="round" stroke-width="3" d="M19 8L10.572 16 6 11.748"/>
+			    </g>
+			</svg>
+			<div class="step3">완료</div>
 		</div>
 		
-
-				<script src="js/jquery-3.4.1.min.js"></script>
+		<div class="input">회원정보 입력</div>
+		<div class="inputT">
+		스카이패스 회원이 아닌 경우, 온라인 회원으로 가입하시면 스카이패스 회원으로도 별도 가입됩니다.<br>
+		스카이패스 및 온라인 회원 자격을 각각 유지하는 동안 회원의 개인정보는 별도의 개인정보처리시스템에 저장되어 관리 됩니다.
+		</div>
+		
+		<div class="wrapper">
+			<div class="container9"></div>
+				<div class="info-container">				
+					<label class="memInfor">회원정보 (필수)</label>
+					<label class="lastname">한글 성</label>
+					<input type="text" class="lastname_text">
+					<label class="firstname">한글 이름</label>
+					<input type="text" class="firstname_text">
+					<label class="englishFirstN">영문 성</label>
+					<label class="helper1">여권과 동일한 철자로 입력해 주세요(특수문자 제외).</label>
+					<input type="text" class="englishFirst_text">
+					<label class="englishLastN">영문 이름</label>
+					<label class="helper2">여권과 동일한 철자로 입력해 주세요(특수문자 제외).</label>
+					<input type="text" class="englishLast_text">
+					<label class="ID">아이디</label>
+					<label class="helper3">6~12자리 영문, 숫자로 입력</label>
+					<input type="text" class="ID_text">
+					
+					<label class="password">비밀번호</label>
+					<label class="helper4">영문+숫자+특수문자(@~!#$%^&*()\-=+,.?) 8자~20자 이내 입력 가능, 4자리 이상 동일 또는 연속된 숫자/문자열 입력 불가</label>
+					<input type="text" class="password_text">
+					
+					<label class="passwordConfirm">비밀번호 확인</label>
+					<input type="text" class="passwordConfirm_text">	
+					
+					<label class="birth">생년월일 (YYYY.MM.DD.)</label>
+					<input type="text" class="birth_text">				
+					
+					<label class="gender">성별</label>
+					<input type="radio" id="option1" class="option1" name="option" value="1">
+					<label class="label1" for="option1">남자</label></br>
+					
+					<input type="radio" id="option2" class="option2" name="option" value="2">
+					<label class="label2" for="option2">여자</label></br>
+					
+					<label class="email">이메일 주소 (예) daehan@koreanair.com</label>
+					<input type="text" class="email_text">
+					
+					<label class="phone">휴대전화 번호</label>
+					<input type="text" class="phone_text">
+					
+					<a href="join" class="btnCancel">이전</a>
+					<a href="" class="btnSubmit">확인</a>
+				</div>
+		</nav>
+		
+		<script src="js/jquery-3.4.1.min.js"></script>
 				<script src="js/popper.min.js"></script>
 				<script src="js/bootstrap.min.js"></script>
 				<script src="js/owl.carousel.min.js"></script>
@@ -227,6 +299,7 @@
 
 
 				<script src="js/flight.js"></script>
+				
+				<script src="js/join.js"></script>
 	</body>
-
 </html>

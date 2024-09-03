@@ -1,0 +1,529 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+.body {
+  background-color: #ffffff;
+  overflow-y: auto; /* 수직 스크롤 가능 */
+  overflow-x: hidden; /* 수평 스크롤 숨김 */
+}
+.header-container {
+  background-color: #FCE00C;
+  height: 8px;
+  width: 100%;
+}
+ .link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+  }
+  
+  .nav-arrow {
+    color: #fee014;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+.sub-nav {
+  align-items: center;
+  background-color: #FBFBFB;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  display: flex;
+  height: 62px;
+  justify-content: center;
+  margin-bottom: 56px;
+  width: 100%;  
+}
+
+.sub-item {  
+    
+  > .button {
+    color: #666666;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 24px 32px;
+    text-decoration: none;
+    
+    &:hover {
+    background-color: #02A7E0;
+    color: #F2F2F2;
+    cursor: pointer;
+    }
+  }
+}
+.route-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0;
+  max-width: 830px;
+  padding: 20px;
+  width: 100%;
+  
+  > .origin,
+  > .destination {
+    color: #666666;
+    flex: 0 0 150px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  > .destination {
+    text-align: right;
+  }
+  
+  > .icon {
+    color: #666666;
+    font-size: 32px;
+    transform: rotate(90deg);
+  }
+  
+  > .line {
+    background-color: #666666;
+    display: block;
+    height: 1px;
+    margin: 0 24px;
+    width: 100%;
+  }
+  
+}
+.search_btn1 {
+    transform: translate(1391px, -51px);
+    cursor: pointer;
+    border-color: #000000;
+    height: 2.7rem;
+    width: 230px;
+    border-radius: 1rem;
+}
+.submit-btn {
+    transform: translate(1352px, -52px);
+    cursor: pointer;
+    height: 2.2rem;
+    width: 38px;
+    border-color: #fff;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    border-width: 0 0 0px;
+}
+.faq-svg {
+    transform: translate(1368px, -134px);
+    cursor: pointer;
+    height: 1.5rem;
+    width: 42px;
+    top: 50%;
+    left: 50%;
+}
+.event-svg {
+    transform: translate(1347px, -134px);
+    cursor: pointer;
+    height: 1.5rem;
+    width: 42px;
+    top: 50%;
+    left: 50%;
+}
+.signUp-svg {
+    transform: translate(1572px, -134px);
+    cursor: pointer;
+    height: 1.5rem;
+    width: 42px;
+    top: 50%;
+    left: 50%;
+}
+.line{
+    transform: translate(0px, -83px);
+    color: #000000;
+}
+.joinMem{
+	font-size: 2.5rem;
+    font-weight: 400;
+    height: 4rem;
+    width: 9rem;
+    color: #000000;
+    transform: translate(337px, 3px);
+}
+
+.step1_svg{
+	background: #fff url(step-agree-active.svg) no-repeat center center;
+    background-size: 35px 628px;
+    border-radius: 2rem;
+    border: 1px solid #00256c;
+    background-color: #ecedf1;
+    transform: translate(658px, 50px);
+    width: 31px;
+    height: 31px;
+}
+.step1{
+	font-size: 0.9rem;
+    font-weight: 440;
+    height: 2rem;
+    width: 4rem;
+    color: #00256c;
+    transform: translate(729px, 24px);
+}
+.arrow1{
+    transform: translate(828px, -7px);
+}
+.step2_svg{
+	background: #00256c url(step-agree-active.svg) no-repeat center center;
+    background-size: 35px 628px;
+    border-radius: 2rem;
+    transform: translate(857px, -11px);
+    width: 30px;
+    height: 30px;
+}
+.step2{
+	font-size: 0.9rem;
+    font-weight: 700;
+    height: 2rem;
+    width: 5rem;
+    color: #00256c;
+    transform: translate(943px, -37px);
+}
+.arrow2{
+	transform: translate(1066px, -70px);
+}
+.step3-svg{
+	background: #fff url(step-agree-active.svg) no-repeat center center;
+    background-size: 35px 628px;
+    border-radius: 2rem;
+    border-color: #767676;
+    background-color: #ecedf1;
+    transform: translate(1105px, -75px);
+    width: 31px;
+    height: 31px;
+}
+.step3{
+	font-size: 0.9rem;
+    font-weight: 440;
+    height: 2rem;
+    width: 5rem;
+    color: #00256c;
+    transform: translate(1185px, -103px);
+}
+.input{
+	font-size: 1.6rem;
+    font-weight: 730;
+    height: 4rem;
+    width: 9rem;
+    color: #00256c;
+    transform: translate(337px, -108px);
+}
+.inputT{
+	font-size: 1rem;
+    font-weight: 440;
+    height: 2rem;
+    width: 50rem;
+    color: #555;
+    transform: translate(339px, -119px);
+}
+.container9{
+	width: 1260px;
+    height: 107rem;
+    background-color: #ffffff;
+    padding: 17px 587px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #bbb9b9;
+    border-width: thin;
+    transform: translate(331px, -61px);
+}
+.info-container{
+	margin-top: 25px;
+    padding: 10px;
+    border-color: #000000;
+    max-width: 500px;
+    transform: translate(-4px, -959px);
+}
+.join-container{
+	margin-top: 25px;
+    padding: 10px;
+    border-color: #000000;
+    max-width: 500px;
+    transform: translate(-15px, -53px);
+}
+.memInfor{
+	font-size: 17px;
+    font-weight: 750;
+    height: 2rem;
+    width: 20rem;
+    color: #000000;
+    transform: translate(376px, -789px);
+}
+.lastname{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(445px, -792px);
+    width: 100px;
+}
+.lastname_text{
+	transform: translate(769px, -805px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 2px;
+    height: 2.9rem;
+    width: 775px;
+    border-radius: 0rem;
+}
+.firstname{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(769px, -759px);
+    width: 100px;
+}
+.firstname_text{
+	transform: translate(769px, -763px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 2px;
+    height: 2.9rem;
+    width: 775px;
+    border-radius: 0rem;
+}
+.englishFirstN{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(769px, -714px);
+    width: 100px;
+}
+.helper1{
+	font-size: 0.9rem;
+    font-weight: 600;
+    height: 2rem;
+    color: #00256c;
+    transform: translate(666px, -690px);
+    width: 297px;
+}
+.englishFirst_text{
+	transform: translate(769px, -693px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 2px;
+    height: 2.9rem;
+    width: 775px;
+    border-radius: 0rem;
+}
+
+.englishLastN{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(769px, -642px);
+    width: 100px;
+}
+.helper2{
+	font-size: 0.9rem;
+    font-weight: 600;
+    height: 2rem;
+    color: #00256c;
+    transform: translate(666px, -619px);
+    width: 297px;
+}
+.englishLast_text{
+	transform: translate(769px, -622px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 2px;
+    height: 2.9rem;
+    width: 775px;
+    border-radius: 0rem;
+}
+.ID{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(769px, -565px);
+    width: 100px;
+}
+.helper3{
+	font-size: 0.9rem;
+    font-weight: 600;
+    height: 2rem;
+    color: #00256c;
+    transform: translate(666px, -544px);
+    width: 297px;
+}
+.ID_text{
+	transform: translate(769px, -541px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 2px;
+    height: 2.9rem;
+    width: 775px;
+    border-radius: 0rem;
+}
+
+.password{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(769px, -482px);
+    width: 100px;
+}
+.helper4{
+	font-size: 0.9rem;
+    font-weight: 600;
+    height: 2rem;
+    color: #00256c;
+    transform: translate(769px, -499px);
+    width: 803px;
+}
+.password_text{
+	transform: translate(769px, -493px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 2px;
+    height: 2.9rem;
+    width: 775px;
+    border-radius: 0rem;
+}
+.passwordConfirm{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(769px, -444px);
+    width: 100px;
+}
+.passwordConfirm_text{
+	transform: translate(769px, -439px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 2px;
+    height: 2.9rem;
+    width: 775px;
+    border-radius: 0rem;
+}
+.birth{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(769px, -386px);
+    width: 167px;
+}
+.birth_text{
+	transform: translate(769px, -380px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 2px;
+    height: 2.9rem;
+    width: 775px;
+    border-radius: 0rem;
+}
+.gender{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(769px, -320px);
+    width: 167px;
+}
+#option1{
+	transform: translate(599px, -266px);
+    position: fixed;
+    height: 1rem;
+    border-radius: 1.8rem;
+    border: 1px solid #00256c;
+}
+.label1{
+	transform: translate(625px, -268px);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 0rem;
+    line-height: 1.5;
+    color: #767676;
+}
+
+#option2{
+	transform: translate(973px, -306px);
+    position: fixed;
+    height: 1rem;
+    border-radius: 1.8rem;
+    border: 1px solid #00256c;
+}
+.label2{
+	transform: translate(1002px, -308px);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 0rem;
+    line-height: 1.5;
+    color: #767676;
+}
+
+.email{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(769px, -271px);
+    width: 264px;
+}
+.email_text{
+	transform: translate(769px, -275px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 2px;
+    height: 2.9rem;
+    width: 775px;
+    border-radius: 0rem;
+}
+
+.phone{
+	font-size: 0.9rem;
+    font-weight: 650;
+    height: 2rem;
+    color: #767676;
+    transform: translate(769px, -231px);
+    width: 264px;
+}
+.phone_text{
+	transform: translate(769px, -231px);
+    cursor: pointer;
+    border-color: #000000;
+    border-width: 0 0 2px;
+    height: 2.9rem;
+    width: 775px;
+    border-radius: 0rem;
+}
+.btnCancel{
+	display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    height: 3.5rem;
+    border-radius: 1rem;
+    background: #fff;
+    color: #00256c;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 1px solid #00256c;
+    cursor: pointer;
+    width: 217px;
+    transform: translate(735px, -75px);
+}
+.btnSubmit{
+	display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    height: 3.5rem;
+    border-radius: 1rem;
+    background: #00256c;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 217px;
+    transform: translate(971px, -131px);
+}

@@ -236,7 +236,7 @@
     transform: translate(393px, -468px);
  }
  .checkbox3{
-	transform: translate(360px, -371px);
+	transform: translate(360px, -437px);
     width: 1.2rem;
     height: 1.8rem;
     border: 1px solid #00256c;
@@ -254,21 +254,21 @@
     border-style: solid;
     border-color: #bbb9b9;
     border-width: thin;
-    transform: translate(331px, -388px);
+    transform: translate(331px, -490px);
     border-radius: 0rem;
     z-index: 0;
     position: relative;
  }
  .container8-3T{
 	font-size: 1rem;
-    font-weight: 650;
+    font-weight: 400;
     height: 2rem;
     width: 20rem;
     color: #000000;
-    transform: translate(393px, -402px);
+    transform: translate(393px, -534px);
  }
  .checkbox4{
-	transform: translate(360px, -371px);
+	transform: translate(360px, -503px);
     width: 1.2rem;
     height: 1.8rem;
     border: 1px solid #00256c;
@@ -286,21 +286,21 @@
     border-style: solid;
     border-color: #bbb9b9;
     border-width: thin;
-    transform: translate(331px, -388px);
+    transform: translate(331px, -557px);
     border-radius: 0rem;
     z-index: 0;
     position: relative;
  }
  .container8-4T{
 	font-size: 1rem;
-    font-weight: 650;
+    font-weight: 400;
     height: 2rem;
     width: 20rem;
     color: #000000;
-    transform: translate(393px, -402px);
+    transform: translate(393px, -601px);
  }
  .checkbox5{
-	transform: translate(360px, -371px);
+	transform: translate(360px, -571px);
     width: 1.2rem;
     height: 1.8rem;
     border: 1px solid #00256c;
@@ -318,21 +318,21 @@
     border-style: solid;
     border-color: #bbb9b9;
     border-width: thin;
-    transform: translate(331px, -388px);
+    transform: translate(331px, -624px);
     border-radius: 0rem;
     z-index: 0;
     position: relative;
  }
  .container8-5T{
 	font-size: 1rem;
-    font-weight: 650;
+    font-weight: 400;
     height: 2rem;
     width: 20rem;
     color: #000000;
-    transform: translate(393px, -402px);
+    transform: translate(393px, -667px);
  }
  .checkbox6-1{
-	transform: translate(360px, -371px);
+	transform: translate(360px, -638px);
     width: 1.2rem;
     height: 1.8rem;
     border: 1px solid #00256c;
@@ -343,14 +343,14 @@
 }
 .container8_6-1T{
 	font-size: 1rem;
-    font-weight: 650;
+    font-weight: 400;
     height: 2rem;
     width: 20rem;
     color: #000000;
-    transform: translate(393px, -402px);
+    transform: translate(393px, -668px);
  }
 .checkbox6-2{
-	transform: translate(360px, -371px);
+	transform: translate(530px, -704px);
     width: 1.2rem;
     height: 1.8rem;
     border: 1px solid #00256c;
@@ -361,9 +361,42 @@
 }
 .container8_6-2T{
 	font-size: 1rem;
-    font-weight: 650;
+    font-weight: 400;
     height: 2rem;
     width: 20rem;
     color: #000000;
-    transform: translate(393px, -402px);
+    transform: translate(563px, -734px);
  }
+ .btnCancel{
+ 	display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    height: 3.5rem;
+    border-radius: 1rem;
+    background: #fff;
+    color: #00256c;
+    font-size: 1.1rem;
+    font-weight: 700;    
+    border: 1px solid #00256c;
+    cursor: pointer;
+    width: 217px;	
+    transform: translate(735px, -675px);
+ }
+.btnSubmit{
+	display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    height: 3.5rem;
+    border-radius: 1rem;
+    background: #00256c;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 217px;
+    transform: translate(971px, -731px);
+}
+.btnSubmit:hover{
+	background: #00256c;
+    color: #fff;
+}
