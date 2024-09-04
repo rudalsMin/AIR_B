@@ -370,24 +370,88 @@
 	<div class="container14">
 		<label class="helper7">예약 후 성명 변경은 <span class="blue">불가</span>하오니 <span class="blue">여권에 기재된 성명</span>을 정확히 확인하시기 바랍니다.</label>
 	</div>
-	<div class="wrapper">
-		<div class="container15">
-			<label class="adult">성인1</label>
+<!-- 	<div class="wrapper">
+ -->    <div class="container15">
+			<svg class="svg15" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			    <g fill="none" fill-rule="evenodd">
+			        <path d="M0 0h24v24H0z"/>
+			        <path stroke="#fff" stroke-linecap="round" stroke-width="1.5" d="M18 15l-6-6-6 6"/>
+			    </g>
+			</svg>
+	        <label class="adult">성인1</label>
+    </div>
+    <div class="container16">
+        <label class="lastname">승객 성</label>
+        <input type="text" class="lastname_text" placeholder="예) KIM">
+        <label class="firstname">승객 이름</label>
+        <input type="text" class="firstname_text" placeholder="예) DAEHAN">
+        <label class="gender">성별</label>
+        <select name="" id="" class="gender_text" onclick="selectSel">
+        	<option value="">선택</option>
+        	<option value="">여성(F)</option>
+        	<option value="">남성(M)</option>
+        </select>
+        <label class="birth">생년월일(YYYY>MM.DD.)</label>
+        <input type="text" class="birth_text">
+        <label class="phone">휴대전화 번호</label>
+        <input type="text" class="phone_text">
+        <input type="submit" class="btn_confirm" value="확인">
+    </div>
+		<a href="" class="seatAssign">좌석 배정</a>
+		<svg class="seat_svg" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+		    <g fill="none" fill-rule="evenodd">
+		        <path d="M0 0H72V72H0z"/>
+		        <g>
+		            <path fill="#A9EAFC" d="M0 2.25v12.878c0 .828.672 1.5 1.5 1.5.398 0 .78-.158 1.06-.44L15.44 3.312c.585-.586.585-1.536 0-2.122-.282-.281-.664-.439-1.061-.439H1.5C.672.75 0 1.422 0 2.25z" transform="translate(12 11.25)"/>
+		            <path stroke="#00256C" stroke-width="3" d="M7.557 5.25h5.425c1.22 0 2.319.739 2.779 1.869l7.934 19.49h0H8.382L4.622 8.872c-.343-1.62.692-3.213 2.313-3.557.205-.043.413-.065.622-.065z" transform="translate(12 11.25)"/>
+		            <path fill="#FFF" stroke="#00256C" stroke-linejoin="round" stroke-width="3" d="M8.27 26.25H39c1.657 0 3 1.343 3 3v3h4.5l-9.621 9.621c-.563.563-1.326.879-2.122.879H13.87c-1.443 0-2.681-1.027-2.948-2.444L8.27 26.25h0z" transform="translate(12 11.25)"/>
+		            <path fill="#FFF" d="M46.167 26.25l1.27 1.269H48v.563l.289.29-.29.287.001 15.36h-4.5V33.147l-6.894 6.876-2.122-2.122L43.5 28.91l.001-1.39 1.394-.001 1.273-1.269z" transform="translate(12 11.25)"/>
+		            <path stroke="#00256C" stroke-linecap="round" stroke-width="3" d="M11.25 48.75L38.25 48.75" transform="translate(12 11.25)"/>
+		        </g>
+		    </g>
+		</svg>
+		<label class="agreement">확인 및 동의</label>
+		<div class="container18">
+			<input type="button" value="동의" class="helper8">
+			<svg class="btn_svg1" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g id="Icon/Common/24x24/Check/Blue">
+			<path id="Shape" d="M9.66667 1.33325L4.04829 6.66659L1 3.83177" stroke="#767676" stroke-width="2" stroke-linecap="round"/>
+			</g>
+			</svg>
+			<label class="helper8-1">
+				[필수]<span class="link1">운송약관</span>, 운임 규정, 수하물 규정을 확인하였으며 이에 동의합니다.
+			</label>
+			<label class="helper8-2">
+			대한항공 항공권을 구매하시는 것은 본 항공사와 운송계약 체결에 동의하는 것으로 운임규정은 항공권 변경, 취소 등에 따른 수수료와 사전좌석배정, 좌석승급 등<br>
+			구매하는 항공권 운임에 적용되는 세부 조건을 기재하고 있으며, 운송 약관은 운송 계약 체결에 따른 계약조건을 명시합니다.<br>
+			대한항공은 '항공교통이용자 보호기준'에 따라 <span class="link2">항공교통이용자 서비스 계획</span>을 게시합니다.
+			</label>
+			<hr class="line1">
+			<input type="button" value="동의" class="helper9">
+			<svg class="btn_svg2" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g id="Icon/Common/24x24/Check/Blue">
+			<path id="Shape" d="M9.66667 1.33325L4.04829 6.66659L1 3.83177" stroke="#767676" stroke-width="2" stroke-linecap="round"/>
+			</g>
+			</svg>
+			<label class="helper9-1">
+				[필수]위험품 안내를 확인하였습니다. 
+			</label>
+			<label class="helper9-2">
+				고객 안전을 위하여 항공기 내부로 반입이 금지된 폭발성, 인화성, 유독성 물질 및 무기로 사용될 수 있는 품목에 대한 안내 사항 입니다. 
+			</label>
 		</div>
-		<div class="container16">
-			<label class="lastname">승객 성</label>
-			<input type="text" class="lastname_text">
-			<label class="firstname">승객 이름</label>
-			<input type="text" class="firstname_text">
-			<label class="gender">성별</label>
-			<input type="text" class="gender_text">			
-			<label class="birth">생년월일(YYYY>MM.DD.)</label>
-			<input type="text" class="birth_text">
-			<label class="phone">휴대전화 번호</label>
-			<input type="text" class="phone_text">
-			<input type="submit" class="btn_confirm" value="확인">
+		
+		<div class="blank"></div>
+		
+		<div class="container5">
+			<label class="total">최종 결제 금액</label>
+			<label class="totalN">704,600 원</label>
+			<a href="" class="payment">결제하기</a>
 		</div>
-	</div>
+
+	
+	
+	
 	<div id="SELModal" class="modal" style="display: none;">
 				<div class="modal-content" id="sel_modal">
 					<span class="close-btn">&times;</span>
@@ -497,6 +561,8 @@
 		
 
 		<script src="js/flight.js"></script>
+
+		<script src="js/payment.js"></script>
 </body>
 
 </html>
