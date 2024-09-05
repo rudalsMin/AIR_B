@@ -55,4 +55,9 @@ public class AirController {
 		
 		return "/nonM";
 	}
+	@GetMapping("seatAssign")
+	public String seatAssign() {
+		
+		return "/seatAssign";
+	}
 }
