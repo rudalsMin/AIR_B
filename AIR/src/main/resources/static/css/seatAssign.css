@@ -80,7 +80,72 @@ body {
     font-weight: 700;
 }
 .deparT{
-	
+	transform: translate(-401px, -60px);
+    position: absolute;
+    z-index: 10;
+    color: #000000;
+    font-size: 21.4px;
+    font-weight: 700;
+}
+.arriT{
+	transform: translate(-310px, -60px);
+    position: absolute;
+    z-index: 10;
+    color: #000000;
+    font-size: 21.4px;
+    font-weight: 700;
+}
+.icon{
+	transform: translate(-348px, -57px);
+    position: absolute;
+}
+.before_btn{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border-radius: 1rem;
+    color: #767676;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: right;
+    width: 132px;
+    padding: 5px 0px;
+    transform: translate(451px, -102px);
+    position: fixed;
+    z-index: 5;
+    text-decoration: none;
+}
+.before_svg{
+    transform: translate(431px, -63px);
+}
+.v-line1{
+	border-left: 2.4px solid #DCDCDC;
+    height: 13px;
+    position: absolute;
+    transform: translate(582px, -85px);
+}
+.next_btn{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border-radius: 1rem;
+    color: #00256c;
+    font-size: 1.1rem;
+    font-weight: 645;
+    cursor: pointer;
+    text-align: left;
+    width: 121px;
+    transform: translate(594px, -102px);
+    padding: 6px 0px;
+    position: fixed;
+    z-index: 5;
+    text-decoration: none;
+}
+.next_svg{
+	transform: translate(640px, -63px);
 }
 .seatHeader{
     transform: translate(-587px, -19px);
@@ -94,16 +159,98 @@ body {
 
 
 .line1{
-    transform: translate(-587px, -53px);
+    transform: translate(-587px, -58px);
     width: 1331px;
     border: 0px;
     border-top: 0.1px dashed #dcdcdc;
+    position: absolute;
+}
+.flightN{
+	transform: translate(-47px, 18px);
+    position: absolute;
+    z-index: 10;
+    color: #00256c;
+    font-size: 18px;
+    font-weight: 700;
+}
+.flightNum{
+	transform: translate(54px, 19px);
+    position: absolute;
+    z-index: 10;
+    color: #555;
+    font-size: 16px;
+    font-weight: 340;
+    text-decoration: underline;
+}
+.v-line2{
+	border-left: 2.4px solid #DCDCDC;
+    height: 13px;
+    position: absolute;
+    transform: translate(107px, -10px);
+}
+.dateTime{
+	transform: translate(45px, -10px);
+    position: absolute;
+    z-index: 10;
+    color: #555;
+    font-size: 16px;
+    font-weight: 340;
+}
+.depar{
+	display: flex;
+    align-items: center;
+    height: 5.2rem;
+    width: 132px;
+    border-radius: 2rem;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    max-width: 41%;
+    transform: translate(-328px, 3px);
+    position: fixed;
+}
+.airline_svg1{
+    transform: translate(-98px, 56px);
+}
+.air_line1{
+	transform: translate(-1px, 33px);
+	width: 100px;
+    border: 0px;
+    border-top: 3px dotted #c7f3ff;
+    position: absolute;	
+}
+.airline_svg2{
+    transform: translate(98px, 56px);
+}
+.air_line2{
+	transform: translate(117px, 33px);
+	width: 100px;
+    border: 0px;
+    border-top: 3px dotted #c7f3ff;
+    position: absolute;	
+}
+
+.center_svg{
+	text-align: center;
+    transform: translate(0, 56px);
+}
+.arri{
+	display: flex;
+    align-items: center;
+    height: 5.2rem;
+    width: 132px;
+    border-radius: 2rem;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translate(413px, 4px);
 }
 .plane-container {
   width: 45rem;
   min-height: 56rem;
   background-color: transparent;
-  position: relative;
 }
 
 .plane {
@@ -113,7 +260,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    transform: translate(844px, -61px);
+    transform: translate(235px, 43px);
     margin: 0 auto;
     background-color: #eeeeeeee;
     display: flex;
@@ -177,7 +324,7 @@ body {
     background-image: #f6f6f6;
     width: 2rem;
     height: 2rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeee;
 	transform: translate(-85px, 10px);
 }
 .seat-mapB{
@@ -188,7 +335,7 @@ body {
     background-image: #f6f6f6;
     width: 2rem;
     height: 2rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeee;
     transform: translate(-78px, 10px);
 }
 .seat-mapC{
@@ -199,7 +346,7 @@ body {
     background-image: #f6f6f6;
     width: 2rem;
     height: 2rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeee;
     transform: translate(-70px, 10px);
 }
 .seat-mapD{
@@ -210,7 +357,7 @@ body {
     background-image: #f6f6f6;
     width: 2rem;
     height: 2rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeee;
     transform: translate(-13px, 10px);
 }
 .seat-mapE{
@@ -221,7 +368,7 @@ body {
     background-image: #f6f6f6;
     width: 2rem;
     height: 2rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeee;
     transform: translate(-5px, 10px);
 }
 .seat-mapF{
@@ -232,7 +379,7 @@ body {
     background-image: #f6f6f6;
     width: 2rem;
     height: 2rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeee;
     transform: translate(4px, 10px);
 }
 .seat-mapG{
@@ -243,7 +390,7 @@ body {
     background-image: #f6f6f6;
     width: 2rem;
     height: 2rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeee;
     transform: translate(10px, 10px);
 }
 .seat-mapH{
@@ -254,7 +401,7 @@ body {
     background-image: #f6f6f6;
     width: 2rem;
     height: 2rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeee;
     transform: translate(66px, 10px);
 }
 .seat-mapJ{
@@ -265,7 +412,7 @@ body {
     background-image: #f6f6f6;
     width: 2rem;
     height: 2rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeee;
     transform: translate(75px, 10px);
 }
 .seat-mapK{
@@ -276,7 +423,7 @@ body {
     background-image: #f6f6f6;
     width: 2rem;
     height: 2rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeee;
     transform: translate(81px, 10px);
 }
 
@@ -319,14 +466,39 @@ body {
 }
 
 .seat {
-  background-color: #00256c;
+	background-color: #00256c;
     width: 2.5rem;
     height: 2.5rem;
-    border: 2px solid #fff;
+    border: 2px solid #eeeeeeee;
     transform: translate(-4px, -2px);
     cursor: pointer;
     
 }
+.seatG{
+	background-color: #00256c;
+    width: 29px;
+    height: 29px;
+    border: 2px solid #eeeeeeee;
+    transform: translate(-85px, 43px);
+    cursor: pointer;
+}
+.seat.selectedG{
+	background-color: #00256c;
+    width: 29px;
+    height: 29px;
+    border: 2px solid #eeeeeeee;
+    transform: translate(28px, 45px);
+    cursor: pointer;
+}
+.seat.occupiedG{
+	background-color: #eeeeee;
+    width: 29px;
+    height: 29px;
+    border: 2px solid #eeeeeeee;
+    transform: translate(-143px, 140px);
+    cursor: pointer;
+}
+
 
 .selected {
   background-color: #5cb85c;
@@ -350,18 +522,21 @@ body {
 }
 
 .state {
-  position: absolute;
-  top: 25rem;
-  right: 12%;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  transform: translate(-1116px, 10px);
-  width: 20rem;
-  height: 12rem;
-  padding: 2rem 0;
+    position: fixed;
+    top: 25rem;
+    right: 12%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(-1078px, -197px);
+    border: 1px solid #d9dbe1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    width: 20rem;
+    height: 31rem;
+    padding: 2rem 0;
 }
 
 .showcase {
@@ -371,6 +546,58 @@ body {
   list-style: none;
   width: 100%;
   padding: 0;
+}
+.seat_guide{
+	transform: translate(-115px, -64px);
+    position: absolute;
+    z-index: 10;
+    color: #000000;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: left;
+    padding: 24px 22px;
+    width: 318px;
+    height: 70px;
+    background-color: #F0F8FF;
+    border: 1px solid #f8f9fc;
+    border-radius: 17px 17px 0 0;
+}
+.seatT{
+	transform: translate(-53px, 22px);
+	position: absolute;
+}
+.selectedT{
+	transform: translate(44px, 54px);
+	position: absolute;
+}
+.occupiedT{
+	transform: translate(-125px, 147px);
+	position: absolute;
+}
+.information{
+	transform: translate(0, -22px);
+    text-align: center;
+}
+.line2{
+	transform: translate(0, 87px);
+    width: 253px;
+    border: 0px;
+    border-top: 0.25px dashed #d9dbe1;
+    text-align: center;
+}
+.toiletS{
+	transform: translate(-113px, 55px);
+}
+.toiletT{
+	transform: translate(-64px, 262px);
+    position: absolute;
+}
+.galleyS{
+	transform: translate(28px, -37px);
+}
+.galleyT{
+	transform: translate(71px, 262px);
+    position: absolute;
 }
 .showcase li {
   text-align: center;
