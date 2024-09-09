@@ -1,0 +1,43 @@
+.before_btn{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border-radius: 1rem;
+    color: #00256c;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: right;
+    width: 132px;
+    padding: 5px 0px;
+    transform: translate(451px, -102px);
+    position: fixed;
+    z-index: 5;
+    text-decoration: none;
+}
+.before_svg{
+    transform: translate(431px, -63px);
+}
+
+.next_btn{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border-radius: 1rem;
+    color: #767676;
+    font-size: 1.1rem;
+    font-weight: 645;
+    cursor: pointer;
+    text-align: left;
+    width: 121px;
+    transform: translate(594px, -102px);
+    padding: 6px 0px;
+    position: fixed;
+    z-index: 5;
+    text-decoration: none;
+}
+.next_svg{
+	transform: translate(640px, -63px);
+}
