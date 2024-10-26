@@ -5,7 +5,7 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */ -->
 <!doctype html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="utf-8">
 <meta name="viewport"
@@ -80,7 +80,7 @@
 		<div class="site-mobile-menu-body"></div>
 	</div>
 
-	<nav class="site-nav">
+	<nav class="site-navD">
 		<div class="container">
 			<div class="site-navigation">
 				<a href="index.html" class="logo m-0"><span class="text-primary"></span></a>
@@ -98,7 +98,7 @@
 					</ul>
 					<div class="row align-items-center">
 						<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-							<a href="login" class="btn btn-login btn-block">로그인</a>
+							<a href="login" class="btn btn-login btn-block">로그인</a> 
 						</div>
 
 						<a href="#"
@@ -138,6 +138,11 @@
 			</div>
 		</div>
 		<div class="gnb-new_group">
+			<button type="button" id="gnb-new_nav" class="gnb-book_button">예약</button>
+			<button type="button" id="gnb-new_nav" class="gnb-travel_button">여행
+				준비</button>
+			<button type="button" id="gnb-new_nav" class="gnb-skypass_button">스카이패스</button>
+		</div>		<div class="gnb-new_group">
 			<button type="button" id="gnb-new_nav" class="gnb-book_button">예약</button>
 			<button type="button" id="gnb-new_nav" class="gnb-travel_button">여행
 				준비</button>
@@ -237,50 +242,59 @@
 		스카이패스 및 온라인 회원 자격을 각각 유지하는 동안 회원의 개인정보는 별도의 개인정보처리시스템에 저장되어 관리 됩니다.
 		</div>
 		
+		<form action="/passengers/register" th:object="${Passengers}" method="post">
 		<div class="wrapper">
 			<div class="container9"></div>
 				<div class="info-container">				
 					<label class="memInfor">회원정보 (필수)</label>
-					<label class="lastname">한글 성</label>
-					<input type="text" class="lastname_text">
-					<label class="firstname">한글 이름</label>
-					<input type="text" class="firstname_text">
-					<label class="englishFirstN">영문 성</label>
+					<label class="last_name">한글 성</label>
+					<input type="text" id="last_name" name="last_name" th:field="*{last_name}" class="lastname_text" >
+					
+					<label class="first_name">한글 이름</label>
+					<input type="text" id="first_name" name="first_name" th:field="*{first_name}" class="firstname_text">
+					
+					<label class="english_first_name">영문 이름</label>
 					<label class="helper1">여권과 동일한 철자로 입력해 주세요(특수문자 제외).</label>
-					<input type="text" class="englishFirst_text">
-					<label class="englishLastN">영문 이름</label>
+					<input type="text" id="english_first_name" name="english_first_name" th:field="*{english_first_name}" class="englishFirst_text">
+					
+					<label class="english_last_name">영문 성</label>
 					<label class="helper2">여권과 동일한 철자로 입력해 주세요(특수문자 제외).</label>
-					<input type="text" class="englishLast_text">
-					<label class="ID">아이디</label>
+					<input type="text" id="english_last_name" name="english_last_name" th:field="*{english_last_name}" class="englishLast_text">
+					
+					<label class="id">아이디</label>
 					<label class="helper3">6~12자리 영문, 숫자로 입력</label>
-					<input type="text" class="ID_text">
+					<input type="text" id="id" name="id" th:field="*{id}" class="ID_text">
 					
 					<label class="password">비밀번호</label>
 					<label class="helper4">영문+숫자+특수문자(@~!#$%^&*()\-=+,.?) 8자~20자 이내 입력 가능, 4자리 이상 동일 또는 연속된 숫자/문자열 입력 불가</label>
-					<input type="text" class="password_text">
+					<input type="text" id="password" name="password" th:field="*{password}" class="password_text" >
 					
-					<label class="passwordConfirm">비밀번호 확인</label>
-					<input type="text" class="passwordConfirm_text">	
+					<label class="confirm_password">비밀번호 확인</label>
+					<input type="text" id="confirm_password" name="confirm_password" th:field="*{confirm_password}" class="passwordConfirm_text">	
 					
 					<label class="birth">생년월일 (YYYY.MM.DD.)</label>
-					<input type="text" class="birth_text">				
+					<input type="date" id="birth" name="birth" th:field="*{birth}" class="birth_text">				
 					
 					<label class="gender">성별</label>
-					<input type="radio" id="option1" class="option1" name="option" value="1">
+					<input type="radio" id="option1" class="option1" name="gender" value="남자">
 					<label class="label1" for="option1">남자</label></br>
 					
-					<input type="radio" id="option2" class="option2" name="option" value="2">
+					<input type="radio" id="option2" class="option2" name="gender" value="여자">
 					<label class="label2" for="option2">여자</label></br>
 					
 					<label class="email">이메일 주소 (예) daehan@koreanair.com</label>
-					<input type="text" class="email_text">
+					<input type="text" id="email" name="email" th:field="*{email}" class="email_text" >
 					
-					<label class="phone">휴대전화 번호</label>
-					<input type="text" class="phone_text">
+					<label class="phone_number">휴대전화 번호</label>
+					<input type="text" id="phone_number" name="phone_number" th:field="*{phone_number}" class="phone_text">
+					
+					<input type="hidden" value="wo" th:field=*{gender}>
 					
 					<a href="join" class="btnCancel">이전</a>
-					<a href="" class="btnSubmit">확인</a>
+					<button type="submit" class="btnSubmit">확인</button>
 				</div>
+			</div>
+		</form>
 		</nav>
 		
 		<script src="js/jquery-3.4.1.min.js"></script>

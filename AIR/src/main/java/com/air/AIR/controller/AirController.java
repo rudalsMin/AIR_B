@@ -28,6 +28,13 @@ public class AirController {
 		
 		return "/payment";
 	}
+	
+	@GetMapping("/join")
+	public String join() {
+		
+		return "/join";
+	}
+
 
 	@GetMapping("home")
 	public String home() {
@@ -40,11 +47,7 @@ public class AirController {
 		
 		return "/login";
 	}
-	@GetMapping("join")
-	public String join() {
-		
-		return "/join";
-	}
+	
 	@GetMapping("memInformation")
 	public String memInformation() {
 		

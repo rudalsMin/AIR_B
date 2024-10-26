@@ -48,16 +48,19 @@ window.onclick = function(event) {
     }
 }
 
-// SEL 모달에서 선택한 값을 버튼 텍스트로 업데이트
+// SEL 모달에서 선택한 값을 버튼의 텍스트와 value 속성으로 업데이트
 document.querySelector('#SELModal select').addEventListener('change', function() {
     // 선택된 옵션의 value를 가져옵니다.
     let selectedValue = this.options[this.selectedIndex].value;
 	let selectedText = this.options[this.selectedIndex].text;
 
-    // SEL 버튼 텍스트를 선택된 option의 value로 업데이트
-    document.getElementById('openModalBtn').innerText = selectedValue;
-	
-	// departure_Sel의 텍스트를 선택된 option의 텍스트로 업데이트
+    // SEL 버튼의 텍스트를 선택된 option의 텍스트로 업데이트
+    document.getElementById('openModalBtn').innerText = selectedText;
+
+    // SEL 버튼의 value 속성도 선택된 값으로 업데이트
+    document.getElementById('openModalBtn').value = selectedValue;
+		
+	// departure_Sel 요소의 텍스트를 선택된 option의 텍스트로 업데이트
 	document.getElementById('departure_Sel').innerText = selectedText;
 
     // 모달 닫기

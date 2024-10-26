@@ -253,7 +253,7 @@
     color: #000000;
     transform: translate(376px, -789px);
 }
-.lastname{
+.last_name{
 	font-size: 0.9rem;
     font-weight: 650;
     height: 2rem;
@@ -270,7 +270,7 @@
     width: 775px;
     border-radius: 0rem;
 }
-.firstname{
+.first_name{
 	font-size: 0.9rem;
     font-weight: 650;
     height: 2rem;
@@ -287,7 +287,7 @@
     width: 775px;
     border-radius: 0rem;
 }
-.englishFirstN{
+.english_first_name{
 	font-size: 0.9rem;
     font-weight: 650;
     height: 2rem;
@@ -313,7 +313,7 @@
     border-radius: 0rem;
 }
 
-.englishLastN{
+.english_last_name{
 	font-size: 0.9rem;
     font-weight: 650;
     height: 2rem;
@@ -338,7 +338,7 @@
     width: 775px;
     border-radius: 0rem;
 }
-.ID{
+.id{
 	font-size: 0.9rem;
     font-weight: 650;
     height: 2rem;
@@ -389,7 +389,7 @@
     width: 775px;
     border-radius: 0rem;
 }
-.passwordConfirm{
+.confirm_password{
 	font-size: 0.9rem;
     font-weight: 650;
     height: 2rem;
@@ -481,7 +481,7 @@
     border-radius: 0rem;
 }
 
-.phone{
+.phone_number{
 	font-size: 0.9rem;
     font-weight: 650;
     height: 2rem;

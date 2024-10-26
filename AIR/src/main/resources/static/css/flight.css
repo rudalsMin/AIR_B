@@ -5,11 +5,40 @@
 
 .body {
   background-color: #ffffff;
+  overflow: scroll;
 }
 .header-container {
   background-color: #FCE00C;
   height: 8px;
   width: 100%;
+}
+.site-navD {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+}
+.site-navD .site-navigation .site-menu > li > a {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: rgb(0, 0, 0);
+    transform: translate(253px, 4px);
+    cursor: pointer;
+}
+.btn.btn-loginD {
+    display: flex;
+    padding: 7px 30px;
+    justify-content: center;
+    height: 41px;
+    border-radius: 2rem;
+    background: #00256c;
+    color: #fff;
+    font-size: 0.9rem;
+    max-width: 63%;
+    transform: translate(1231px, 5px);
 }
  .link {
     font-size: 14px;
@@ -89,7 +118,19 @@
   }
   
 }
-
+.search_btnD{
+	transform: translate(429px, -36px);
+    cursor: pointer;
+    border: 1px solid rgb(5, 23, 102);
+    height: 40px;
+    width: 230px;
+    font-size: 4px;
+    border-radius: 9px;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    padding: 1px 19px;
+}
 
 
 
@@ -372,6 +413,11 @@ transform: translate(-221px, 47px);
     cursor: pointer;
     position: fixed;
     width: 41px;
+}
+.line{
+	position: relative;
+	bottom: 10px;
+	width: 100px;
 }
 .selD-btn {
 	display: flex;

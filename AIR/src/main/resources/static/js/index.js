@@ -1,3 +1,4 @@
+
 // "대한민국 - 한국어" 버튼을 클릭하면 LANModal을 열기
 document.getElementById('openModalBtn5').onclick = function() {
     document.getElementById('LANModal').style.display = "block";
@@ -33,7 +34,7 @@ document.getElementById('openModalBtn').onclick = function(event) {
     // 모달 창 열기
     document.getElementById('SELModal').style.display = "block";
 
-    // 다른 모달 창이 열려 있다면 닫기 (이 코드는 선택사항입니다)
+    // 다른 모달 창이 열려 있다면 닫기 (선택사항)
     document.getElementById('SEATModal').style.display = "none"; 
 }
 
@@ -44,50 +45,67 @@ document.querySelector('.close-btn').onclick = function() {
 
 // 모달창 외부 클릭 시 모달창 닫기
 window.onclick = function(event) {
+    // SELModal을 클릭했을 때 모달 닫기
     if (event.target == document.getElementById('SELModal')) {
         document.getElementById('SELModal').style.display = "none";
     }
 }
 
-// SEL 모달에서 선택한 값을 버튼 텍스트로 업데이트
+// SEL 모달에서 선택한 값을 버튼 텍스트와 value로 업데이트
 document.querySelector('#SELModal select').addEventListener('change', function() {
     // 선택된 옵션의 value를 가져옵니다.
     let selectedValue = this.options[this.selectedIndex].value;
 
-    // SEL 버튼 텍스트를 선택된 option의 value로 업데이트
-    document.getElementById('openModalBtn').innerText = selectedValue;
+    // SEL 버튼 텍스트와 value를 선택된 option의 value로 업데이트
+    let selButton = document.getElementById('openModalBtn');
+    selButton.innerText = selectedValue;
+    selButton.value = selectedValue;  // value도 업데이트
 
     // 모달 닫기
     document.getElementById('SELModal').style.display = "none";
 });
 
+// ESC 키로 모달 닫기 기능 추가
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        document.getElementById('SELModal').style.display = "none";
+    }
+});
+
+// 현재 열린 모달을 추적하기 위한 변수
+let currentOpenModal = null;
 // TO 버튼을 클릭하면 모달창을 열기
 document.getElementById('openModalBtn2').onclick = function(event) {
     // 버튼의 기본 동작(페이지 전환)을 막습니다.
     event.preventDefault();
 
-    // 모달 창 열기
-    document.getElementById('TOModal').style.display = "block";
+    // 현재 열려 있는 모달이 있다면 닫기
+    if (currentOpenModal && currentOpenModal !== 'TOModal') {
+        document.getElementById(currentOpenModal).style.display = "none";
+    }
 
-    // 다른 모달 창이 열려 있다면 닫기 (이 코드는 선택사항입니다)
-    document.getElementById('SEATModal').style.display = "none";
+    // TO 모달 창 열기
+    document.getElementById('TOModal').style.display = "block";
+    currentOpenModal = 'TOModal';
 }
 
 // TO 모달창 닫기 버튼 클릭 시 모달창 닫기
 document.querySelector('.close-btn2').onclick = function() {
     document.getElementById('TOModal').style.display = "none";
+    currentOpenModal = null;
 }
 
 // TO 모달창 외부 클릭 시 모달창 닫기
 window.onclick = function(event) {
     if (event.target == document.getElementById('TOModal')) {
         document.getElementById('TOModal').style.display = "none";
+        currentOpenModal = null;
     }
 }
 
-// TO 모달에서 선택한 값을 버튼 텍스트로 업데이트
+// TO 모달에서 선택한 값을 버튼 텍스트와 value로 업데이트
 document.querySelector('#TOModal select').addEventListener('change', function() {
-    // 선택된 옵션의 value를 가져옵니다.
+    // 선택된 옵션의 value와 text를 가져옵니다.
     let selectedValue = this.options[this.selectedIndex].value;
     let selectedText = this.options[this.selectedIndex].text;
 
@@ -95,9 +113,19 @@ document.querySelector('#TOModal select').addEventListener('change', function() 
     // 선택된 옵션에 value가 없으면 텍스트를 사용합니다.
     let displayText = selectedValue ? selectedValue : selectedText;
     document.getElementById('openModalBtn2').innerText = displayText;
+    document.getElementById('openModalBtn2').value = selectedValue;
 
     // 모달 닫기
     document.getElementById('TOModal').style.display = "none";
+    currentOpenModal = null;
+});
+
+// ESC 키로 모달 닫기 기능 추가
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && currentOpenModal) {
+        document.getElementById(currentOpenModal).style.display = "none";
+        currentOpenModal = null;
+    }
 });
 
 // 좌석 등급 모달창 열기 버튼 클릭 시 모달 열기
